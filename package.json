@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "name": "sylvbot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "author": "Sylvee",
+  "license": "ISC",
+  "description": ""
+}
