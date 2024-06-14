@@ -9,7 +9,7 @@ module.exports = {
     async execute(interaction, client) {
 
         const user = interaction.options.getUser('user');
-        const ID = users.id;
+        const ID = user.id;
         const link = [
             "https://media1.tenor.com/m/kIh2QZ7MhBMAAAAC/tsumiki-anime.gif",
             "https://media1.tenor.com/m/E6fMkQRZBdIAAAAC/kanna-kamui-pat.gif",
