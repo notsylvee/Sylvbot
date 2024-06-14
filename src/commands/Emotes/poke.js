@@ -9,6 +9,7 @@ module.exports = {
     async execute(interaction, client) {
 
         const user = interaction.options.getUser('user');
+        const ID = users.id;
         const link = [
             "https://media1.tenor.com/m/4OHxyGd4qp0AAAAC/boop-nose.gif",
             "https://media1.tenor.com/m/1YMrMsCtxLQAAAAC/anime-poke.gif",
@@ -24,6 +25,8 @@ module.exports = {
             "https://media.tenor.com/W5Sqx8YavwYAAAAM/chtholly-nota-seniorious-suka-suka.gif"
         ];
         const gif = link[Math.floor(Math.random() * link.length)];
+
+        if (interaction.member.id === ID) return await interaction.reply({ content: "You cannot use this command on yourself", ephemeral: true });
 
         const embed = new EmbedBuilder()
         .setColor("Fuchsia")
