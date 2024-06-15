@@ -51,4 +51,4 @@ jobs:
           KUBE_CERTIFICATE: ${{ secrets.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: -n sylvbot set image deployment/sylvbot sylvbot=ghcr.io/${{ env.REPO }}:git-${{ github.sha }}
+          args: -n sylvbot set image statefulset/sylvbot sylvbot=ghcr.io/${{ env.REPO }}:git-${{ github.sha }}
