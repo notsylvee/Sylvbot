@@ -12,10 +12,12 @@ module.exports = {
         const kickUser = interaction.options.getUser('user');
         const kickMember = await interaction.guild.members.fetch(kickUser.id);
         const channel = interaction.channel;
+        const ID = kickUser.id;
 
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.KickMembers)) return await interaction.reply({ content: "Invalid permissions", ephemeral: true});
         if (!kickMember) return await interaction.reply({ content: "Invalid user", ephemeral: true });
         if (!kickMember.kickable) return await interaction.reply({ content: "Invalid permissions", ephemeral: true });
+        if (interaction.member.id === ID) return await interaction.reply({ content: "You cannot kick yourself", ephemeral: true });
 
         let reason = interaction.options.getString('reason');
         if (!reason) reason = "No reason provided";

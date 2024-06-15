@@ -11,11 +11,11 @@ module.exports = {
             "https://media1.tenor.com/m/4q5OwnFZJdEAAAAC/adorable-pleading.gif",
             "https://media1.tenor.com/m/TgtTEClE92gAAAAd/crying-face-appeal.gif",
             "https://media1.tenor.com/m/puJHeOtbn8UAAAAC/konasuba-tears.gif",
-            "https://media1.tenor.com/m/jqnbSlE62aAAAAAC/anime-cute.gif",
             "https://media1.tenor.com/m/Y9g7q5u4W8IAAAAC/girl-please.gif",
             "https://media1.tenor.com/m/4LQ38wHjsL0AAAAC/anime-girl.gif",
             "https://media1.tenor.com/m/79G0dJYpf4EAAAAC/kiriya-evi-kiriya.gif",
-            "https://media1.tenor.com/m/ejVAMxHwW68AAAAC/please-begging.gif"
+            "https://media1.tenor.com/m/ejVAMxHwW68AAAAC/please-begging.gif",
+            "https://media1.tenor.com/m/4-Wcadun8mIAAAAC/shiro-anime.gif"
         ];
         const gif = link[Math.floor(Math.random() * link.length)];
 
