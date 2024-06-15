@@ -35,7 +35,20 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ env.REPO }}:latest
+          tags: ghcr.io/${{ env.REPO }}:latest,ghcr.io/${{ env.REPO }}:git-${{ github.sha }}
           platforms: linux/amd64
           cache-from: type=gha
           cache-to: type=gha,mode=max
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correct env
+        run: echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
+      - uses: actions-hub/kubectl@master
+        env:
+          KUBE_HOST: ${{ secrets.KUBE_HOST }}
+          KUBE_CERTIFICATE: ${{ secrets.KUBE_CERTIFICATE }}
+          KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
+        with:
+          args: -n sylvbot set image deployment/sylvbot sylvbot=ghcr.io/${{ env.REPO }}:git-${{ github.sha }}
