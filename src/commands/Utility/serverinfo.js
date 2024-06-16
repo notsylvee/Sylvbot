@@ -15,7 +15,7 @@ module.exports = {
         const emojis = guild.emojis.cache.size;
         const id = guild.id;
 
-        let baseVerification = guild.VerificationLevel;
+        let baseVerification = guild.verificationLevel;
 
         if (baseVerification == 0) baseVerification = "None"
         if (baseVerification == 1) baseVerification = "Low"
