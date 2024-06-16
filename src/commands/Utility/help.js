@@ -34,6 +34,8 @@ module.exports = {
         .addFields({ name: "/bite", value: "Bite someone!" })
         .addFields({ name: "/cry", value: "Sends a crying gif" })
         .addFields({ name: "/cuddle", value: "Cuddle someone!" })
+        .addFields({ name: "/dance", value: "Sends dancing gif!" })
+        .addFields({ name: "/eat", value: "Sends a an eating gif!" })
         .addFields({ name: "/giggle", value: "Sends a giggling gif!" })
         .addFields({ name: "/happy", value: "Sends a happy gif!" })
         .addFields({ name: "/hug", value: "Give someone a hug!" })
