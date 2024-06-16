@@ -11,7 +11,7 @@ module.exports = {
         const { mmebers } = guild;
         const { name, ownerId, createdTimestamp, memberCount } = guild;
         const icon = guild.iconURL() || 'https://static.vecteezy.com/system/resources/previews/006/892/625/original/discord-logo-icon-editorial-free-vector.jpg';
-        const roles = guild.roles.cach.size;
+        const roles = guild.roles.cache.size;
         const emojis = guild.emojis.cache.size;
         const id = guild.id;
 
