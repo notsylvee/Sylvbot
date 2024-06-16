@@ -25,6 +25,7 @@ module.exports = {
         .addFields({ name: "/help", value: "Get a list of all available commands" })
         .addFields({ name: "/ping", value: "Pong!" })
         .addFields({ name: "/status", value: "Set bot status (bot owner only)" })
+        .addFields({ name: "/userinfo", value: "Get info of a user" })
         .setFooter({ text: "Utility commands" })
         .setTimestamp()
 
@@ -43,6 +44,7 @@ module.exports = {
         .addFields({ name: "/kill", value: "Kill someone!" })
         .addFields({ name: "/kiss", value: "Give someone a kiss!" })
         .addFields({ name: "/lick", value: "Lick someone!" })
+        .addFields({ name: "/mad", value: "Sends a mad gif!" })
         .addFields({ name: "/pat", value: "Pat someone!" })
         .addFields({ name: "/plead", value: "Sends a pleading gif!" })
         .addFields({ name: "/poke", value: "Poke someone!" })
@@ -50,6 +52,7 @@ module.exports = {
         .addFields({ name: "/sad", value: "Sends a sad gif" })
         .addFields({ name: "/shy", value: "Sends a shy gif!" })
         .addFields({ name: "/slap", value: "Slap someone!" })
+        .addFields({ name: "/sleep", value: "Sends a sleeping gif!" })
         .addFields({ name: "/suicide", value: "Commit suicide" })
         .addFields({ name: "/tickle", value: "Tickle someone!" })
         .addFields({ name: "/tired", value: "Sends a tired gif!" })
