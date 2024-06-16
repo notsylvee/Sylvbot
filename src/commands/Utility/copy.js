@@ -39,14 +39,9 @@ module.exports = {
 
         interaction.guild.emojis.create({ attachment: `${emoji}`, name: `${name}` })
         .then(emoji => {
-            const embed = new EmbedBuilder()
-            .setColor("Green")
-            .setDescription(`Added emoji: ${emoji}`)
-
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ content: `Added emoji: ${emoji}` });
         }).catch(err => {
             interaction.reply({ content: "Emoji limit reached", ephemeral: true })
         })
     }
-
 }

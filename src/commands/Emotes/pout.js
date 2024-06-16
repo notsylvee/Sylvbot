@@ -16,7 +16,8 @@ module.exports = {
             "https://media1.tenor.com/m/wtSs_VCHYmEAAAAC/noela-angry.gif",
             "https://media1.tenor.com/m/5zXUvByrCe8AAAAC/sora-no.gif",
             "https://media1.tenor.com/m/yCR6JOoxS6wAAAAd/anime-angry.gif",
-            "https://media1.tenor.com/m/CZGY4W52elwAAAAC/anime-kubo-san.gif"
+            "https://media1.tenor.com/m/CZGY4W52elwAAAAC/anime-kubo-san.gif",
+            "https://media1.tenor.com/m/G_YeALOH-iAAAAAC/mao-amatsuka-mad.gif"
         ];
         const gif = link[Math.floor(Math.random() * link.length)];
 

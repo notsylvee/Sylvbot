@@ -3,7 +3,7 @@ const { EmbedBuilder, Embed } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-    .setName('pay')
+    .setName('pat')
     .setDescription('Pat someone!')
     .addUserOption(option => option.setName('user').setDescription('Who you want to pat').setRequired(true)),
     async execute(interaction, client) {
