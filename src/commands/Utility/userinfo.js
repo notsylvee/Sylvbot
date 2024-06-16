@@ -9,7 +9,7 @@ module.exports = {
     async execute (interaction) {
 
         const user = interaction.options.getUser('user') || interaction.user;
-        const memebr = await interaction.guild.members.fetch(user.id);
+        const member = await interaction.guild.members.fetch(user.id);
         const icon = user.displayAvatarURL();
         const tag = user.tag;
 
