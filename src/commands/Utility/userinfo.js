@@ -4,7 +4,7 @@ const { EmbedBuilder, IntegrationExpireBehavior } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
     .setName('userinfo')
-    .setDescription('Get info of a user')
+    .setDescription('Get info about a user')
     .addUserOption(option => option.setName('user').setDescription('Who you want to get info about')),
     async execute (interaction) {
 
@@ -20,7 +20,7 @@ module.exports = {
         .addFields({ name: "Member", value: `${user}`, inline: false})
         .addFields({ name: "Roles", value: `${member.roles.cache.map(r => r).join(' ')}`, inline: false })
         .addFields({ name: "Joined server", value: `<t:${parseInt(member.joinedAt / 1000)}:R>` })
-        .addFields({ name: "Joined Discord", value: `<t:${parseInt(member.createdAt / 1000)}:R>` })
+        .addFields({ name: "Joined Discord", value: `<t:${parseInt(user.createdAt / 1000)}:R>` })
         .setFooter({ text: `User ID: ${user.id}` })
         .setTimestamp()
 
