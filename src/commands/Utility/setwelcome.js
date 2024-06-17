@@ -12,7 +12,7 @@ module.exports = {
 
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator))return await interaction.reply({ content: "Invalid permissions", ephemeral: true });
 
-        const channel = interaction.option.getChannel('channel');
+        const channel = interaction.options.getChannel('channel');
 
         const embed = new EmbedBuilder()
         .setColor("Green")
