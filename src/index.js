@@ -1,6 +1,7 @@
-const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions, MessageManager, Embed, Collection } = require(`discord.js`);
+const { channel } = require('diagnostics_channel');
+const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions, MessageManager, Embed, Collection, Events } = require(`discord.js`);
 const fs = require('fs');
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] }); 
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers] }); 
 
 client.commands = new Collection();
 
@@ -18,3 +19,17 @@ const commandFolders = fs.readdirSync("./src/commands");
     client.handleCommands(commandFolders, "./src/commands");
     client.login(process.env.token)
 })();
+
+const { QuickDB } = require('quick.db');
+const db = new QuickDB();
+
+client.on(Events.GuildMemberAdd, async (member) => {
+
+    const channelID = await db.get(`welcomechannel_${member.guild.id}`)
+    const channel = member.guild.channels.cache.get(channelID)
+    const message = `Welcome to the server, ${member}!`
+
+    if (channelID == null) return;
+
+    channel.send(message)
+})
