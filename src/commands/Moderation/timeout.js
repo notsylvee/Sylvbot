@@ -51,7 +51,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
         .setColor('Blue')
-        .setDescription(`:white_check_mark: ${user.tag} has been timed out for ${duration / 60} minute(s) for ${reason}`)
+        .setDescription(`:white_check_mark: ${user.tag} has been timed out for ${duration / 60} minute(s) for "${reason}"`)
 
         await interaction.reply({ embeds: [embed] });
     }
