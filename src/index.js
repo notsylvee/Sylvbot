@@ -19,17 +19,3 @@ const commandFolders = fs.readdirSync("./src/commands");
     client.handleCommands(commandFolders, "./src/commands");
     client.login(process.env.token)
 })();
-
-const { QuickDB } = require('quick.db');
-const db = new QuickDB();
-
-client.on(Events.GuildMemberAdd, async (member) => {
-
-    const channelID = await db.get(`welcomechannel_${member.guild.id}`)
-    const channel = member.guild.channels.cache.get(channelID)
-    const message = `Welcome to the server, ${member}!`
-
-    if (channelID == null) return;
-
-    channel.send(message)
-})

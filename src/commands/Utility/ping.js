@@ -5,10 +5,8 @@ module.exports = {
     .setName('ping')
     .setDescription('Pong! Get the bots ping (ms)'),
     async execute(interaction, client) {
-        await interaction.deferReply();
 
-        const reply = await interaction.fetchReply();
-        const ping = reply.createdTimestamp - interaction.createdTimestamp
+        let ping = `${Date.now() - interaction.createdTimestamp}`
 
         interaction.editReply(`🏓 Pong! Client latency is ${ping}ms`)
     }
