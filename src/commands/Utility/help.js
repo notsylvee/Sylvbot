@@ -13,6 +13,8 @@ module.exports = {
         .addFields({ name: "/ban", value: "Ban a user from this server" })
         .addFields({ name: "/unban", value: "Unban a user from this server" })
         .addFields({ name: "/kickuser", value: "Kick a user from this server" })
+        .addFields({ name: "/timeout", value: "Timeout a user in this server" })
+        .addFields({ name: "/untimeout", value: "Remove timeout a user in this server" })
         .addFields({ name: "/clear", value: "Clear messages from this channel" })
         .addFields({ name: "/slowmode", value: "Enable slowmode in a channel" })
         .setFooter({ text: "Moderation commands" })
