@@ -37,7 +37,7 @@ module.exports = {
 
         const user = interaction.options.getUser('user');
         const member = await interaction.guild.members.fetch(user.id);
-        const duration = interaction.options.getString('durations');
+        const duration = interaction.options.getString('duration');
 
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.ModerateMembers)) return await interaction.reply({ content: 'Invalid permissions', ephemeral: true});
         if (!member) return await interaction.reply({ content: 'Invalid user', ephemeral: true });
