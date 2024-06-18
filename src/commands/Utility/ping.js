@@ -8,6 +8,6 @@ module.exports = {
 
         const ping = `${Date.now() - interaction.createdTimestamp}`
 
-        interaction.editReply(`🏓 Pong! Client latency is ${ping}ms`)
+        interaction.reply(`🏓 Pong! Client latency is ${ping}ms`)
     }
 }
