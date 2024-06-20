@@ -25,7 +25,7 @@ module.exports = {
         setTimeout(() => {
             if (!sticker) return;
 
-            interaction.editReply({  content: `Added sticker! ${sticker}` });
+            interaction.editReply({  content: `Added sticker!` });
         }, 3000)
     }
 }
