@@ -25,11 +25,7 @@ module.exports = {
         setTimeout(() => {
             if (!emoji) return;
 
-            const embed = new EmbedBuilder()
-            .setColor("Blue")
-            .setDescription(`Added emoji: ${emoji}`)
-
-            interaction.editReply({  content: '', embeds: [embed] });
+            interaction.editReply({  content: 'Added emoji: ${emoji}' });
         }, 3000)
     }
 }
