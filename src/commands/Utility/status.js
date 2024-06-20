@@ -12,7 +12,7 @@ module.exports = {
         const status = options.getString('status');
         const type = options.getString('type');
 
-        if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "Invalid permission", ephemeral: true });
+        if (interaction.user.id != "1018686464000807003" || "431220802797568001") return await interaction.reply({ content: "Invalid permission", ephemeral: true });
         else {
 
             client.user.setActivity({
@@ -28,5 +28,4 @@ module.exports = {
             await interaction.reply({ embeds: [embed], ephemeral: true });
         }
     }
-
 }
