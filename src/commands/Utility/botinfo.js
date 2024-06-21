@@ -25,12 +25,12 @@ module.exports = {
         const row = new ActionRowBuilder()
         .addComponents(
             new ButtonBuilder()
-            .setLabel('Primary Server')
+            .setLabel('Support server')
             .setStyle(ButtonStyle.Link)
-            .setURL(`https://discord.gg/tYdcFVY6pJ`),
+            .setURL(`https://discord.gg/xds5ttU2fG`),
 
             new ButtonBuilder()
-            .setLabel('Bot Invite')
+            .setLabel('Bot invite')
             .setStyle(ButtonStyle.Link)
             .setURL(`https://discord.com/oauth2/authorize?client_id=953885359668871238&permissions=8&integration_type=0&scope=applications.commands+bot`),
         )
