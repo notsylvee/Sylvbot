@@ -59,9 +59,11 @@ module.exports = {
         .addFields({ name: "/shy", value: "Sends a shy gif!" })
         .addFields({ name: "/slap", value: "Slap someone!" })
         .addFields({ name: "/sleep", value: "Sends a sleeping gif!" })
+        .addFields({ name: "/spin", value: "Sends a spinning gif!" })
         .addFields({ name: "/suicide", value: "Commit suicide" })
         .addFields({ name: "/tickle", value: "Tickle someone!" })
         .addFields({ name: "/tired", value: "Sends a tired gif!" })
+        .addFields({ name: "/wave", value: "Sends a waving gif!" })
         .setFooter({ text: "Emote commands" })
         .setTimestamp()
 
