@@ -4,7 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('status')
     .setDescription('Set bot status (bot owner only)')
-    .addStringOption(option => option.setName('type').setDescription('The status type').addChoices( { name: 'Watching', value: `${4}` }, { name: 'Playing', value: `${1}` }, { name: 'Listening', value: `${3}` }, { name: 'Competing in', value: `${6}` }, { name: 'Streaming', value: `${2}` }).setRequired(true))
+    .addStringOption(option => option.setName('type').setDescription('The status type').addChoices( { name: 'Watching', value: `${4}` }, { name: 'Playing', value: `${1}` }, { name: 'Listening to', value: `${3}` }, { name: 'Competing in', value: `${6}` }, { name: 'Streaming', value: `${2}` }).setRequired(true))
     .addStringOption(option => option.setName('status').setDescription('What to change the bot status to').setMaxLength(128).setRequired(true)),
     async execute (interaction, client) {
 
