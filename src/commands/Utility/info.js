@@ -17,8 +17,11 @@ module.exports = {
         .setName('user')
         .setDescription('Send info about a user')
         .addUserOption(option => option.setName('user').setDescription('Who you want to get info about'))),
+
     async execute (interaction, client) {
+
         const command = interaction.options.getSubcommand();
+
         switch (command) {
             case 'bot':
                 const name = "Sylvbot";
@@ -63,6 +66,7 @@ module.exports = {
         
                 await interaction.reply({ embeds: [embed], components: [row] });
         }
+
         switch (command) {
             case 'server':
                 const { guild } = interaction;
@@ -98,6 +102,7 @@ module.exports = {
         
                 await interaction.reply({ embeds: [embed] });
         }
+        
         switch (command) {
             case 'user':
                 const user = interaction.options.getUser('user') || interaction.user;
