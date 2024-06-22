@@ -36,6 +36,7 @@ module.exports = {
     async execute (interaction) {
 
         const command = interaction.options.getSubcommand();
+        
         switch (command) {
             case 'd4':
             const number = Math.floor(Math.random() * 4) + 1
