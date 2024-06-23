@@ -5,7 +5,7 @@ const { PermissionsBitField, PermissionOverwriteManager } = require('discord.js'
 module.exports = {
     data: new SlashCommandBuilder()
     .setName('expression')
-    .setDescription('Get info about a user, the bot, or this server')
+    .setDescription('Add an expression to this server')
     .addSubcommand(command =>
         command
         .setName('copy')
