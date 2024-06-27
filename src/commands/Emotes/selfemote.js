@@ -64,7 +64,15 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('wave')
-        .setDescription('Sends a waving gif!')),
+        .setDescription('Sends a waving gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('scared')
+        .setDescription('Sends a scared gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('sigh')
+        .setDescription('Sends a sighing gif!')),
     async execute(interaction, client) {
 
         const command = interaction.options.getSubcommand();
@@ -176,7 +184,8 @@ module.exports = {
                     "https://media1.tenor.com/m/ruU09sGPcCwAAAAd/happy-anime.gif",
                     "https://media1.tenor.com/m/lAfLMj3TnCYAAAAC/noela-fox-girl.gif",
                     "https://media1.tenor.com/m/ZQx1GOXHa68AAAAC/happy-anime.gif",
-                    "https://media1.tenor.com/m/cDCkQ6BPlF4AAAAC/pat-pat-anime.gif"
+                    "https://media1.tenor.com/m/cDCkQ6BPlF4AAAAC/pat-pat-anime.gif",
+                    "https://media1.tenor.com/m/UOnumIqo2CQAAAAC/anime-girl.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -424,6 +433,61 @@ module.exports = {
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} waves!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'scared':
+                const link = [
+                    "https://media1.tenor.com/m/pGopKd9Rr6UAAAAC/spy-x-family-anya.gif",
+                    "https://media1.tenor.com/m/RhyxCbENd6YAAAAC/umaru-chan-scared.gif",
+                    "https://media1.tenor.com/m/WcxwXmB-YiIAAAAC/anime-pillow.gif",
+                    "https://media1.tenor.com/m/wWmjeJgcFr4AAAAC/nervous-anime.gif",
+                    "https://media1.tenor.com/m/m3hU0lQpvgYAAAAC/yuko-yoshida.gif",
+                    "https://media1.tenor.com/m/zaA5Pjj5uLEAAAAC/what-anime.gif",
+                    "https://media1.tenor.com/m/-JR_teNMOXEAAAAC/ijiranaide-nagatoro-nagataro.gif",
+                    "https://media1.tenor.com/m/s47WLGGXpykAAAAC/caca.gif",
+                    "https://media1.tenor.com/m/xOkEyRSthr8AAAAC/zom-100-shizuka.gif",
+                    "https://media1.tenor.com/m/Jqu1G_iJ3UAAAAAC/spy-x-family-anime.gif",
+                    "https://media1.tenor.com/m/8YzW_09IUlsAAAAC/kyoko-kyouko.gif",
+                    "https://media1.tenor.com/m/H6aXU6tlAF4AAAAC/chika-fujiwara.gif",
+                    "https://media1.tenor.com/m/AfnHLh8b3g4AAAAC/mira-yamana-scared-anime-girl.gif",
+                    "https://media1.tenor.com/m/am4tzoTsnRoAAAAd/ichigaya-arisa-bang-dream.gif",
+                    "https://media1.tenor.com/m/lxHeSjvoIqYAAAAC/ellenoar-seiran.gif",
+                    "https://media1.tenor.com/m/k-20hdZMXZcAAAAC/scared-anime.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} is scared 😨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'sigh':
+                const link = [
+                    "https://media1.tenor.com/m/AH5Z8hQe-fIAAAAC/mission-yozakura.gif",
+                    "https://media1.tenor.com/m/0AOiFgMsBWcAAAAC/sigh.gif",
+                    "https://media1.tenor.com/m/WqdUzHZ4CfAAAAAC/anime-nichijou.gif",
+                    "https://media1.tenor.com/m/eWoBMxka7_MAAAAC/anime-sigh.gif",
+                    "https://media1.tenor.com/m/XLOFIrDqe_EAAAAd/kanna-comf-kanna.gif",
+                    "https://media1.tenor.com/m/GpeoeGe1yiMAAAAd/86-frederica.gif",
+                    "https://media1.tenor.com/m/HAsTIppa8lAAAAAC/inaba-himeko-himeko-inaba.gif",
+                    "https://media1.tenor.com/m/w-KmooSalMgAAAAd/kuroneko-oreimo.gif",
+                    "https://media1.tenor.com/m/Qc2kUr8hXC4AAAAC/sigh-new-game.gif",
+                    "https://media1.tenor.com/m/0EgQgZWi8WoAAAAC/sigh-yamadakun-and-the-seven-witches.gif",
+                    "https://media1.tenor.com/m/c4Xa3T8AXRwAAAAC/anime-otoboku.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} sighs 😮‍💨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
