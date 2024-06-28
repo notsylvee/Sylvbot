@@ -138,7 +138,7 @@ module.exports = {
 
                     async function sendMessage (message, key) {
                         const embed = new EmbedBuilder()
-                        .setColor("Green")
+                        .setColor("Blurple")
                         .setDescription(message);
 
                         if (key) {
@@ -147,7 +147,7 @@ module.exports = {
                                 new ButtonBuilder()
                                 .setStyle(ButtonStyle.Link)
                                 .setURL(`https://sourceb.in/${key}`)
-                                .setLabel(`Server list`)
+                                .setLabel(`🔗 Server list`)
                             );
 
                             await interaction.editReply({ embeds: [embed], components: [button] });
@@ -179,9 +179,9 @@ module.exports = {
 
                     if (listBin.ok) {
                         var { key } = await listBin.json();
-                        await sendMessage(`**Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`, key);
+                        await sendMessage(`✅ **Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`, key);
                     } else {
-                        await sendMessage(`Failed to load server list`);
+                        await sendMessage(`⚠️ Failed to load server list`);
                     }
                 }
         }

@@ -31,7 +31,7 @@ module.exports = {
 
         switch (command) {
             case 'copy':
-                if (!interaction.member.permissions.has(PermissionsBitField.Flags.CreateGuildExpressions)) return await interaction.reply({ content: "Invalid permission", ephemeral: true });
+                if (!interaction.member.permissions.has(PermissionsBitField.Flags.CreateGuildExpressions)) return await interaction.reply({ content: "⚠️ Invalid permission", ephemeral: true });
 
                 let emoji = interaction.options.getString('emoji')?.trim();
                 const name = interaction.options.getString('name');
@@ -51,29 +51,29 @@ module.exports = {
                 }
         
                 if (!emoji.startsWith("http")) {
-                    return await interaction.reply({ content: "Invalid emoji", ephemeral: true })
+                    return await interaction.reply({ content: "⚠️ Invalid emoji", ephemeral: true })
                 }
         
                 if (!emoji.startsWith("https")) {
-                    return await interaction.reply({ content: "Invalid emoji", ephemeral: true })
+                    return await interaction.reply({ content: "⚠️ Invalid emoji", ephemeral: true })
                 }
         
                 interaction.guild.emojis.create({ attachment: `${emoji}`, name: `${name}` })
                 .then(emoji => {
-                    return interaction.reply({ content: `Added emoji: ${emoji}` });
+                    return interaction.reply({ content: `✅ Added emoji: ${emoji}` });
                 }).catch(err => {
-                    interaction.reply({ content: "Emoji limit reached", ephemeral: true })
+                    interaction.reply({ content: "⚠️ Emoji limit reached", ephemeral: true })
                 })
         }
 
         switch (command) {
             case 'emoji':
-                if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageGuildExpressions)) return await interaction.reply({ content: "Invalid permissions", ephemeral: true})
+                if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageGuildExpressions)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true})
 
                     const upload = interaction.options.getAttachment('image');
                     const name = interaction.options.getString('name');
             
-                    await interaction.reply({ content: "Uploading emoji..." });
+                    await interaction.reply({ content: "💭 Uploading emoji..." });
             
                     const emoji = await interaction.guild.emojis.create({ attachment: `${upload.attachment}`, name: `${name}` }).catch(err => {
                         setTimeout(() => {
@@ -85,18 +85,18 @@ module.exports = {
                     setTimeout(() => {
                         if (!emoji) return;
             
-                        interaction.editReply({  content: `Added emoji: ${emoji}` });
+                        interaction.editReply({  content: `💭 Added emoji: ${emoji}` });
                     }, 3000)
         }
 
         switch (command) {
             case 'sticker':
-                if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageGuildExpressions)) return await interaction.reply({ content: "Invalid permissions", ephemeral: true})
+                if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageGuildExpressions)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true})
 
                     const upload = interaction.options.getAttachment('image');
                     const name = interaction.options.getString('name');
             
-                    await interaction.reply({ content: "Uploading sticker..." });
+                    await interaction.reply({ content: "💭 Uploading sticker..." });
             
                     const sticker = await interaction.guild.stickers.create({ file: `${upload.attachment}`, name: `${name}` }).catch(err => {
                         setTimeout(() => {
@@ -108,7 +108,7 @@ module.exports = {
                     setTimeout(() => {
                         if (!sticker) return;
             
-                        interaction.editReply({  content: `Added sticker!` });
+                        interaction.editReply({  content: `✅ Added sticker!` });
                     }, 3000)
         }
     }
