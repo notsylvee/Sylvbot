@@ -53,6 +53,7 @@ module.exports = {
             .addFields({ name: "/expression (copy, emoji, sticker)", value: "Add an expression to this server" })
             .addFields({ name: "/help (moderation, utility, emote)", value: "Get a list of all available commands" })
             .addFields({ name: "/info (bot, user, server)", value: "Get info about a user, the bot, or this server" })
+            .addFields({ name: "/info serverlist", value: "Get a list of all the servers this bot is in (owner only)"})
             .addFields({ name: "/util ping", value: "Pong! Get the bots ping (ms)" })
             .addFields({ name: "/util status", value: "Set bot status (bot owner only)" })
             .setFooter({ text: "Utility commands" })

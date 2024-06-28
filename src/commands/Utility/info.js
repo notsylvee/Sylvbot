@@ -16,7 +16,11 @@ module.exports = {
         command
         .setName('user')
         .setDescription('Send info about a user')
-        .addUserOption(option => option.setName('user').setDescription('Who you want to get info about'))),
+        .addUserOption(option => option.setName('user').setDescription('Who you want to get info about')))
+    .addSubcommand(command =>
+        command
+        .setName('serverlist')
+        .setDescription('Get a list of all the servers this bot is in (owner only)')),
 
     async execute (interaction, client) {
 
@@ -122,6 +126,64 @@ module.exports = {
                 .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'serverlist':
+    
+                if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "Invalid permission", ephemeral: true });
+                else {
+
+                    await interaction.deferReply({ ephemeral: true });
+
+                    async function sendMessage (message, key) {
+                        const embed = new EmbedBuilder()
+                        .setColor("Green")
+                        .setDescription(message);
+
+                        if (key) {
+                            const button = new ActionRowBuilder()
+                            .addComponents(
+                                new ButtonBuilder()
+                                .setStyle(ButtonStyle.Link)
+                                .setURL(`https://sourceb.in/${key}`)
+                                .setLabel(`Server list`)
+                            );
+
+                            await interaction.editReply({ embeds: [embed], components: [button] });
+                        } else {
+                            await interaction.editReply({ embeds: [embed] });
+                        }
+                    }
+
+                    var content = `${client.user.username}'s server list:\n\n`;
+
+                    var guilds = await client.guilds.fetch()
+                    await guilds.forEach(async guild => {
+                        content += `Server: ${guild.name}, ID: ${guild.id}\n`;
+                    });
+
+                    var listBin = await fetch('https://sourceb.in/api/bins', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': "application/json"
+                        },
+                        body: JSON.stringify({
+                            files: [
+                                {
+                                    content: content,
+                                },
+                            ],
+                        }),
+                    });
+
+                    if (listBin.ok) {
+                        var { key } = await listBin.json();
+                        await sendMessage(`**Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`, key);
+                    } else {
+                        await sendMessage(`Failed to load server list`);
+                    }
+                }
         }
     }
 }
