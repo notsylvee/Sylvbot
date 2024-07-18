@@ -20,7 +20,7 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('serverlist')
-        .setDescription('Get a list of all the servers this bot is in (owner only)')),
+        .setDescription('Get a list of all the servers this bot is in (bot owner only)')),
 
     async execute (interaction, client) {
 
@@ -44,19 +44,6 @@ module.exports = {
         
                 let ping = `${Date.now() - interaction.createdTimestamp}ms`
         
-                const row = new ActionRowBuilder()
-                .addComponents(
-                    new ButtonBuilder()
-                    .setLabel('Support server')
-                    .setStyle(ButtonStyle.Link)
-                    .setURL(`https://discord.gg/xds5ttU2fG`),
-        
-                    new ButtonBuilder()
-                    .setLabel('Bot invite')
-                    .setStyle(ButtonStyle.Link)
-                    .setURL(`https://discord.com/oauth2/authorize?client_id=953885359668871238&permissions=8&integration_type=0&scope=applications.commands+bot`),
-                )
-        
                 const embed = new EmbedBuilder()
                 .setColor("Green")
                 .setAuthor({ name: name, iconURL: icon })
@@ -68,7 +55,7 @@ module.exports = {
                 .setFooter({ text: "Bot ID: 953885359668871238" })
                 .setTimestamp()
         
-                await interaction.reply({ embeds: [embed], components: [row] });
+                await interaction.reply({ embeds: [embed] });
         }
 
         switch (command) {
