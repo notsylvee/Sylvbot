@@ -17,6 +17,6 @@ module.exports = {
     async execute (interaction) {
         const value = interaction.options.getString('type');
         const number = Math.floor(Math.random() * `${value}`) + 1
-        await interaction.reply({ content: `The D4 landed on ${number}` })
+        await interaction.reply({ content: `The D${value} landed on ${number}` })
     }
 }
