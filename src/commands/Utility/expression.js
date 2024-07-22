@@ -85,7 +85,7 @@ module.exports = {
                     setTimeout(() => {
                         if (!emoji) return;
             
-                        interaction.editReply({  content: `💭 Added emoji: ${emoji}` });
+                        interaction.editReply({  content: `✅ Added emoji: ${emoji}` });
                     }, 3000)
         }
 

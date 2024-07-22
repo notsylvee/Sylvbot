@@ -5,6 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('useremote')
     .setDescription('Use an emote command')
+    //13
     .addSubcommand(command =>
         command
         .setName('bite')
@@ -64,7 +65,13 @@ module.exports = {
         command
         .setName('tickle')
         .setDescription('Tickle someone!')
-        .addUserOption(option => option.setName('user').setDescription('Who you want to tickle').setRequired(true))),
+        .addUserOption(option => option.setName('user').setDescription('Who you want to tickle').setRequired(true)))
+    .addSubcommand(command =>
+        command
+        .setName('spit')
+        .setDescription('Spit on someone!')
+        .addUserOption(option => option.setName('user').setDescription('Who you want to spit on').setRequired(true))),
+    
     async execute(interaction, client) {
 
         const command = interaction.options.getSubcommand();
@@ -179,7 +186,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} gives ${user.displayName} a hug!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} hugs ${user.displayName}! 🫂`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -255,7 +262,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} gives ${user.displayName} a kiss!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} kisses ${user.displayName}! 😚`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -280,7 +287,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} licks ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} licks ${user.displayName}! 👅`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -389,6 +396,34 @@ module.exports = {
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} tickles ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'spit':
+                const user = interaction.options.getUser('user');
+                const ID = user.id;
+                const link = [
+                    "https://media1.tenor.com/m/aKSY2XuSpcwAAAAC/anime-spit.gif",
+                    "https://media1.tenor.com/m/xq7jWN9rIKIAAAAC/d4dj-first-mix-anime.gif",
+                    "https://media1.tenor.com/m/heztdFpNuocAAAAC/spit-anime.gif",
+                    "https://media1.tenor.com/m/xrnVSkollW4AAAAC/anime-spit-fullmetal-alchemist.gif",
+                    "https://media1.tenor.com/m/CEubYcaDFP8AAAAC/spit-anime.gif",
+                    "https://media1.tenor.com/m/w_Z2432EnWAAAAAC/spit-anime.gif",
+                    "https://media1.tenor.com/m/9cc2vI7xxk0AAAAC/sargun-spit.gif",
+                    "https://media1.tenor.com/m/sBzYrs4eu8oAAAAC/surprised-shookt.gif",
+                    "https://media1.tenor.com/m/5s7LvtsHO9MAAAAC/toradora-anime.gif",
+                    "https://media1.tenor.com/m/mAdlcGBQKVAAAAAC/spit-take-rukia.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                if (interaction.member.id === ID) return await interaction.reply({ content: "You cannot use this command on yourself", ephemeral: true });
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} spits on ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
