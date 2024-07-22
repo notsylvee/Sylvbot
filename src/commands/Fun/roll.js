@@ -5,13 +5,13 @@ module.exports = {
     .setName('roll')
     .setDescription('Roll dice')
     .addStringOption(option => option.setName('type').setDescription('The type of die you want to roll').setRequired(true).addChoices(
-        { name: 'D4', value: '60' },
-        { name: 'D6', value: '120' },
-        { name: 'D8', value: '180' },
-        { name: 'D10', value: '240' },
-        { name: 'D12', value: '300' },
-        { name: 'D20', value: '600' },
-        { name: 'D100', value: '900' }
+        { name: 'D4', value: '4' },
+        { name: 'D6', value: '6' },
+        { name: 'D8', value: '8' },
+        { name: 'D10', value: '10' },
+        { name: 'D12', value: '12' },
+        { name: 'D20', value: '20' },
+        { name: 'D100', value: '100' }
     )),
 
     async execute (interaction) {
