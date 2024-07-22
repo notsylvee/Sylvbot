@@ -72,7 +72,17 @@ module.exports = {
         .setName('untimeout')
         .setDescription('Remove timeout a user in this server')
         .addUserOption(option => option.setName('user').setDescription('The user you want to untimeout').setRequired(true))
-        .addStringOption(option => option.setName('reason').setDescription('Reason for removing this users timeout'))),
+        .addStringOption(option => option.setName('reason').setDescription('Reason for removing this users timeout')))
+    .addSubcommand(command =>
+        command
+        .setName('lock')
+        .setDescription('Lock a channel')
+        .addChannelOption(option => option.setName('channel').setDescription('The channel you want to lock').addChannelTypes(ChannelType.GuildText)))
+    .addSubcommand(command => 
+        command
+        .setName('unlock')
+        .setDescription('Unlock a channel')
+        .addChannelOption(option => option.setName('channel').setDescription('The channel you want to unlock').addChannelTypes(ChannelType.GuildText))),
 
     async execute (interaction, client) {
 
@@ -256,6 +266,36 @@ module.exports = {
             .setDescription(`✅ ${user.tag} has been untimed out for "${reason}"`)
 
             await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'lock':
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
+            
+            let channel = interaction.options.getChannel('channel') || interaction.channel;
+
+            channel.permissionOverwrites.create(interaction.guild.id, {SendMessages: false })
+
+            const embed = new EmbedBuilder()
+            .setColor('Blue')
+            .setDescription(`✅ ${channel} has been **locked**`)
+
+            await interaction.reply({ embeds: [embed] })
+        }
+
+        switch (command) {
+            case 'unlock':
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
+            
+            let channel = interaction.options.getChannel('channel') || interaction.channel;
+
+            channel.permissionOverwrites.create(interaction.guild.id, {SendMessages: true })
+
+            const embed = new EmbedBuilder()
+            .setColor('Blue')
+            .setDescription(`✅ ${channel} has been **unlocked**`)
+
+            await interaction.reply({ embeds: [embed] })
         }
     }
 }

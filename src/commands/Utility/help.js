@@ -38,6 +38,8 @@ module.exports = {
             .addFields({ name: "untimeout", value: "Remove timeout a user in this server" })
             .addFields({ name: "clear", value: "Clear messages from this channel" })
             .addFields({ name: "slowmode", value: "Enable slowmode in a channel" })
+            .addFields({ name: "lock", value: "Lock a channel" })
+            .addFields({ name: "unlock", value: "Unlock a channel" })
             .setFooter({ text: "These commands start with /mod" })
             .setTimestamp()
 
