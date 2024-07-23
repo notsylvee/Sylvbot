@@ -4,8 +4,8 @@ module.exports = {
         
         if (message.author.bot || !message.guild) return;
 
-        if (message.content.toLowerCase().includes("type shit")) {
-            message.channel.send("-# shit")
+        if (message.content.toLowerCase().includes("real")) {
+            message.channel.send("-# is this real chat?")
         }
     }
 }
