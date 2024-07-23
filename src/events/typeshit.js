@@ -4,7 +4,7 @@ module.exports = {
         
         if (message.author.bot || !message.guild) return;
 
-        if (message.content.toLowerCase().includes("type shit")) {
+        if (message.content.toLowerCase().startsWith("type shit")) {
             message.channel.send("-# shit")
         }
     }

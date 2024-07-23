@@ -4,7 +4,7 @@ module.exports = {
         
         if (message.author.bot || !message.guild) return;
 
-        if (message.content.toLowerCase().includes("ligma")) {
+        if (message.content.toLowerCase().startsWith("ligma")) {
             message.channel.send("-# balls")
         }
     }
