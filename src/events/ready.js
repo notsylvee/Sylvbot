@@ -4,6 +4,13 @@ module.exports = {
     async execute(client) {
         console.log('Ready!');
 
+        client.user.setActivity({
+            name: "/help",
+            type: 1,
+            url: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+        })
+
+
         async function pickPresence () {
             const option = Math.floor(Math.random() * statusArray.length);
 
