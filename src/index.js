@@ -52,7 +52,7 @@ client.on(Events.GuildDelete, async guild => {
     const ownerName = owner.username;
 
     const embed = new EmbedBuilder()
-    .setColor("Green")
+    .setColor("Red")
     .setTitle('Left Server')
     .addFields({ name: 'Server Name', value: `> ${name}` })
     .addFields({ name: 'Server Owner', value: `> ${ownerName} / ${ownerID}` })
