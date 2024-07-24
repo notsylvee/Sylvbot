@@ -79,6 +79,7 @@ module.exports = {
         switch (command) {
             case 'bite':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/5mVQ3ffWUTgAAAAC/anime-bite.gif",
@@ -98,7 +99,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} bites ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} bites ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -107,6 +108,7 @@ module.exports = {
         switch (command) {
             case 'cuddle':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/c2SMIhi33DMAAAAC/cuddle-bed-hug.gif",
@@ -125,7 +127,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} cuddles ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} cuddles ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -134,6 +136,7 @@ module.exports = {
         switch (command) {
             case 'holdhands':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/WUZAwo5KFdMAAAAd/love-holding-hands.gif",
@@ -157,7 +160,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} holds ${user.displayName}'s hand!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} holds ${member.displayName}'s hand!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -166,6 +169,7 @@ module.exports = {
         switch (command) {
             case 'hug':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/kCZjTqCKiggAAAAC/hug.gif",
@@ -186,7 +190,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} hugs ${user.displayName}! 🫂`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} hugs ${member.displayName}! 🫂`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -195,6 +199,7 @@ module.exports = {
         switch (command) {
             case 'kick':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/Lyqfq7_vJnsAAAAC/kick-funny.gif",
@@ -211,7 +216,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} kicks ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} kicks ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -220,6 +225,7 @@ module.exports = {
         switch (command) {
             case 'kill':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/NbBCakbfZnkAAAAC/die-kill.gif",
@@ -236,7 +242,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} kills ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} kills ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -245,6 +251,7 @@ module.exports = {
         switch (command) {
             case 'kiss':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/ye6xtORyw_8AAAAC/2.gif",
@@ -262,7 +269,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} kisses ${user.displayName}! 😚`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} kisses ${member.displayName}! 😚`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -271,6 +278,7 @@ module.exports = {
         switch (command) {
             case 'lick':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/0LMxPQdFBKAAAAAC/nekopara-kiss.gif",
@@ -287,7 +295,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} licks ${user.displayName}! 👅`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} licks ${member.displayName}! 👅`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -296,6 +304,7 @@ module.exports = {
         switch (command) {
             case 'pat':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/kIh2QZ7MhBMAAAAC/tsumiki-anime.gif",
@@ -314,7 +323,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} pats ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} pats ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -323,6 +332,7 @@ module.exports = {
         switch (command) {
             case 'poke':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/4OHxyGd4qp0AAAAC/boop-nose.gif",
@@ -344,7 +354,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} pokes ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} pokes ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -353,6 +363,7 @@ module.exports = {
         switch (command) {
             case 'slap':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/Ws6Dm1ZW_vMAAAAC/girl-slap.gif",
@@ -370,7 +381,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} slaps ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} slaps ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -379,6 +390,7 @@ module.exports = {
         switch (command) {
             case 'tickle':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/l3c7tV1zYD4AAAAC/date-a-live-date-a-live-iv.gif",
@@ -395,7 +407,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} tickles ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} tickles ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -404,6 +416,7 @@ module.exports = {
         switch (command) {
             case 'spit':
                 const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
                 const ID = user.id;
                 const link = [
                     "https://media1.tenor.com/m/aKSY2XuSpcwAAAAC/anime-spit.gif",
@@ -423,7 +436,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} spits on ${user.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} spits on ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
