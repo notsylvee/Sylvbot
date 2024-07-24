@@ -274,7 +274,7 @@ module.exports = {
             
             let channel = interaction.options.getChannel('channel') || interaction.channel;
 
-            channel.permissionOverwrites.create(interaction.guild.id, {SendMessages: false })
+            channel.permissionOverwrites.edit(interaction.guild.id, {SendMessages: false })
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
@@ -289,7 +289,7 @@ module.exports = {
             
             let channel = interaction.options.getChannel('channel') || interaction.channel;
 
-            channel.permissionOverwrites.create(interaction.guild.id, {SendMessages: true })
+            channel.permissionOverwrites.edit(interaction.guild.id, {SendMessages: true })
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
