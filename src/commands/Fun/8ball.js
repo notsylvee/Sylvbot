@@ -32,7 +32,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
         .setColor("Orange")
-        .setTitle(`🎱 ${interaction.user.username} used the 8ball`)
+        .setAuthor({ name: `${interaction.member.displayName} used the 8ball 🎱`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
         .addFields({ name: "Question", value: `${question}`, inline: true })
         .addFields({ name: "Answer", value: `${answer}`, inline: true })
 
