@@ -75,7 +75,8 @@ module.exports = {
             const funembed = new EmbedBuilder()
             .setColor("Orange")
             .setTitle("Fun commands")
-            .addFields({ name: "/roll", value: "Roll dice" })
+            .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
+            .addFields({ name: "/roll", value: "Roll some dice" })
             .setFooter({ text: "Fun commands" })
             .setTimestamp()
 

@@ -3,7 +3,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
     data: new SlashCommandBuilder()
     .setName('roll')
-    .setDescription('Roll dice')
+    .setDescription('Roll some dice')
     .addStringOption(option => option.setName('type').setDescription('The type of die you want to roll').setRequired(true).addChoices(
         { name: 'D4', value: '4' },
         { name: 'D6', value: '6' },
