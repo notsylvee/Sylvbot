@@ -55,7 +55,20 @@ module.exports = {
                 .setFooter({ text: "Bot ID: 953885359668871238" })
                 .setTimestamp()
         
-                await interaction.reply({ embeds: [embed] });
+                const row =  new ActionRowBuilder()
+                .addComponents(
+                    new ButtonBuilder()
+                    .setLabel('Support Server')
+                    .setStyle(ButtonStyle.Link)
+                    .setURL('https://discord.gg/cYedAMBrfN'),
+
+                    new ButtonBuilder()
+                    .setLabel('Bot Invite')
+                    .setStyle(ButtonStyle.Link)
+                    .setURL('https://discord.com/oauth2/authorize?client_id=953885359668871238')
+                )
+
+                await interaction.reply({ embeds: [embed], components: [row] });
         }
 
         switch (command) {
