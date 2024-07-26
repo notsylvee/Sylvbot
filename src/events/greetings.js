@@ -5,18 +5,18 @@ module.exports = {
         if (message.author.bot || !message.guild) return;
 
         const msg = [
-            `Hi  ${message.member.displayName}!`,
-            `Hello  ${message.member.displayName}!`,
-            `Hey  ${message.member.displayName}!`,
-            `Howdy  ${message.member.displayName}!`,
-            `Hai  ${message.member.displayName}!`,
-            `Hewwo  ${message.member.displayName}!`,
-            `Whats up  ${message.member.displayName}?`,
-            `Yo  ${message.member.displayName}!`,
-            `Hallo  ${message.member.displayName}!`,
-            `Sup  ${message.member.displayName}?`,
-            `Aloha  ${message.member.displayName}!`,
-            `Greetings  ${message.member.displayName}!`
+            `Hi ${message.member.displayName}!`,
+            `Hello ${message.member.displayName}!`,
+            `Hey ${message.member.displayName}!`,
+            `Howdy ${message.member.displayName}!`,
+            `Hai ${message.member.displayName}!`,
+            `Hewwo ${message.member.displayName}!`,
+            `Whats up ${message.member.displayName}?`,
+            `Yo ${message.member.displayName}!`,
+            `Hallo ${message.member.displayName}!`,
+            `Sup ${message.member.displayName}?`,
+            `Aloha ${message.member.displayName}!`,
+            `Greetings ${message.member.displayName}!`
         ];
         const response = msg[Math.floor(Math.random() * msg.length)];
 
