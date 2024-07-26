@@ -56,8 +56,8 @@ module.exports = {
         .setDescription('Sends a spinning gif!'))
     .addSubcommand(command =>
         command
-        .setName('suicide')
-        .setDescription('Commit suicide'))
+        .setName('die')
+        .setDescription('This kills you'))
     .addSubcommand(command =>
         command
         .setName('tired')
@@ -386,7 +386,7 @@ module.exports = {
         }
 
         switch (command) {
-            case 'suicide':
+            case 'die':
                 const link = [
                     "https://media1.tenor.com/m/3WRKCYqnYEsAAAAC/kermit-suicide.gif"
                 ];
@@ -394,7 +394,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} commit suicide 💀`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} died 💀`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
