@@ -103,10 +103,14 @@ module.exports = {
             const dmEmbed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ You have been banned from ${interaction.guild.name} for "${reason}"`)
+            .setFooter({ text: "Ban" })
+            .setTimestamp()
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ ${users.tag} has been banned for "${reason}"`)
+            .setFooter({ text: "Ban" })
+            .setTimestamp()
 
             await banUser.send({ embeds: [dmEmbed] }).catch(err => {
                 return;
@@ -135,6 +139,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ Deleted ${amount} message(s)`)
+            .setFooter({ text: "Clear" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed] }).catch(err => {
                 return;
@@ -159,10 +165,14 @@ module.exports = {
             const dmEmbed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ You have been kicked from ${interaction.guild.name} for "${reason}"`)
+            .setFooter({ text: "Kick" })
+            .setTimestamp()
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ ${kickUser.tag} has been kicked for "${reason}"`)
+            .setFooter({ text: "Kick" })
+            .setTimestamp()
 
             await kickMember.send({ embeds: [dmEmbed] }).catch(err => {
                 return;
@@ -186,6 +196,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ Slowmode has been enabled in ${channel} with a cooldown of ${duration} second(s)`)
+            .setFooter({ text: "Slowmode" })
+            .setTimestamp()
 
             channel.setRateLimitPerUser(duration).catch(err => {
                 return;
@@ -213,6 +225,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor('Blue')
             .setDescription(`✅ ${user.tag} has been timed out for ${duration / 60} minute(s) for "${reason}"`)
+            .setFooter({ text: "Timeout" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed] });
         }
@@ -230,6 +244,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor("Blue")
             .setDescription(`✅ ${userID} has been unbanned for "${reason}"`)
+            .setFooter({ text: "Unban" })
+            .setTimestamp()
 
             await interaction.guild.bans.fetch()
             .then(async bans => {
@@ -264,6 +280,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor('Blue')
             .setDescription(`✅ ${user.tag} has been untimed out for "${reason}"`)
+            .setFooter({ text: "Untimeout" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed] });
         }
@@ -279,6 +297,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor('Blue')
             .setDescription(`✅ ${channel} has been **locked**`)
+            .setFooter({ text: "Lock" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed] })
         }
@@ -294,6 +314,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor('Blue')
             .setDescription(`✅ ${channel} has been **unlocked**`)
+            .setFooter({ text: "Unlock" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed] })
         }

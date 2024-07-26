@@ -54,6 +54,8 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor('Blurple')
             .setDescription(`✅ The bots status has been set to \`${status}\``)
+            .setFooter({ text: "Status" })
+            .setTimestamp()
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
             }

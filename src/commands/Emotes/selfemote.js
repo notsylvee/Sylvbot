@@ -111,6 +111,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} cries 😭`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Cry" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -133,6 +135,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} dances!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Dance" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -160,6 +164,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} eats!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Eat" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -182,6 +188,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} giggles!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Giggle" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -207,6 +215,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is happy! 😊`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Happy" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -233,6 +243,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is mad! 😡`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Mad" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -255,6 +267,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} pleads! 🥺`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Plead" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -279,6 +293,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} pouts! Hmph!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Pout" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -302,6 +318,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is sad ☹️`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Sad" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -327,6 +345,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is shy! 😳`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Shy" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -355,6 +375,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} sleeps! 😴`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Sleep" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -381,6 +403,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} spins!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Spin" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -396,6 +420,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} died 💀`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Die" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -418,6 +444,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is tired 🥱`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Tired" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -448,6 +476,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} waves! 👋`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Wave" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -478,6 +508,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} is scared 😨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Scared" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -503,6 +535,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} sighs 😮‍💨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Sigh" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -529,6 +563,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} blushes! >///<`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Blush" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -557,6 +593,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} drools! 🤤`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Drool" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -579,6 +617,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} explodes! 🤯`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Explode" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }

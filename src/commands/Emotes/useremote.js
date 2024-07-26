@@ -101,6 +101,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} bites ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Bite" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -129,6 +131,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} cuddles ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Cuddle" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -162,6 +166,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} holds ${member.displayName}'s hand!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Hold Hands" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -192,6 +198,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} hugs ${member.displayName}! 🫂`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Hug" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -218,6 +226,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} kicks ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Kick" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -244,6 +254,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} kills ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Kill" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -271,6 +283,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} kisses ${member.displayName}! 😚`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Kiss" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -297,6 +311,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} licks ${member.displayName}! 👅`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Lick" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -325,6 +341,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} pats ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Pat" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -356,6 +374,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} pokes ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Poke" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -383,6 +403,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} slaps ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Slap" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -409,6 +431,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} tickles ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Tickle" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -438,6 +462,8 @@ module.exports = {
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} spits on ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
+                .setFooter({ text: "Spit" })
+                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
