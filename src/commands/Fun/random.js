@@ -48,7 +48,7 @@ module.exports = {
                 const agent = agents[Math.floor(Math.random() * agents.length)];
         
                 const embed = new EmbedBuilder()
-                .setColor("Orange")
+                .setColor("Purple")
                 .setAuthor({ name: `${interaction.member.displayName}, your random Valorant agent is...`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(agent)
         
@@ -118,7 +118,7 @@ module.exports = {
                 const character = characters[Math.floor(Math.random() * characters.length)];
         
                 const embed = new EmbedBuilder()
-                .setColor("Orange")
+                .setColor("Purple")
                 .setAuthor({ name: `${interaction.member.displayName}, your random Honkai: Star Rail character is...`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(character)
         

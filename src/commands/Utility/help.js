@@ -73,7 +73,7 @@ module.exports = {
             case 'fun':
             
             const funembed = new EmbedBuilder()
-            .setColor("Orange")
+            .setColor("Purple")
             .setTitle("Fun commands")
             .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
             .addFields({ name: "/random", value: "Get a random character from a specified game" })
@@ -172,7 +172,7 @@ module.exports = {
             case 'replies':
             
             const repliesembed = new EmbedBuilder()
-            .setColor("Purple")
+            .setColor("Orange")
             .setTitle("Text replies")
             .addFields({ name: ":3", value: "> :3" })
             .addFields({ name: "aw man", value: "> creeper! aw man" })
@@ -186,7 +186,7 @@ module.exports = {
             .setTimestamp()
 
             const greetingsembed = new EmbedBuilder()
-            .setColor("Purple")
+            .setColor("Orange")
             .setTitle("Greeting")
             .addFields({ name: "aloha", value: "Aloha (user)!" })
             .addFields({ name: "greetings", value: "Greetings (user)!" })
