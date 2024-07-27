@@ -45,7 +45,7 @@ module.exports = {
                 let ping = `${Date.now() - interaction.createdTimestamp}ms`
         
                 const embed = new EmbedBuilder()
-                .setColor("Green")
+                .setColor("f3b3a2")
                 .setAuthor({ name: name, iconURL: icon })
                 .setThumbnail(`${icon}`)
                 .addFields({ name: 'Server count', value: `${client.guilds.cache.size}`, inline: true })
@@ -131,7 +131,7 @@ module.exports = {
         switch (command) {
             case 'serverlist':
     
-                if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "Invalid permission", ephemeral: true });
+                if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
                 else {
 
                     await interaction.deferReply({ ephemeral: true });
@@ -147,7 +147,7 @@ module.exports = {
                                 new ButtonBuilder()
                                 .setStyle(ButtonStyle.Link)
                                 .setURL(`https://sourceb.in/${key}`)
-                                .setLabel(`🔗 Server list`)
+                                .setLabel(`Server list`)
                             );
 
                             await interaction.editReply({ embeds: [embed], components: [button] });
@@ -179,9 +179,9 @@ module.exports = {
 
                     if (listBin.ok) {
                         var { key } = await listBin.json();
-                        await sendMessage(`✅ **Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`, key);
+                        await sendMessage(`<:check:1266815137587920937> **Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`, key);
                     } else {
-                        await sendMessage(`⚠️ Failed to load server list`);
+                        await sendMessage(`<:exclamation:1266823414828765246> Failed to load server list`);
                     }
                 }
         }

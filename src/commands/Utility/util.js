@@ -42,7 +42,7 @@ module.exports = {
                 "431220802797568001"
             ]
 
-            if (!id.includes(interaction.user.id)) return await interaction.reply({ content: "⚠️ Invalid permission", ephemeral: true });
+            if (!id.includes(interaction.user.id)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
             else {
 
             client.user.setActivity({
@@ -53,9 +53,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor('Blurple')
-            .setDescription(`✅ The bots status has been set to \`${status}\``)
-            .setFooter({ text: "Status" })
-            .setTimestamp()
+            .setDescription(`<:check:1266815137587920937> The bots status has been set to \`${status}\``)
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
             }
@@ -63,7 +61,7 @@ module.exports = {
 
         switch (command) {
             case 'leaveserver':
-            if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "⚠️ Invalid permission", ephemeral: true });
+            if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
                 else {
                     const { options } = interaction;
                     const guild = options.getString('server');
@@ -91,16 +89,16 @@ module.exports = {
 
                     if (fetchedGuild) {
                         await fetchedGuild.leave();
-                        await sendMessage(`✅ I have succesfully left ${fetchedGuild.name}`).catch(err => {});
+                        await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
                     } else {
                         if (guilds.length > 1) {
-                            await sendMessage(`⚠️ \`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`)
+                            await sendMessage(`<:exclamation:1266823414828765246> \`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`)
                         } else if (guild.length == 0) {
-                            await sendMessage(`⚠️ I am not in any guilds matching \`${guild}\``)
+                            await sendMessage(`<:exclamation:1266823414828765246> I am not in any guilds matching \`${guild}\``)
                         } else {
                             fetchedGuild = await client.guild.fetch(guilds[0].id);
                             await fetchedGuild.leave();
-                            await sendMessage(`✅ I have succesfully left ${fetchedGuild.name}`).catch(err => {});
+                            await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
                         }
                     }
                 }

@@ -49,10 +49,8 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Purple")
-                .setAuthor({ name: `${interaction.member.displayName}, your random Valorant agent is...`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
-                .setFooter({ text: "Random Valorant agent" })
+                .setDescription(`<:valorant:1266815187445485725> ${interaction.member.displayName}, your random Valorant agent is...`)
                 .setImage(agent)
-                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }
@@ -121,10 +119,8 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Purple")
-                .setAuthor({ name: `${interaction.member.displayName}, your random Honkai: Star Rail character is...`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
-                .setFooter({ text: "Random Honkai: Star Rail character" })
+                .setDescription(`<:hsr:1266840602730037340> ${interaction.member.displayName}, your random Honkai: Star Rail character is...`)
                 .setImage(character)
-                .setTimestamp()
         
                 await interaction.reply({ embeds: [embed] });
         }

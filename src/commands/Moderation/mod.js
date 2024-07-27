@@ -94,22 +94,20 @@ module.exports = {
             const ID = users.id;
             const banUser = client.users.cache.get(ID)
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true});
-            if (interaction.member.id === ID) return await interaction.reply({ content: "⚠️ You cannot ban yourself", ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permissions", ephemeral: true});
+            if (interaction.member.id === ID) return await interaction.reply({ content: "<:forbidden:1266829648344645694> You cannot ban yourself", ephemeral: true });
 
             let reason = interaction.options.getString('reason');
             if (!reason) reason = "No reason provided"
 
             const dmEmbed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ You have been banned from ${interaction.guild.name} for "${reason}"`)
-            .setFooter({ text: "Ban" })
+            .setDescription(`<:check:1266815137587920937> You have been banned from ${interaction.guild.name} for "${reason}"`)
             .setTimestamp()
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ ${users.tag} has been banned for "${reason}"`)
-            .setFooter({ text: "Ban" })
+            .setDescription(`<:check:1266815137587920937> ${users.tag} has been banned for "${reason}"`)
             .setTimestamp()
 
             await banUser.send({ embeds: [dmEmbed] }).catch(err => {
@@ -117,7 +115,7 @@ module.exports = {
             });
 
             await interaction.guild.bans.create(banUser.id, {reason}).catch(err => {
-                interaction.reply({ content: "⚠️ There was an error", ephemeral: true});
+                interaction.reply({ content: "<:exclamation:1266823414828765246> There was an error", ephemeral: true});
             });
 
             await interaction.reply({ embeds: [embed] });
@@ -128,9 +126,9 @@ module.exports = {
             const amount = interaction.options.getInteger('amount');
             const channel = interaction.channel;
 
-            if (!interaction.member.permissions.has(PermissionsBitField.ManageMessages)) return await interaction.reply({ content: "⚠️ Invalid permission", ephemeral: true });
-            if (!amount) return await interaction.reply({ content: "⚠️ Invalid amount", ephemeral: true });
-            if (amount > 100 || amount < 1) return await interaction.reply({ content: "⚠️ Invalid amount", ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.ManageMessages)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
+            if (!amount) return await interaction.reply({ content: "<:exclamation:1266823414828765246> Invalid amount", ephemeral: true });
+            if (amount > 100 || amount < 1) return await interaction.reply({ content: "<:exclamation:1266823414828765246> Invalid amount", ephemeral: true });
 
             await interaction.channel.bulkDelete(amount).catch(err => {
                 return;
@@ -138,8 +136,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ Deleted ${amount} message(s)`)
-            .setFooter({ text: "Clear" })
+            .setDescription(`<:check:1266815137587920937> Deleted ${amount} message(s)`)
             .setTimestamp()
 
             await interaction.reply({ embeds: [embed] }).catch(err => {
@@ -154,24 +151,22 @@ module.exports = {
             const channel = interaction.channel;
             const ID = kickUser.id;
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.KickMembers)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true});
-            if (!kickMember) return await interaction.reply({ content: "⚠️ Invalid user", ephemeral: true });
-            if (!kickMember.kickable) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true });
-            if (interaction.member.id === ID) return await interaction.reply({ content: "⚠️ You cannot kick yourself", ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.KickMembers)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permissions", ephemeral: true});
+            if (!kickMember) return await interaction.reply({ content: "<:exclamation:1266823414828765246> Invalid user", ephemeral: true });
+            if (!kickMember.kickable) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permissions", ephemeral: true });
+            if (interaction.member.id === ID) return await interaction.reply({ content: "<:forbidden:1266829648344645694> You cannot kick yourself", ephemeral: true });
 
             let reason = interaction.options.getString('reason');
             if (!reason) reason = "No reason provided";
 
             const dmEmbed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ You have been kicked from ${interaction.guild.name} for "${reason}"`)
-            .setFooter({ text: "Kick" })
+            .setDescription(`<:check:1266815137587920937> You have been kicked from ${interaction.guild.name} for "${reason}"`)
             .setTimestamp()
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ ${kickUser.tag} has been kicked for "${reason}"`)
-            .setFooter({ text: "Kick" })
+            .setDescription(`<:check:1266815137587920937> ${kickUser.tag} has been kicked for "${reason}"`)
             .setTimestamp()
 
             await kickMember.send({ embeds: [dmEmbed] }).catch(err => {
@@ -179,7 +174,7 @@ module.exports = {
             });
 
             await kickMember.kick({ reason: reason }).catch(err => {
-            interaction.reply({ content: "⚠️ There was an error", ephemeral: true});
+            interaction.reply({ content: "<:exclamation:1266823414828765246> There was an error", ephemeral: true});
             });
 
             await interaction.reply({ embeds: [embed] });
@@ -191,12 +186,11 @@ module.exports = {
             const duration = options.getInteger('duration');
             const channel = options.getChannel('channel') || interaction.channel;
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true});
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permissions", ephemeral: true});
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ Slowmode has been enabled in ${channel} with a cooldown of ${duration} second(s)`)
-            .setFooter({ text: "Slowmode" })
+            .setDescription(`<:check:1266815137587920937> Slowmode has been enabled in ${channel} with a cooldown of ${duration} second(s)`)
             .setTimestamp()
 
             channel.setRateLimitPerUser(duration).catch(err => {
@@ -212,11 +206,11 @@ module.exports = {
             const member = await interaction.guild.members.fetch(user.id);
             const duration = interaction.options.getString('duration');
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ModerateMembers)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
-            if (!member) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
-            if (!member.kickable) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
-            if (interaction.member.id === member.id) return await interaction.reply({ content: '⚠️ You cannot timeout yourself', ephemeral: true });
-            if (member.permissions.has(PermissionsBitField.Flags.Administrator)) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ModerateMembers)) return await interaction.reply({ content: '<:forbidden:1266829648344645694> Invalid permissions', ephemeral: true});
+            if (!member) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
+            if (!member.kickable) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
+            if (interaction.member.id === member.id) return await interaction.reply({ content: '<:forbidden:1266829648344645694> You cannot timeout yourself', ephemeral: true });
+            if (member.permissions.has(PermissionsBitField.Flags.Administrator)) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
 
             let reason = interaction.options.getString('reason') || 'No reason provided';
 
@@ -224,8 +218,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setDescription(`✅ ${user.tag} has been timed out for ${duration / 60} minute(s) for "${reason}"`)
-            .setFooter({ text: "Timeout" })
+            .setDescription(`<:check:1266815137587920937> ${user.tag} has been timed out for ${duration / 60} minute(s) for "${reason}"`)
             .setTimestamp()
 
             await interaction.reply({ embeds: [embed] });
@@ -235,27 +228,26 @@ module.exports = {
             case 'unban':
             const userID = interaction.options.getUser('user');
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return await interaction.reply({ content: "⚠️ Invalid permissions", ephemeral: true});
-            if (interaction.member.id === userID) return await interaction.reply({ content: "⚠️ You cannot unban yourself", ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.BanMembers)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permissions", ephemeral: true});
+            if (interaction.member.id === userID) return await interaction.reply({ content: "<:forbidden:1266829648344645694> You cannot unban yourself", ephemeral: true });
 
             let reason = interaction.options.getString('reason');
             if (!reason) reason = "No reason provided"
 
             const embed = new EmbedBuilder()
             .setColor("Blue")
-            .setDescription(`✅ ${userID} has been unbanned for "${reason}"`)
-            .setFooter({ text: "Unban" })
+            .setDescription(`<:check:1266815137587920937> ${userID} has been unbanned for "${reason}"`)
             .setTimestamp()
 
             await interaction.guild.bans.fetch()
             .then(async bans => {
 
-                if (bans.size == 0) return await interaction.reply({ content: "⚠️ No users are banned from this server", ephemeral: true })
+                if (bans.size == 0) return await interaction.reply({ content: "<:exclamation:1266823414828765246> No users are banned from this server", ephemeral: true })
                 let bannedID = bans.find(ban => ban.user.id == userID);
-                if (!bannedID) return await interaction.reply({ content: "⚠️ That user is not banned", ephemeral: true })
+                if (!bannedID) return await interaction.reply({ content: "<:exclamation:1266823414828765246> That user is not banned", ephemeral: true })
 
                 await interaction.guild.bans.remove(userID, reason).catch(err => {
-                    return interaction.reply({ content: "⚠️ User could not be unbanned" })
+                    return interaction.reply({ content: "<:exclamation:1266823414828765246> User could not be unbanned" })
                 })
             })
 
@@ -267,11 +259,11 @@ module.exports = {
             const user = interaction.options.getUser('user');
             const member = await interaction.guild.members.fetch(user.id);
 
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ModerateMembers)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
-            if (!member) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
-            if (!member.kickable) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
-            if (interaction.member.id === member.id) return await interaction.reply({ content: '⚠️ You cannot untimeout yourself', ephemeral: true });
-            if (member.permissions.has(PermissionsBitField.Flags.Administrator)) return await interaction.reply({ content: '⚠️ Invalid user', ephemeral: true });
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ModerateMembers)) return await interaction.reply({ content: '<:forbidden:1266829648344645694> Invalid permissions', ephemeral: true});
+            if (!member) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
+            if (!member.kickable) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
+            if (interaction.member.id === member.id) return await interaction.reply({ content: '<:forbidden:1266829648344645694> You cannot untimeout yourself', ephemeral: true });
+            if (member.permissions.has(PermissionsBitField.Flags.Administrator)) return await interaction.reply({ content: '<:exclamation:1266823414828765246> Invalid user', ephemeral: true });
 
             let reason = interaction.options.getString('reason') || 'No reason provided';
 
@@ -279,8 +271,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setDescription(`✅ ${user.tag} has been untimed out for "${reason}"`)
-            .setFooter({ text: "Untimeout" })
+            .setDescription(`<:check:1266815137587920937> ${user.tag} has been untimed out for "${reason}"`)
             .setTimestamp()
 
             await interaction.reply({ embeds: [embed] });
@@ -288,7 +279,7 @@ module.exports = {
 
         switch (command) {
             case 'lock':
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '<:forbidden:1266829648344645694> Invalid permissions', ephemeral: true});
             
             let channel = interaction.options.getChannel('channel') || interaction.channel;
 
@@ -296,8 +287,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setDescription(`✅ ${channel} has been **locked**`)
-            .setFooter({ text: "Lock" })
+            .setDescription(`<:check:1266815137587920937> ${channel} has been **locked**`)
             .setTimestamp()
 
             await interaction.reply({ embeds: [embed] })
@@ -305,7 +295,7 @@ module.exports = {
 
         switch (command) {
             case 'unlock':
-            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '⚠️ Invalid permissions', ephemeral: true});
+            if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageChannels)) return await interaction.reply({ content: '<:forbidden:1266829648344645694> Invalid permissions', ephemeral: true});
             
             let channel = interaction.options.getChannel('channel') || interaction.channel;
 
@@ -313,8 +303,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor('Blue')
-            .setDescription(`✅ ${channel} has been **unlocked**`)
-            .setFooter({ text: "Unlock" })
+            .setDescription(`<:check:1266815137587920937> ${channel} has been **unlocked**`)
             .setTimestamp()
 
             await interaction.reply({ embeds: [embed] })

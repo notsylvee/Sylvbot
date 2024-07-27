@@ -7,7 +7,7 @@ module.exports = {
         const msg = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
         const response = msg[Math.floor(Math.random() * msg.length)];
 
-        if (message.content.toLowerCase().startsWith("erm") && message.content.toLowerCase().endsWith("erm")) {
+        if (message.content.toLowerCase().startsWith("erm") && message.content.toLowerCase().endsWith("m")) {
             message.channel.send(`-# what the ${response}`)
         }
     }
