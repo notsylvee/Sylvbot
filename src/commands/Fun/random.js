@@ -11,7 +11,19 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('hsr')
-        .setDescription('Get a randomly chosen Honkai: Star Rail character')),
+        .setDescription('Get a randomly chosen Honkai: Star Rail character'))
+    .addSubcommand(command => 
+        command
+        .setName('stardew-marriageable')
+        .setDescription('Get a randomly chosen marriageable Stardew Valley NPC'))
+    .addSubcommand(command => 
+        command
+        .setName('stardew-nonmarriageable')
+        .setDescription('Get a randomly chosen non-marriageable Stardew Valley NPC'))
+     .addSubcommand(command => 
+        command
+        .setName('stardew-nongiftable')
+        .setDescription('Get a randomly chosen non-giftable Stardew Valley NPC')),
 
     async execute (interaction) {
 
@@ -123,6 +135,97 @@ module.exports = {
                 .setImage(character)
         
                 await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'stardew-marriageable':
+
+            const characters = [
+                "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
+                "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
+                "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
+                "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png",
+                "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
+                "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
+                "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
+                "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
+                "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
+                "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
+                "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
+                "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png"
+            ];
+            const character = characters[Math.floor(Math.random() * characters.length)];
+            
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is...`)
+            .setImage(character)
+
+            await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'stardew-nonmarriageable':
+
+            const characters = [
+                "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
+                "https://stardewvalleywiki.com/mediawiki/images/3/31/Clint.png",
+                "https://stardewvalleywiki.com/mediawiki/images/f/f9/Demetrius.png",
+                "https://stardewvalleywiki.com/mediawiki/images/e/ed/Dwarf.png",
+                "https://stardewvalleywiki.com/mediawiki/images/8/8e/Evelyn.png",
+                "https://stardewvalleywiki.com/mediawiki/images/7/78/George.png",
+                "https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png",
+                "https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png",
+                "https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png",
+                "https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png",
+                "https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png",
+                "https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png",
+                "https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png",
+                "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png",
+                "https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png",
+                "https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png",
+                "https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png",
+                "https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png",
+                "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png",
+                "https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png",
+                "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png",
+                "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png"
+            ];
+            const character = characters[Math.floor(Math.random() * characters.length)];
+            
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is...`)
+            .setImage(character)
+            
+            await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'stardew-nongiftable':
+
+            const characters = [
+                "https://stardewvalleywiki.com/mediawiki/images/4/46/Birdie.png",
+                "https://stardewvalleywiki.com/mediawiki/images/f/f5/Bouncer.png",
+                "https://stardewvalleywiki.com/mediawiki/images/a/a3/Fizz_00.png",
+                "https://stardewvalleywiki.com/mediawiki/images/6/64/Gil.png",
+                "https://stardewvalleywiki.com/mediawiki/images/4/46/Governor.png",
+                "https://stardewvalleywiki.com/mediawiki/images/8/88/Grandpa.png",
+                "https://stardewvalleywiki.com/mediawiki/images/3/3d/Gunther.png",
+                "https://stardewvalleywiki.com/mediawiki/images/2/21/Henchman_Portrait_1.png",
+                "https://stardewvalleywiki.com/mediawiki/images/3/37/Marlon.png",
+                "https://stardewvalleywiki.com/mediawiki/images/9/90/Morris.png",
+                "https://stardewvalleywiki.com/mediawiki/images/b/b4/Mr._Qi.png",
+                "https://stardewvalleywiki.com/mediawiki/images/d/d4/Professor_Snail.png"
+            ];
+            const character = characters[Math.floor(Math.random() * characters.length)];
+
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is...`)
+            .setImage(character)
+
+            await interaction.reply({ embeds: [embed] });
         }
     }
 }
