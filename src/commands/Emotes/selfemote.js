@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('selfemote')
     .setDescription('Use an emote command')
-    //20
+    //23
     .addSubcommand(command =>
         command
         .setName('cry')
@@ -85,7 +85,19 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('explode')
-        .setDescription('Sends an exploding gif!')),
+        .setDescription('Sends an exploding gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('nod')
+        .setDescription('Sends an nodding gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('shakehead')
+        .setDescription('Sends an head shaking gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('thumbsup')
+        .setDescription('Sends an thumbs up gif!')),
     
     async execute(interaction, client) {
 
@@ -109,7 +121,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} cries 😭`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} cries`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -205,7 +217,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is happy! 😊`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is happy!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -231,7 +243,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is mad! 😡`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is mad!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -253,7 +265,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} pleads! 🥺`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} pleads!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -300,7 +312,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is sad ☹️`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is sad`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -325,7 +337,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is shy! 😳`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is shy!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -353,7 +365,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} sleeps! 😴`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} sleeps! zzZ`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -416,7 +428,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is tired 🥱`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is tired`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -446,7 +458,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} waves! 👋`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} waves!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -476,7 +488,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} is scared 😨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} is scared`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -501,7 +513,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} sighs 😮‍💨`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} sighs`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -527,7 +539,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} blushes! >///<`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} blushes!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -555,7 +567,7 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} drools! 🤤`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} drools!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
@@ -577,7 +589,79 @@ module.exports = {
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
-                .setAuthor({ name: `${interaction.member.displayName} explodes! 🤯`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setAuthor({ name: `${interaction.member.displayName} explodes!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'nod':
+                const link = [
+                    "https://media1.tenor.com/m/Ku0nXSmftncAAAAC/shirosaki-hana-shirosaki.gif",
+                    "https://media1.tenor.com/m/lNkVGL4mLDAAAAAC/elaina-nod.gif",
+                    "https://media1.tenor.com/m/7xStm7h_r60AAAAd/anime-anime-girl.gif",
+                    "https://media1.tenor.com/m/CCikvipAi6kAAAAC/fran-nod.gif",
+                    "https://media1.tenor.com/m/yzZ2U9gQpZQAAAAC/anime-nod.gif",
+                    "https://media1.tenor.com/m/uGRG865sv3YAAAAC/yui-nod.gif",
+                    "https://media1.tenor.com/m/ZUMbZHhkaBoAAAAC/anime-yes.gif",
+                    "https://media1.tenor.com/m/99_H7NIsa8kAAAAC/we-never.gif",
+                    "https://media1.tenor.com/m/WcoVJ8aQcwkAAAAC/one-piece-monkey-d-luffy.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} nods!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'shakehead':
+                const link = [
+                    "https://media1.tenor.com/m/WaQYXtfwj4IAAAAC/anya-forger-no.gif",
+                    "https://media1.tenor.com/m/f-udqX_N-28AAAAd/bocchi-the-rock-oomfie-bocchi-the-rock.gif",
+                    "https://media1.tenor.com/m/1i61l5MoH8sAAAAC/no-nope.gif",
+                    "https://media1.tenor.com/m/el1y_HRpyGIAAAAC/no-head-shaking.gif",
+                    "https://media1.tenor.com/m/df7ZeNrYFw0AAAAC/akiha-akiha-tohno.gif",
+                    "https://media1.tenor.com/m/bgBLV5PY-8IAAAAC/villainess-level-99-akuyaku-reijou.gif",
+                    "https://media1.tenor.com/m/07VyrQ27IAoAAAAC/no-yui.gif",
+                    "https://media1.tenor.com/m/Ced4r5ehnPwAAAAC/jahy-jahy-sama.gif",
+                    "https://media1.tenor.com/m/r030L1UQWlUAAAAC/head-shake-no.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} shakes their head!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'thumbsup':
+                const link = [
+                    "https://media1.tenor.com/m/kR7OOCL-nroAAAAC/ryo-yamada-thumbs-up.gif",
+                    "https://media1.tenor.com/m/yFDrE0-KetUAAAAC/lucky-star-thumbs-up.gif",
+                    "https://media1.tenor.com/m/g1yD0odUyUEAAAAC/princess-connect-priconne.gif",
+                    "https://media1.tenor.com/m/gTjXmU6ZHsIAAAAC/thumbs-up-chew.gif",
+                    "https://media1.tenor.com/m/LbyT0UNhPfEAAAAC/anime-thumbs-up.gif",
+                    "https://media1.tenor.com/m/TXvwW9ePAt0AAAAC/dragon-maid-thumbs-up.gif",
+                    "https://media1.tenor.com/m/r6VZ-oJoyqUAAAAC/anime-thumbs-up.gif",
+                    "https://media1.tenor.com/m/W_WjhH0GXnoAAAAC/kou-toilet-bound-hanako-kun.gif",
+                    "https://media1.tenor.com/m/29x6TqUTRFEAAAAd/estab-life-martes.gif",
+                    "https://media1.tenor.com/m/nyp9Twq3gMAAAAAC/thumbs-up-approve.gif",
+                    "https://media1.tenor.com/m/Hv8Mg8VhH9AAAAAC/anime-catboy.gif",
+                    "https://media1.tenor.com/m/RuhFL9METKkAAAAC/anime-kurumizawa_satanichia_mcdowell.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} gives a thumbs up!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
