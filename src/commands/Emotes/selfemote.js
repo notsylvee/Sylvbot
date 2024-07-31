@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('selfemote')
     .setDescription('Use an emote command')
-    //23
+    //24
     .addSubcommand(command =>
         command
         .setName('cry')
@@ -97,7 +97,11 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('thumbsup')
-        .setDescription('Sends an thumbs up gif!')),
+        .setDescription('Sends an thumbs up gif!'))
+    .addSubcommand(command =>
+        command
+        .setName('peace')
+        .setDescription('Sends an peace sign gif!')),
     
     async execute(interaction, client) {
 
@@ -115,7 +119,8 @@ module.exports = {
                     "https://media1.tenor.com/m/zTfldsDR0j4AAAAd/aikatsu-aikatsu-stars.gif",
                     "https://media1.tenor.com/m/ZNu-H1ww2swAAAAC/ellenoar-seiran.gif",
                     "https://media1.tenor.com/m/dlTfWGczs5IAAAAC/homura-chika.gif",
-                    "https://media1.tenor.com/m/bsCeGzjTHs0AAAAC/onimai-onaka.gif"
+                    "https://media1.tenor.com/m/bsCeGzjTHs0AAAAC/onimai-onaka.gif",
+                    "https://media1.tenor.com/m/3xLAd_UGsI0AAAAC/blood-anime.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -137,7 +142,9 @@ module.exports = {
                     "https://media1.tenor.com/m/db0yF9G7qn4AAAAC/cat-dance.gif",
                     "https://media1.tenor.com/m/fim-ddZD7c8AAAAC/dance-anime.gif",
                     "https://media1.tenor.com/m/DT4TI5l1B-kAAAAd/mashiro-mikakunin.gif",
-                    "https://media1.tenor.com/m/imB5U5W-RTkAAAAC/dance-anime.gif"
+                    "https://media1.tenor.com/m/imB5U5W-RTkAAAAC/dance-anime.gif",
+                    "https://media1.tenor.com/m/dGsEJw308WoAAAAC/nakatsu-shizuru-anime.gif",
+                    "https://media1.tenor.com/m/jLfNZJcs_CQAAAAC/akari-akaza-akarin.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -283,7 +290,8 @@ module.exports = {
                     "https://media1.tenor.com/m/5zXUvByrCe8AAAAC/sora-no.gif",
                     "https://media1.tenor.com/m/yCR6JOoxS6wAAAAd/anime-angry.gif",
                     "https://media1.tenor.com/m/CZGY4W52elwAAAAC/anime-kubo-san.gif",
-                    "https://media1.tenor.com/m/G_YeALOH-iAAAAAC/mao-amatsuka-mad.gif"
+                    "https://media1.tenor.com/m/G_YeALOH-iAAAAAC/mao-amatsuka-mad.gif",
+                    "https://media1.tenor.com/m/D5SnO3n7d9QAAAAd/nakatsu-shizuru-shizuru.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -331,7 +339,10 @@ module.exports = {
                     "https://media1.tenor.com/m/Gps0S9hBnbgAAAAC/to-love-ru-golden-darkness.gif",
                     "https://media1.tenor.com/m/HfmV7nPyesAAAAAC/anime-tamako-market.gif",
                     "https://media1.tenor.com/m/B66MWZE1G4YAAAAC/anime-anime-shy.gif",
-                    "https://media1.tenor.com/m/ojKYOiAuNyIAAAAC/azur-lane-shy.gif"
+                    "https://media1.tenor.com/m/ojKYOiAuNyIAAAAC/azur-lane-shy.gif",
+                    "https://media1.tenor.com/m/pO390H3VWZMAAAAC/nakatsu-shizuru-anime.gif",
+                    "https://media1.tenor.com/m/-zGzY4DtU7AAAAAd/nakatsu-shizuru-shizuru.gif",
+                    "https://media1.tenor.com/m/ukJ6PSqXhGIAAAAd/akari-best-waifu.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -385,7 +396,8 @@ module.exports = {
                     "https://media1.tenor.com/m/xSVqCQ9wt8oAAAAd/rinne-berlinetta-magical-girl-lyrical-nanoha.gif",
                     "https://media1.tenor.com/m/mqAFe5kR2xwAAAAC/anime-girl-rotate-rotate.gif",
                     "https://media1.tenor.com/m/xvwaan7QCAYAAAAd/wakaba-girl-anime.gif",
-                    "https://media1.tenor.com/m/442gjGV-udYAAAAC/speeen-anime.gif"
+                    "https://media1.tenor.com/m/442gjGV-udYAAAAC/speeen-anime.gif",
+                    "https://media1.tenor.com/m/Eii9d5YZ1HAAAAAC/akari-akaza-akarin.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -452,7 +464,9 @@ module.exports = {
                     "https://media1.tenor.com/m/ILT5-vuNzB8AAAAC/anime-anime-wave-bye.gif",
                     "https://media1.tenor.com/m/bGS2OhhN9tsAAAAC/hello-gojo-satoru.gif",
                     "https://media1.tenor.com/m/TQ3Jul8r2DwAAAAC/anime-boy.gif",
-                    "https://media1.tenor.com/m/SPkUmWsvnGIAAAAd/sumi-sakurasawa-rent-a-girlfriend.gif"
+                    "https://media1.tenor.com/m/SPkUmWsvnGIAAAAd/sumi-sakurasawa-rent-a-girlfriend.gif",
+                    "https://media1.tenor.com/m/D6qeWAFwqSYAAAAC/nakatsu-shizuru-shizuru.gif",
+                    "https://media1.tenor.com/m/TykN1zIvWBEAAAAC/akarin-akaza.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -533,7 +547,9 @@ module.exports = {
                     "https://media1.tenor.com/m/30a9CPebaZoAAAAC/koiseka-anime-blush.gif",
                     "https://media1.tenor.com/m/uqmvkg7EWZoAAAAd/my-tiny-senpai-shiori-katase.gif",
                     "https://media1.tenor.com/m/rtAQFoskUBgAAAAC/uchi-no-kaisha-no-chiisai-senpai-no-hanashi-my-tiny-senpai.gif",
-                    "https://media1.tenor.com/m/GiOGySHeERMAAAAC/anime-blush.gif"
+                    "https://media1.tenor.com/m/GiOGySHeERMAAAAC/anime-blush.gif",
+                    "https://media1.tenor.com/m/pO390H3VWZMAAAAC/nakatsu-shizuru-anime.gif",
+                    "https://media1.tenor.com/m/D5SnO3n7d9QAAAAd/nakatsu-shizuru-shizuru.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -655,13 +671,45 @@ module.exports = {
                     "https://media1.tenor.com/m/29x6TqUTRFEAAAAd/estab-life-martes.gif",
                     "https://media1.tenor.com/m/nyp9Twq3gMAAAAAC/thumbs-up-approve.gif",
                     "https://media1.tenor.com/m/Hv8Mg8VhH9AAAAAC/anime-catboy.gif",
-                    "https://media1.tenor.com/m/RuhFL9METKkAAAAC/anime-kurumizawa_satanichia_mcdowell.gif"
+                    "https://media1.tenor.com/m/RuhFL9METKkAAAAC/anime-kurumizawa_satanichia_mcdowell.gif",
+                    "https://media1.tenor.com/m/-lDgSEqbdp8AAAAC/thumbs-up-anime.gif",
+                    "https://media1.tenor.com/m/YNoRPLbxwxkAAAAC/rewrite-nakatsu-shizuru.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} gives a thumbs up!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'peace':
+                const link = [
+                    "https://media1.tenor.com/m/P7hCyZlzDH4AAAAC/wink-anime.gif",
+                    "https://media1.tenor.com/m/42SH_3x6y_EAAAAC/hanamaru-kunikida-love-live.gif",
+                    "https://media1.tenor.com/m/xypqXgnD2QwAAAAC/phantom-of-the-idol-anime-peace.gif",
+                    "https://media1.tenor.com/m/MXdLda7_c_kAAAAd/anime-anime-girl.gif",
+                    "https://media1.tenor.com/m/3Kjshg4JNbAAAAAC/akari-akaza-yuru-yuri.gif",
+                    "https://media1.tenor.com/m/qD-4Fe8CjA8AAAAC/power-peace.gif",
+                    "https://media1.tenor.com/m/QUwzhLZTjsYAAAAC/chika-fujiwara.gif",
+                    "https://media1.tenor.com/m/WJQDOXHRNBgAAAAC/heart-cute.gif",
+                    "https://media1.tenor.com/m/8Ksp3PD-1rYAAAAC/tenten-kakumei-anime-peace.gif",
+                    "https://media1.tenor.com/m/5z2K7MklSVUAAAAd/anis-magirevo.gif",
+                    "https://media1.tenor.com/m/dbPFfumSq1cAAAAd/anime-anime-girl.gif",
+                    "https://media1.tenor.com/m/ATqbLcSHqBYAAAAd/yuuki-sword-art-online.gif",
+                    "https://media1.tenor.com/m/TloDypFZSuAAAAAC/taiga-peace.gif",
+                    "https://media1.tenor.com/m/hxlEu-RlKhwAAAAC/peace-cute.gif",
+                    "https://media1.tenor.com/m/qNi2QEbUBlEAAAAC/rikka-smile.gif",
+                    "https://media1.tenor.com/m/9JMmuyam6KcAAAAC/hello-anime.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} hold up a peace sign!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });

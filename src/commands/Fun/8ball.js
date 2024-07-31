@@ -5,6 +5,7 @@ module.exports = {
     .setName('8ball')
     .setDescription('Ask the 8ball a question')
     .addStringOption(option => option.setName('question').setDescription('What you would like to ask the 8ball').setRequired(true)),
+    
     async execute (interaction) {
 
         const { options } = interaction;
