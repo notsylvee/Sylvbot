@@ -190,20 +190,21 @@ module.exports = {
 
             const greetingsembed = new EmbedBuilder()
             .setColor("Orange")
-            .setTitle("Greeting")
-            .addFields({ name: "aloha", value: "Aloha (user)!" })
-            .addFields({ name: "greetings", value: "Greetings (user)!" })
-            .addFields({ name: "hai", value: "Hai (user)!" })
-            .addFields({ name: "hallo", value: "Hallo (user)!" })
-            .addFields({ name: "hello", value: "Hello (user)!" })
-            .addFields({ name: "hewwo", value: "Hewwo (user)!" })
-            .addFields({ name: "hey", value: "Hey (user)!" })
-            .addFields({ name: "hi", value: "Hi (user)!" })
-            .addFields({ name: "howdy", value: "Howdy (user)!" })
-            .addFields({ name: "sup", value: "Sup (user)?" })
-            .addFields({ name: "whats up", value: "Whats up (user)?" })
-            .addFields({ name: "yo", value: "Yo (user)!" })
+            .addFields({ name: "Greetings", value: "> Aloha (user)!\n> Greetings (user)!\n> Hai (user)!\n> Hallo (user)!\n> Hello (user)!\n> Hewwo (user)!\n> Hey (user)!\n> Hi (user)!\n> Howdy (user)!\n> Sup (user)?\n> Whats up (user)?\n> Yo (user)!" })
             .setFooter({ text: "Greetings || All replies are randomized" })
+            .setTimestamp()
+
+            const goodbyesembed = new EmbedBuilder()
+            .setColor("Orange")
+            .addFields({ name: "Goodbyes", value: "> Bai (user)!\n> Bye (user)!\n> Bye bye (user)!\n> Cya (user)!\n> Cya later (user)!\n> Goodbye (user)!\n> See ya (user)!\n> See ya later (user)!" })
+            .setFooter({ text: "Goodbyes || All replies are randomized" })
+            .setTimestamp()
+
+            const morningandnightembed = new EmbedBuilder()
+            .setColor("Orange")
+            .addFields({ name: "Morning", value: "> Good morning (user)!\n> Good morning (user)! How did you sleep?\n> Morning (user)!\n> Morning (user)! How did you sleep?" })
+            .addFields({ name: "Night", value: "> Good night (user)!\n> Good night (user)! Dont let the bed bugs bite!\n> Night (user)!\n> Night (user)! Dont let the bedbugs bite!" })
+            .setFooter({ text: "Morning/Night || All replies are randomized" })
             .setTimestamp()
 
             const button = new ActionRowBuilder()
@@ -216,6 +217,16 @@ module.exports = {
                 new ButtonBuilder()
                 .setCustomId('page2')
                 .setLabel('Greetings')
+                .setStyle(ButtonStyle.Success),
+
+                new ButtonBuilder()
+                .setCustomId('page3')
+                .setLabel('Goodbyes')
+                .setStyle(ButtonStyle.Success),
+
+                new ButtonBuilder()
+                .setCustomId('page4')
+                .setLabel('Morning/Night')
                 .setStyle(ButtonStyle.Success),
             )
 
@@ -238,6 +249,22 @@ module.exports = {
                         return await i.reply({ content: 'You cannot use these buttons', ephemeral: true })
                     }
                     await i.update({ embeds: [greetingsembed], components: [button] })
+                }
+
+                if (i.customId === 'page3') {
+    
+                    if (i.user.id !== interaction.user.id) {
+                        return await i.reply({ content: 'You cannot use these buttons', ephemeral: true })
+                    }
+                    await i.update({ embeds: [goodbyesembed], components: [button] })
+                }
+
+                if (i.customId === 'page4') {
+    
+                    if (i.user.id !== interaction.user.id) {
+                        return await i.reply({ content: 'You cannot use these buttons', ephemeral: true })
+                    }
+                    await i.update({ embeds: [morningandnightembed], components: [button] })
                 }
             })
         }
