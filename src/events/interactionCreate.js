@@ -10,7 +10,7 @@ module.exports = {
 
         if (bannedusers.includes(interaction.user.id)) return await interaction.reply({ content: `<:banned:1270092255365173348> You are banned from using this bot`, ephemeral: true })
 
-        if (owner == true) {
+        if (command.owner == true) {
             if (interaction.user.id !== '1018686464000807003') return await interaction.reply({ content: `<:forbidden:1266829648344645694> Invalid permission`, ephemeral: true })
         }
 

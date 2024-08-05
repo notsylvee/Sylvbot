@@ -1,5 +1,5 @@
 const { channel } = require('diagnostics_channel');
-const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions, MessageManager, Embed, Collection, Events } = require(`discord.js`);
+const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions, MessageManager, Embed, Collection, Events, ChannelType } = require(`discord.js`);
 const fs = require('fs');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers] }); 
 
@@ -20,6 +20,7 @@ const commandFolders = fs.readdirSync("./src/commands");
     client.login(process.env.token)
 })();
 
+// joined server
 client.on(Events.GuildCreate, async guild => {
 
     const channel = await client.channels.cache.get('1245963741460430858');
@@ -42,6 +43,7 @@ client.on(Events.GuildCreate, async guild => {
     await channel.send({ embeds: [embed] });
 })
 
+// left server
 client.on(Events.GuildDelete, async guild => {
 
     const channel = await client.channels.cache.get('1245963741460430858');
