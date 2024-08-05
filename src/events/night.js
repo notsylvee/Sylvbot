@@ -12,7 +12,11 @@ module.exports = {
             `Night night ${message.member.displayName}!`,
             `Night night ${message.member.displayName}! Dont let the bed bugs bite!`,
             `Nini ${message.member.displayName}!`,
-            `${message.member.displayName}! Dont let the bed bugs bite!`
+            `Nini ${message.member.displayName}! Dont let the bed bugs bite!`,
+            `Nighty ${message.member.displayName}!`,
+            `Nighty ${message.member.displayName}! Dont let the bed bugs bite!`,
+            `Nighty night ${message.member.displayName}!`,
+            `Nighty night ${message.member.displayName}! Dont let the bed bugs bite!`
         ];
         const response = msg[Math.floor(Math.random() * msg.length)];
 
@@ -25,6 +29,12 @@ module.exports = {
         } else if (message.content.toLowerCase().startsWith("night night") && message.content.toLowerCase().endsWith("night night")) {
             message.channel.send(`${response}`)
         } else if (message.content.toLowerCase().startsWith("nini") && message.content.toLowerCase().endsWith("nini")) {
+            message.channel.send(`${response}`)
+        } else if (message.content.toLowerCase().startsWith("goodnight") && message.content.toLowerCase().endsWith("goodnight")) {
+            message.channel.send(`${response}`)
+        } else if (message.content.toLowerCase().startsWith("nighty") && message.content.toLowerCase().endsWith("y")) {
+            message.channel.send(`${response}`)
+        } else if (message.content.toLowerCase().startsWith("nighty night") && message.content.toLowerCase().endsWith("nighty night")) {
             message.channel.send(`${response}`)
         } 
     }

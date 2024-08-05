@@ -2,13 +2,10 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder, Embed, PermissionsBitField, ChannelType, AutoModerationActionExecution } = require('discord.js');
 
 module.exports = {
+    owner: true,
     data: new SlashCommandBuilder()
     .setName('util')
     .setDescription('Run a utility command')
-    .addSubcommand(command =>
-        command
-        .setName('ping')
-        .setDescription('Pong! Get the bots ping'))
     .addSubcommand(command =>
         command
         .setName('status')
@@ -26,24 +23,10 @@ module.exports = {
         const command = interaction.options.getSubcommand();
 
         switch (command) {
-            case 'ping':
-            const ping = `${Date.now() - interaction.createdTimestamp}`
-
-            interaction.reply(`🏓 Pong! Client latency is ${ping}ms`)
-        }
-
-        switch (command) {
             case 'status':
             const { options } = interaction;
             const status = options.getString('status');
             const type = options.getString('type');
-            const id = [
-                "1018686464000807003",
-                "431220802797568001"
-            ]
-
-            if (!id.includes(interaction.user.id)) return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
-            else {
 
             client.user.setActivity({
                 name: status,
@@ -56,52 +39,48 @@ module.exports = {
             .setDescription(`<:check:1266815137587920937> The bots status has been set to \`${status}\``)
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
-            }
         }
 
         switch (command) {
             case 'leaveserver':
-            if (interaction.user.id != "1018686464000807003") return await interaction.reply({ content: "<:forbidden:1266829648344645694> Invalid permission", ephemeral: true });
-                else {
-                    const { options } = interaction;
-                    const guild = options.getString('server');
-                    await interaction.deferReply({ ephemeral: true });
+                const { options } = interaction;
+                const guild = options.getString('server');
+                await interaction.deferReply({ ephemeral: true });
 
-                    async function sendMessage (message) {
-                        const embed = new EmbedBuilder()
-                        .setColor("Blurple")
-                        .setDescription(message);
+                async function sendMessage (message) {
+                    const embed = new EmbedBuilder()
+                    .setColor("Blurple")
+                    .setDescription(message);
 
-                        await interaction.editReply({ embeds: [embed] });
-                    }
+                    await interaction.editReply({ embeds: [embed] });
+                }
 
-                    var fetchedGuild = await client.guilds.fetch(guild).catch(err => {});
-                    var guilds = [];
+                var fetchedGuild = await client.guilds.fetch(guild).catch(err => {});
+                var guilds = [];
 
-                    if (!fetchedGuild) {
-                        var gds = await client.guilds.fetch();
-                        await gds.forEach(async value => {
-                            if (value.name == guild) {
-                                guilds.push({ name: value.name, id: value.id });
-                            }
-                        })
-                    }
+                if (!fetchedGuild) {
+                    var gds = await client.guilds.fetch();
+                    await gds.forEach(async value => {
+                        if (value.name == guild) {
+                            guilds.push({ name: value.name, id: value.id });
+                        }
+                    })
+                }
 
-                    if (fetchedGuild) {
+                if (fetchedGuild) {
+                    await fetchedGuild.leave();
+                    await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
+                } else {
+                    if (guilds.length > 1) {
+                        await sendMessage(`<:exclamation:1266823414828765246> \`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`)
+                    } else if (guild.length == 0) {
+                        await sendMessage(`<:exclamation:1266823414828765246> I am not in any guilds matching \`${guild}\``)
+                    } else {
+                        fetchedGuild = await client.guild.fetch(guilds[0].id);
                         await fetchedGuild.leave();
                         await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
-                    } else {
-                        if (guilds.length > 1) {
-                            await sendMessage(`<:exclamation:1266823414828765246> \`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`)
-                        } else if (guild.length == 0) {
-                            await sendMessage(`<:exclamation:1266823414828765246> I am not in any guilds matching \`${guild}\``)
-                        } else {
-                            fetchedGuild = await client.guild.fetch(guilds[0].id);
-                            await fetchedGuild.leave();
-                            await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
-                        }
                     }
-                }
+                } 
         }
     }
 }
