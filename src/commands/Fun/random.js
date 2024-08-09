@@ -14,16 +14,24 @@ module.exports = {
         .setDescription('Get a randomly chosen Honkai: Star Rail character'))
     .addSubcommand(command => 
         command
-        .setName('stardew-marriageable')
+        .setName('sv-marriageable')
         .setDescription('Get a randomly chosen marriageable Stardew Valley NPC'))
     .addSubcommand(command => 
         command
-        .setName('stardew-nonmarriageable')
+        .setName('sv-nonmarriageable')
         .setDescription('Get a randomly chosen non-marriageable Stardew Valley NPC'))
-     .addSubcommand(command => 
+    .addSubcommand(command => 
         command
-        .setName('stardew-nongiftable')
-        .setDescription('Get a randomly chosen non-giftable Stardew Valley NPC')),
+        .setName('sv-nongiftable')
+        .setDescription('Get a randomly chosen non-giftable Stardew Valley NPC'))
+    .addSubcommand(command => 
+        command
+        .setName('wuwa')
+        .setDescription('Get a randomly chosen Wuthering Waves resonator'))
+    .addSubcommand(command => 
+        command
+        .setName('zzz')
+        .setDescription('Get a randomly chosen Zenless Zone Zero agent')),
 
     async execute (interaction) {
 
@@ -96,122 +104,122 @@ module.exports = {
         switch (command) {
             case 'hsr':
                 const characters = [
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Acheron_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327021325",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Argenti_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231206232011",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Arlan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231038",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bd/Character_Asta_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231122",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a9/Character_Aventurine_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327104723",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e9/Character_Bailu_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210120736",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Black_Swan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240220023547",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/16/Character_Blade_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501004859",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bb/Character_Boothill_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240624231026",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7c/Character_Bronya_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240121130128",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Clara_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231958",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e5/Character_Dan_Heng_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090149",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2c/Character_Dan_Heng_%E2%80%A2_Imbibitor_Lunae_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230818234313",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/56/Character_Dr._Ratio_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227132629",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/38/Character_Firefly_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240619022729",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3e/Character_Fu_Xuan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230928224921",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2d/Character_Gallagher_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327022011",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/96/Character_Gepard_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216232354",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/33/Character_Guinaifen_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231030040741",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e8/Character_Hanya_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231206232120",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8c/Character_Herta_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231220",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8e/Character_Himeko_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090036",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ec/Character_Hook_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090126",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231115031700",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Jade_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240706170539",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Character_Jing_Yuan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115809",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Character_Jingliu_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240525000314",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/95/Character_Kafka_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230809042240",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/51/Character_Luka_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230809042157",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a5/Character_Luocha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230628091054",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3c/Character_Lynx_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230719101506",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/18/Character_March_7th_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090156",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5c/Character_Misha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240206022717",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7e/Character_Natasha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240525042421",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c9/Character_Pela_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090100",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d1/Character_Qingque_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115335",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/92/Character_Robin_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508021256",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d5/Character_Ruan_Mei_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227021137",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/65/Character_Sampo_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090046",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/58/Character_Seele_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240121123334",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8a/Character_Serval_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090108",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/60/Character_Silver_Wolf_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216230911",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Sparkle_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327022635",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/72/Character_Sushang_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115023",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Tingyun_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115502",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9d/Character_Topaz_and_Numby_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231030040101",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6f/Character_Trailblazer_%28F%29_Destruction_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005741",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/12/Character_Trailblazer_%28M%29_Destruction_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005733",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Character_Trailblazer_%28F%29_Preservation_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005729",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/63/Character_Trailblazer_%28M%29_Preservation_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005737",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/0/0a/Character_Trailblazer_%28F%29_Harmony_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508064117",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Character_Trailblazer_%28M%29_Harmony_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508064008",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/11/Character_Welt_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090017",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bc/Character_Xueyi_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227045314",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Yanqing_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210121516",
-                    "https://static.wikia.nocookie.net/houkai-star-rail/images/0/04/Character_Yukong_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230628090836"
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Acheron_Splash_Art.png/revision/latest/?cb=20240327021325",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Argenti_Splash_Art.png/revision/latest/?cb=20231206232011",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Arlan_Splash_Art.png/revision/latest/?cb=20230216231038",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bd/Character_Asta_Splash_Art.png/revision/latest/?cb=20230216231122",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a9/Character_Aventurine_Splash_Art.png/revision/latest/?cb=20240327104723",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e9/Character_Bailu_Splash_Art.png/revision/latest/?cb=20230210120736",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Black_Swan_Splash_Art.png/revision/latest/?cb=20240220023547",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/16/Character_Blade_Splash_Art.png/revision/latest/?cb=20230501004859",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bb/Character_Boothill_Splash_Art.png/revision/latest/?cb=20240624231026",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7c/Character_Bronya_Splash_Art.png/revision/latest/?cb=20240121130128",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Clara_Splash_Art.png/revision/latest/?cb=20230216231958",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e5/Character_Dan_Heng_Splash_Art.png/revision/latest/?cb=20230525090149",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2c/Character_Dan_Heng_%E2%80%A2_Imbibitor_Lunae_Splash_Art.png/revision/latest/?cb=20230818234313",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/56/Character_Dr._Ratio_Splash_Art.png/revision/latest/?cb=20231227132629",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/38/Character_Firefly_Splash_Art.png/revision/latest/?cb=20240619022729",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3e/Character_Fu_Xuan_Splash_Art.png/revision/latest/?cb=20230928224921",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2d/Character_Gallagher_Splash_Art.png/revision/latest/?cb=20240327022011",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/96/Character_Gepard_Splash_Art.png/revision/latest/?cb=20230216232354",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/33/Character_Guinaifen_Splash_Art.png/revision/latest/?cb=20231030040741",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e8/Character_Hanya_Splash_Art.png/revision/latest/?cb=20231206232120",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8c/Character_Herta_Splash_Art.png/revision/latest/?cb=20230216231220",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8e/Character_Himeko_Splash_Art.png/revision/latest/?cb=20230525090036",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ec/Character_Hook_Splash_Art.png/revision/latest/?cb=20230525090126",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/?cb=20231115031700",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Jade_Splash_Art.png/revision/latest/?cb=20240706170539",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Character_Jing_Yuan_Splash_Art.png/revision/latest/?cb=20230210115809",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Character_Jingliu_Splash_Art.png/revision/latest/?cb=20240525000314",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/95/Character_Kafka_Splash_Art.png/revision/latest/?cb=20230809042240",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/51/Character_Luka_Splash_Art.png/revision/latest/?cb=20230809042157",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a5/Character_Luocha_Splash_Art.png/revision/latest/?cb=20230628091054",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3c/Character_Lynx_Splash_Art.png/revision/latest/?cb=20230719101506",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/18/Character_March_7th_Splash_Art.png/revision/latest/?cb=20230525090156",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5c/Character_Misha_Splash_Art.png/revision/latest/?cb=20240206022717",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7e/Character_Natasha_Splash_Art.png/revision/latest/?cb=20240525042421",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c9/Character_Pela_Splash_Art.png/revision/latest/?cb=20230525090100",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d1/Character_Qingque_Splash_Art.png/revision/latest/?cb=20230210115335",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/92/Character_Robin_Splash_Art.png/revision/latest/?cb=20240508021256",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d5/Character_Ruan_Mei_Splash_Art.png/revision/latest/?cb=20231227021137",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/65/Character_Sampo_Splash_Art.png/revision/latest/?cb=20230525090046",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/58/Character_Seele_Splash_Art.png/revision/latest/?cb=20240121123334",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8a/Character_Serval_Splash_Art.png/revision/latest/?cb=20230525090108",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/60/Character_Silver_Wolf_Splash_Art.png/revision/latest/?cb=20230216230911",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Sparkle_Splash_Art.png/revision/latest/?cb=20240327022635",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/7/72/Character_Sushang_Splash_Art.png/revision/latest/?cb=20230210115023",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Tingyun_Splash_Art.png/revision/latest/?cb=20230210115502",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9d/Character_Topaz_and_Numby_Splash_Art.png/revision/latest/?cb=20231030040101",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6f/Character_Trailblazer_%28F%29_Destruction_Splash_Art.png/revision/latest/?cb=20230501005741",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/12/Character_Trailblazer_%28M%29_Destruction_Splash_Art.png/revision/latest/?cb=20230501005733",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Character_Trailblazer_%28F%29_Preservation_Splash_Art.png/revision/latest/?cb=20230501005729",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/63/Character_Trailblazer_%28M%29_Preservation_Splash_Art.png/revision/latest/?cb=20230501005737",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/0/0a/Character_Trailblazer_%28F%29_Harmony_Splash_Art.png/revision/latest/?cb=20240508064117",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Character_Trailblazer_%28M%29_Harmony_Splash_Art.png/revision/latest/?cb=20240508064008",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/1/11/Character_Welt_Splash_Art.png/revision/latest/?cb=20230525090017",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bc/Character_Xueyi_Splash_Art.png/revision/latest/?cb=20231227045314",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Yanqing_Splash_Art.png/revision/latest/?cb=20230210121516",
+                    "https://static.wikia.nocookie.net/houkai-star-rail/images/0/04/Character_Yukong_Splash_Art.png/revision/latest/?cb=20230628090836"
                 ];
                 const character = characters[Math.floor(Math.random() * characters.length)];
         
                 let name = '';
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Acheron_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327021325") name = 'Acheron'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Argenti_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231206232011") name = 'Argenti'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Arlan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231038") name = 'Arlan'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bd/Character_Asta_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231122") name = 'Asta'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a9/Character_Aventurine_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327104723") name = 'Aventurine'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e9/Character_Bailu_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210120736") name = 'Bailu'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Black_Swan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240220023547") name = 'Black Swan'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/16/Character_Blade_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501004859") name = 'Blade'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bb/Character_Boothill_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240624231026") name = 'Boothill'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7c/Character_Bronya_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240121130128") name = 'Bronya'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Clara_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231958") name = 'Clara'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e5/Character_Dan_Heng_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090149") name = 'Dan Heng'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2c/Character_Dan_Heng_%E2%80%A2_Imbibitor_Lunae_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230818234313") name = 'Dan Heng Imbibitor Lunae'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/56/Character_Dr._Ratio_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227132629") name = 'Dr. Ratio'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/38/Character_Firefly_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240619022729") name = 'Firefly'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3e/Character_Fu_Xuan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230928224921") name = 'Fu Xuan'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2d/Character_Gallagher_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327022011") name = 'Gallagher'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/96/Character_Gepard_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216232354") name = 'Gepard'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/33/Character_Guinaifen_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231030040741") name = 'Guinaifen'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e8/Character_Hanya_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231206232120") name = 'Hanya'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8c/Character_Herta_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216231220") name = 'Herta'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8e/Character_Himeko_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090036") name = 'Himeko'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ec/Character_Hook_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090126") name = 'Hook'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231115031700") name = 'Huohuo'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Jade_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240706170539") name = 'Jade'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Character_Jing_Yuan_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115809") name = 'Jing Yuan'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Character_Jingliu_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240525000314") name = 'Jingliu'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/95/Character_Kafka_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230809042240") name = 'Kafka'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/51/Character_Luka_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230809042157") name = 'Luka'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a5/Character_Luocha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230628091054") name = 'Luocha'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3c/Character_Lynx_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230719101506") name = 'Lynx'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/18/Character_March_7th_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090156") name = 'March 7th'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5c/Character_Misha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240206022717") name = 'Misha'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7e/Character_Natasha_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240525042421") name = 'Natasha'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c9/Character_Pela_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090100") name = 'Pela'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d1/Character_Qingque_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115335") name = 'Qingque'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/92/Character_Robin_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508021256") name = 'Robin'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d5/Character_Ruan_Mei_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227021137") name = 'Ruan Mei'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/65/Character_Sampo_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090046") name = 'Sampo'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/58/Character_Seele_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240121123334") name = 'Seele'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8a/Character_Serval_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090108") name = 'Serval'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/60/Character_Silver_Wolf_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230216230911") name = 'Silver Wolf'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Sparkle_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240327022635") name = 'Sparkle'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/72/Character_Sushang_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115023") name = 'Sushang'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Tingyun_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210115502") name = 'Tingyun'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9d/Character_Topaz_and_Numby_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231030040101") name = 'Topaz and Numby'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6f/Character_Trailblazer_%28F%29_Destruction_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005741") name = 'Stelle (Destruction)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/12/Character_Trailblazer_%28M%29_Destruction_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005733") name = 'Caelus (Destruction)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Character_Trailblazer_%28F%29_Preservation_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005729") name = 'Stelle (Preservation)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/63/Character_Trailblazer_%28M%29_Preservation_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230501005737") name = 'Caelus (Preservation)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/0/0a/Character_Trailblazer_%28F%29_Harmony_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508064117") name = 'Stelle (Harmony)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Character_Trailblazer_%28M%29_Harmony_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20240508064008") name = 'Caelus (Harmony)'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/11/Character_Welt_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230525090017") name = 'Welt'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bc/Character_Xueyi_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20231227045314") name = 'Xueyi'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Yanqing_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230210121516") name = 'Yanqing'
-                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/0/04/Character_Yukong_Splash_Art.png/revision/latest/scale-to-width-down/1000?cb=20230628090836") name = 'Yukong'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/78/Character_Acheron_Splash_Art.png/revision/latest/?cb=20240327021325") name = 'Acheron'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/90/Character_Argenti_Splash_Art.png/revision/latest/?cb=20231206232011") name = 'Argenti'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Arlan_Splash_Art.png/revision/latest/?cb=20230216231038") name = 'Arlan'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bd/Character_Asta_Splash_Art.png/revision/latest/?cb=20230216231122") name = 'Asta'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a9/Character_Aventurine_Splash_Art.png/revision/latest/?cb=20240327104723") name = 'Aventurine'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e9/Character_Bailu_Splash_Art.png/revision/latest/?cb=20230210120736") name = 'Bailu'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/f/fd/Character_Black_Swan_Splash_Art.png/revision/latest/?cb=20240220023547") name = 'Black Swan'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/16/Character_Blade_Splash_Art.png/revision/latest/?cb=20230501004859") name = 'Blade'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bb/Character_Boothill_Splash_Art.png/revision/latest/?cb=20240624231026") name = 'Boothill'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7c/Character_Bronya_Splash_Art.png/revision/latest/?cb=20240121130128") name = 'Bronya'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c2/Character_Clara_Splash_Art.png/revision/latest/?cb=20230216231958") name = 'Clara'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e5/Character_Dan_Heng_Splash_Art.png/revision/latest/?cb=20230525090149") name = 'Dan Heng'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2c/Character_Dan_Heng_%E2%80%A2_Imbibitor_Lunae_Splash_Art.png/revision/latest/?cb=20230818234313") name = 'Dan Heng Imbibitor Lunae'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/56/Character_Dr._Ratio_Splash_Art.png/revision/latest/?cb=20231227132629") name = 'Dr. Ratio'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/38/Character_Firefly_Splash_Art.png/revision/latest/?cb=20240619022729") name = 'Firefly'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3e/Character_Fu_Xuan_Splash_Art.png/revision/latest/?cb=20230928224921") name = 'Fu Xuan'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/2/2d/Character_Gallagher_Splash_Art.png/revision/latest/?cb=20240327022011") name = 'Gallagher'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/96/Character_Gepard_Splash_Art.png/revision/latest/?cb=20230216232354") name = 'Gepard'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/33/Character_Guinaifen_Splash_Art.png/revision/latest/?cb=20231030040741") name = 'Guinaifen'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e8/Character_Hanya_Splash_Art.png/revision/latest/?cb=20231206232120") name = 'Hanya'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8c/Character_Herta_Splash_Art.png/revision/latest/?cb=20230216231220") name = 'Herta'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8e/Character_Himeko_Splash_Art.png/revision/latest/?cb=20230525090036") name = 'Himeko'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ec/Character_Hook_Splash_Art.png/revision/latest/?cb=20230525090126") name = 'Hook'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/82/Character_Huohuo_Splash_Art.png/revision/latest/?cb=20231115031700") name = 'Huohuo'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Jade_Splash_Art.png/revision/latest/?cb=20240706170539") name = 'Jade'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/4/48/Character_Jing_Yuan_Splash_Art.png/revision/latest/?cb=20230210115809") name = 'Jing Yuan'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Character_Jingliu_Splash_Art.png/revision/latest/?cb=20240525000314") name = 'Jingliu'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/95/Character_Kafka_Splash_Art.png/revision/latest/?cb=20230809042240") name = 'Kafka'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/51/Character_Luka_Splash_Art.png/revision/latest/?cb=20230809042157") name = 'Luka'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a5/Character_Luocha_Splash_Art.png/revision/latest/?cb=20230628091054") name = 'Luocha'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/3/3c/Character_Lynx_Splash_Art.png/revision/latest/?cb=20230719101506") name = 'Lynx'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/18/Character_March_7th_Splash_Art.png/revision/latest/?cb=20230525090156") name = 'March 7th'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5c/Character_Misha_Splash_Art.png/revision/latest/?cb=20240206022717") name = 'Misha'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/7e/Character_Natasha_Splash_Art.png/revision/latest/?cb=20240525042421") name = 'Natasha'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c9/Character_Pela_Splash_Art.png/revision/latest/?cb=20230525090100") name = 'Pela'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d1/Character_Qingque_Splash_Art.png/revision/latest/?cb=20230210115335") name = 'Qingque'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/92/Character_Robin_Splash_Art.png/revision/latest/?cb=20240508021256") name = 'Robin'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d5/Character_Ruan_Mei_Splash_Art.png/revision/latest/?cb=20231227021137") name = 'Ruan Mei'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/65/Character_Sampo_Splash_Art.png/revision/latest/?cb=20230525090046") name = 'Sampo'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/58/Character_Seele_Splash_Art.png/revision/latest/?cb=20240121123334") name = 'Seele'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8a/Character_Serval_Splash_Art.png/revision/latest/?cb=20230525090108") name = 'Serval'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/60/Character_Silver_Wolf_Splash_Art.png/revision/latest/?cb=20230216230911") name = 'Silver Wolf'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Sparkle_Splash_Art.png/revision/latest/?cb=20240327022635") name = 'Sparkle'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/7/72/Character_Sushang_Splash_Art.png/revision/latest/?cb=20230210115023") name = 'Sushang'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/5/5b/Character_Tingyun_Splash_Art.png/revision/latest/?cb=20230210115502") name = 'Tingyun'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/9/9d/Character_Topaz_and_Numby_Splash_Art.png/revision/latest/?cb=20231030040101") name = 'Topaz and Numby'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6f/Character_Trailblazer_%28F%29_Destruction_Splash_Art.png/revision/latest/?cb=20230501005741") name = 'Stelle (Destruction)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/12/Character_Trailblazer_%28M%29_Destruction_Splash_Art.png/revision/latest/?cb=20230501005733") name = 'Caelus (Destruction)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/17/Character_Trailblazer_%28F%29_Preservation_Splash_Art.png/revision/latest/?cb=20230501005729") name = 'Stelle (Preservation)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/63/Character_Trailblazer_%28M%29_Preservation_Splash_Art.png/revision/latest/?cb=20230501005737") name = 'Caelus (Preservation)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/0/0a/Character_Trailblazer_%28F%29_Harmony_Splash_Art.png/revision/latest/?cb=20240508064117") name = 'Stelle (Harmony)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f5/Character_Trailblazer_%28M%29_Harmony_Splash_Art.png/revision/latest/?cb=20240508064008") name = 'Caelus (Harmony)'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/1/11/Character_Welt_Splash_Art.png/revision/latest/?cb=20230525090017") name = 'Welt'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bc/Character_Xueyi_Splash_Art.png/revision/latest/?cb=20231227045314") name = 'Xueyi'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/6/6d/Character_Yanqing_Splash_Art.png/revision/latest/?cb=20230210121516") name = 'Yanqing'
+                if (character === "https://static.wikia.nocookie.net/houkai-star-rail/images/0/04/Character_Yukong_Splash_Art.png/revision/latest/?cb=20230628090836") name = 'Yukong'
 
                 const embed = new EmbedBuilder()
                 .setColor("Purple")
@@ -222,7 +230,7 @@ module.exports = {
         }
 
         switch (command) {
-            case 'stardew-marriageable':
+            case 'sv-marriageable':
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
@@ -263,7 +271,7 @@ module.exports = {
         }
 
         switch (command) {
-            case 'stardew-nonmarriageable':
+            case 'sv-nonmarriageable':
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
@@ -325,7 +333,7 @@ module.exports = {
         }
 
         switch (command) {
-            case 'stardew-nongiftable':
+            case 'sv-nongiftable':
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/4/46/Birdie.png",
@@ -361,6 +369,112 @@ module.exports = {
             .setColor("Purple")
             .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is... ${name}!`)
             .setImage(character)
+
+            await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'wuwa':
+
+            const resonators = [
+                "https://static.wikia.nocookie.net/wutheringwaves/images/f/f1/Aalto_Full_body_illustration.png/revision/latest?cb=20240129090949",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/c/cc/Baizhi_Full_Sprite.png/revision/latest?cb=20240202080219",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/9/9c/Calcharo_Full_Sprite.png/revision/latest?cb=20240522194656",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/d/d2/Changli_Full_Sprite.png/revision/latest/?cb=20240723101836",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/8/87/Chixia_Full_Sprite.png/revision/latest?cb=20240202080517",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/4/4f/Danjin_Full_Sprite.png/revision/latest?cb=20230403035004",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Encore_Full_Sprite.png/revision/latest?cb=20240421223946",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/d/d4/Jianxin_Full_Sprite.png/revision/latest?cb=20240518003041",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/b/b2/Jinhsi_Full_Sprite.png/revision/latest?cb=20240627024122",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/5/56/Jiyan_Full_Sprite.png/revision/latest/?cb=20230328145005",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/3/36/Lingyang_Full_Sprite.png/revision/latest?cb=20240502113913",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/9/93/Mortefi_Illutration.png/revision/latest?cb=20240202080638",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/7/70/Rover_1.png/revision/latest/?cb=20240420140302",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/4/44/Sanhua_Model.png/revision/latest?cb=20240218224717",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/2/25/Taoqi_Model.png/revision/latest?cb=20240202080916",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/a/ab/Verina_Full_Sprite.png/revision/latest/?cb=20240530080009",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/f/f4/Yangyang_Full_Body_Sprite.png/revision/latest/?cb=20240703175222",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/4/45/Yinlin_Full_Sprite.png/revision/latest/?cb=20240530080509",
+                "https://static.wikia.nocookie.net/wutheringwaves/images/d/de/Yuanwu_Illustration.png/revision/latest?cb=20240202081324"
+            ];
+            const resonator = resonators[Math.floor(Math.random() * resonators.length)];
+
+            let name = '';
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/f/f1/Aalto_Full_body_illustration.png/revision/latest?cb=20240129090949") name = 'Aalto'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/c/cc/Baizhi_Full_Sprite.png/revision/latest?cb=20240202080219") name = 'Baizhi'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/9/9c/Calcharo_Full_Sprite.png/revision/latest?cb=20240522194656") name = 'Calcharo'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/d/d2/Changli_Full_Sprite.png/revision/latest/?cb=20240723101836") name = 'Changli'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/8/87/Chixia_Full_Sprite.png/revision/latest?cb=20240202080517") name = 'Chixia'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/4/4f/Danjin_Full_Sprite.png/revision/latest?cb=20230403035004") name = 'Danjin'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/f/f7/Encore_Full_Sprite.png/revision/latest?cb=20240421223946") name = 'Encore'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/d/d4/Jianxin_Full_Sprite.png/revision/latest?cb=20240518003041") name = 'Jianxin'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/b/b2/Jinhsi_Full_Sprite.png/revision/latest?cb=20240627024122") name = 'Jinhsi'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/5/56/Jiyan_Full_Sprite.png/revision/latest/?cb=20230328145005") name = 'Jiyan'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/3/36/Lingyang_Full_Sprite.png/revision/latest?cb=20240502113913") name = 'Lingyang'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/9/93/Mortefi_Illutration.png/revision/latest?cb=20240202080638") name = 'Mortefi'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/7/70/Rover_1.png/revision/latest/?cb=20240420140302") name = 'Rover'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/4/44/Sanhua_Model.png/revision/latest?cb=20240218224717") name = 'Sanhua'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/2/25/Taoqi_Model.png/revision/latest?cb=20240202080916") name = 'Taoqi'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/a/ab/Verina_Full_Sprite.png/revision/latest/?cb=20240530080009") name = 'Verina'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/f/f4/Yangyang_Full_Body_Sprite.png/revision/latest/?cb=20240703175222") name = 'Yangyang'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/4/45/Yinlin_Full_Sprite.png/revision/latest/?cb=20240530080509") name = 'Yinlin'
+            if (resonator === "https://static.wikia.nocookie.net/wutheringwaves/images/d/de/Yuanwu_Illustration.png/revision/latest?cb=20240202081324") name = 'Yuanwu'
+
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:wuwa:1271601771961126914> ${interaction.member.displayName}, your random Wuthering Waves resonator is... ${name}!`)
+            .setImage(resonator)
+
+            await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'zzz':
+
+            const agents = [
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/13/Agent_Rina_Portrait.png/revision/latest/?cb=20240707002357",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agent_Anby_Demara_Portrait.png/revision/latest/?cb=20240706234414",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/1d/Agent_Anton_Ivanov_Portrait.png/revision/latest/?cb=20240707011622",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/35/Agent_Ben_Bigger_Portrait.png/revision/latest/?cb=20240707004233",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/dc/Agent_Billy_Kid_Portrait.png/revision/latest/?cb=20240707002211",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/c/cf/Agent_Corin_Wickes_Portrait.png/revision/latest/?cb=20240706234305",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/?cb=20240707003033",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/9a/Agent_Grace_Howard_Portrait.png/revision/latest?cb=20240707002436",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d6/Agent_Koleda_Belobog_Portrait.png/revision/latest/?cb=20240706234545",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/ee/Agent_Lucy_Portrait.png/revision/latest/?cb=20240707002258",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bc/Agent_Nekomiya_Mana_Portrait.png/revision/latest?cb=20240706234603",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/?cb=20240707011646",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a9/Agent_Piper_Wheel_Portrait.png/revision/latest?cb=20240707002233",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/36/Agent_Soldier_11_Portrait.png/revision/latest?cb=20240713020308",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/35/Agent_Soukaku_Portrait.png/revision/latest/?cb=20240707011630",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5f/Agent_Von_Lycaon_Portrait.png/revision/latest/?cb=20240707002420",
+                "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest?cb=20240708205906"
+            ];
+            const agent = agents[Math.floor(Math.random() * agents.length)];
+
+            let name = '';
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/13/Agent_Rina_Portrait.png/revision/latest/?cb=20240707002357") name = 'Alexandrina Sebastiane'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agent_Anby_Demara_Portrait.png/revision/latest/?cb=20240706234414") name = 'Andy Demara'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/1d/Agent_Anton_Ivanov_Portrait.png/revision/latest/?cb=20240707011622") name = 'Anton Ivanov'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/35/Agent_Ben_Bigger_Portrait.png/revision/latest/?cb=20240707004233") name = 'Ben Bigger'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/dc/Agent_Billy_Kid_Portrait.png/revision/latest/?cb=20240707002211") name = 'Billy Kid'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/c/cf/Agent_Corin_Wickes_Portrait.png/revision/latest/?cb=20240706234305") name = 'Corin Wickes'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/?cb=20240707003033") name = 'Ellen Joe'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/9/9a/Agent_Grace_Howard_Portrait.png/revision/latest?cb=20240707002436") name = 'Grace Howard'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d6/Agent_Koleda_Belobog_Portrait.png/revision/latest/?cb=20240706234545") name = 'Koleda Belobog'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/ee/Agent_Lucy_Portrait.png/revision/latest/?cb=20240707002258") name = 'Luciana de Montefio'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bc/Agent_Nekomiya_Mana_Portrait.png/revision/latest?cb=20240706234603") name = 'Nekomiya Mana'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/?cb=20240707011646") name = 'Nicole Demara'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a9/Agent_Piper_Wheel_Portrait.png/revision/latest?cb=20240707002233") name = 'Piper Wheel'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/36/Agent_Soldier_11_Portrait.png/revision/latest?cb=20240713020308") name = 'Soldier 11'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/35/Agent_Soukaku_Portrait.png/revision/latest/?cb=20240707011630") name = 'Soukaku'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5f/Agent_Von_Lycaon_Portrait.png/revision/latest/?cb=20240707002420") name = 'Von Lycaon'
+            if (agent === "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest?cb=20240708205906") name = 'Zhu Yuan'
+
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:zzz:1271601970624331827> ${interaction.member.displayName}, your random Zenless Zone Zero agent is... ${name}!`)
+            .setImage(agent)
 
             await interaction.reply({ embeds: [embed] });
         }
