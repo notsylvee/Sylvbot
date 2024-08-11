@@ -36,33 +36,6 @@ module.exports = {
             button
         );
 
-        const msg = await sendChannel.send({ embeds: [embed], components: [row] }).catch(err => {});
-        var time = 86400000;
-        const collector = await msg.createMessageComponentCollector({
-            ComponentType: ComponentType.Button,
-            time
-        });
-
-        collector.on('collect', async i => {
-            if (i.customId == 'invite') {
-                var channel;
-                const channels = await guild.channels.cache.filter(c => c.type === ChannelType.GuildText);
-
-                for (const c of channels.values()) {
-                    channel = c;
-                    break;
-                }
-
-                if (!channel) return await i.reply({ content: `<:exclamation:1266823414828765246> Invalid channels`, ephemeral: true });
-
-                const invite = await channel.createInvite().catch(err => {});
-                await i.reply({ content: `discord.gg/${invite.code}`, ephemeral: true });
-            }
-        });
-
-        collector.on('end', async () => {
-            button.setDisabled(true);
-            await msg.edit({ embeds: [embed], components: [row] });
-        })
+        await sendChannel.send({ embeds: [embed], components: [row] }).catch(err => {});
     }
 }

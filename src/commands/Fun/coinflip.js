@@ -10,6 +10,6 @@ module.exports = {
         const answers = [ "heads", "tails" ];
         const answer = answers[Math.floor(Math.random() * answers.length)];
 
-        await interaction.reply({ content: `The coin landed on ${answer}` })
+        await interaction.reply({ content: `The coin landed on ${answer}!` })
     }
 }

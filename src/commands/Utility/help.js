@@ -76,6 +76,7 @@ module.exports = {
             .setColor("Purple")
             .setTitle("Fun commands")
             .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
+            .addFields({ name: "/coinflip", value: "Flip a coin" })
             .addFields({ name: "/random", value: "Get a random character from a specified game\n> Honkai: Star Rail, Stardew Valley, or Valorant" })
             .addFields({ name: "/roll", value: "Roll some dice" })
             .setFooter({ text: "Fun commands" })

@@ -4,8 +4,8 @@ const { EmbedBuilder, Embed, PermissionsBitField, ChannelType, AutoModerationAct
 module.exports = {
     owner: true,
     data: new SlashCommandBuilder()
-    .setName('util')
-    .setDescription('Run a utility command')
+    .setName('owner')
+    .setDescription('Owner only commands')
     .addSubcommand(command =>
         command
         .setName('status')
