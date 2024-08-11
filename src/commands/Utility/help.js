@@ -24,7 +24,11 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('replies')
-        .setDescription('Get a list of all text replies')),
+        .setDescription('Get a list of all text replies'))
+    .addSubcommand(command =>
+        command
+        .setName('giveaway')
+        .setDescription('Get a list of all giveaway commands')),
     async execute (interaction, client) {
 
         const command = interaction.options.getSubcommand();
@@ -268,6 +272,22 @@ module.exports = {
                     await i.update({ embeds: [morningandnightembed], components: [button] })
                 }
             })
+        }
+
+        switch (command) {
+            case 'giveaway':
+            
+            const modembed = new EmbedBuilder()
+            .setColor("#e5302d")
+            .setTitle("Giveaway commands")
+            .addFields({ name: "start", value: "Start a giveaway" })
+            .addFields({ name: "edit", value: "Edit a giveaway" })
+            .addFields({ name: "end", value: "End a giveaway" })
+            .addFields({ name: "reroll", value: "Reroll a giveaway" })
+            .setFooter({ text: "Giveaway commands || These commands start with /giveaway" })
+            .setTimestamp()
+
+            await interaction.reply({ embeds: [modembed] })
         }
     }
 }
