@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+const mongoURL = process.env.mongoURL
+
 module.exports = {
     name: 'ready',
     once: true,
@@ -10,25 +13,16 @@ module.exports = {
             url: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
         });
 
-        async function pickPresence () {
-            const option = Math.floor(Math.random() * statusArray.length);
+        if (!mongoURL) return;
+        await mongoose.connect(mongoURL || '', {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
 
-            try {
-                await client.user.setPresence({
-                    activities: [
-                        {
-                            name: statusArray[option].content,
-                            type: statusArray[option].type,
-
-                        },
-                    
-                    ],
-
-                    status: statusArray[option].status
-                })
-            } catch (error) {
-                console.error(error);
-            }
+        if (mongoose.connect) {
+            console.log('Connected to MongoDB')
+        } else {
+            console.log('Failed to connect to MongoDB')
         }
     },
 };
