@@ -1,7 +1,7 @@
 const { channel } = require('diagnostics_channel');
 const { Client, GatewayIntentBits, EmbedBuilder, PermissionsBitField, Permissions, MessageManager, Embed, Collection, Events, ChannelType } = require(`discord.js`);
 const fs = require('fs');
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers] }); 
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessageReactions] }); 
 
 client.commands = new Collection();
 
@@ -38,11 +38,11 @@ client.on(Events.InteractionCreate, async interaction => {
 
 //giveaways
 const GiveawaysManager = require('./giveaways')
-client.GiveawaysManager = new GiveawaysManager(client, {
+client.giveawayManager = new GiveawaysManager(client, {
     default: {
-        botsCanWin: false,
-        embedColor: `$e5302d`,
-        embedColorEnd: `$e5302d`,
-        reaction: `🎉`,
+      botsCanWin: false,
+      embedColor: "#e5302d",
+      embedColorEnd: "#e5302d",
+      reaction: "🎉",
     },
 });
