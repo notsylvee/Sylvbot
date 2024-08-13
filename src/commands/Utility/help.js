@@ -64,6 +64,7 @@ module.exports = {
             .addFields({ name: "/expression (copy, emoji, sticker)", value: "Add an expression to this server" })
             .addFields({ name: "/help (moderation, utility, emote, fun)", value: "Get a list of all available commands" })
             .addFields({ name: "/info (bot, user, server)", value: "Get info about a user, the bot, or this server" })
+            .addFields({ name: "/server-badges", value: "Get the number of users with each badge in this server" })
             .setFooter({ text: "Utility commands" })
             .setTimestamp()
 
