@@ -60,12 +60,10 @@ module.exports = {
             const utilembed = new EmbedBuilder()
             .setColor("Green")
             .setTitle("Utility commands")
+            .addFields({ name: "/emoji-list", value: "Get a list of this servers emojis" })
             .addFields({ name: "/expression (copy, emoji, sticker)", value: "Add an expression to this server" })
             .addFields({ name: "/help (moderation, utility, emote, fun)", value: "Get a list of all available commands" })
             .addFields({ name: "/info (bot, user, server)", value: "Get info about a user, the bot, or this server" })
-            .addFields({ name: "/info serverlist", value: "Get a list of all the servers this bot is in (bot owner only)"})
-            .addFields({ name: "/owner status", value: "Set bot status (bot owner only)" })
-            .addFields({ name: "/owner leaveserver", value: "Make this bot leave a server (bot owner only)" })
             .setFooter({ text: "Utility commands" })
             .setTimestamp()
 
