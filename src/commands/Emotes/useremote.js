@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
     .setName('useremote')
     .setDescription('Use an emote command')
-    //13
+    //15
     .addSubcommand(command =>
         command
         .setName('bite')
@@ -70,7 +70,17 @@ module.exports = {
         command
         .setName('spit')
         .setDescription('Spit on someone!')
-        .addUserOption(option => option.setName('user').setDescription('Who you want to spit on').setRequired(true))),
+        .addUserOption(option => option.setName('user').setDescription('Who you want to spit on').setRequired(true)))
+    .addSubcommand(command =>
+        command
+        .setName('tuck-in')
+        .setDescription('Tuck someone in!')
+        .addUserOption(option => option.setName('user').setDescription('Who you want to tuck in').setRequired(true)))
+    .addSubcommand(command =>
+        command
+        .setName('throw')
+        .setDescription('Throw someone!')
+        .addUserOption(option => option.setName('user').setDescription('Who you want to throw').setRequired(true))),
     
     async execute(interaction, client) {
 
@@ -119,7 +129,8 @@ module.exports = {
                     "https://media1.tenor.com/m/RR4YJdzCJRMAAAAd/chainsaw-man-hug.gif",
                     "https://media1.tenor.com/m/Yf7E7BCC3McAAAAC/cuddle-anime.gif",
                     "https://media1.tenor.com/m/9TN_Wmmvh7sAAAAC/anime-cuddle.gif",
-                    "https://media1.tenor.com/m/Dc5yd05wu_cAAAAC/couple-hug.gif"
+                    "https://media1.tenor.com/m/Dc5yd05wu_cAAAAC/couple-hug.gif",
+                    "https://media1.tenor.com/m/ORLdQXrQFvEAAAAd/miss-kobayashis-dragon-maid-anime.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -182,7 +193,8 @@ module.exports = {
                     "https://media1.tenor.com/m/TsEh_PJhTKwAAAAC/pjsk-pjsk-anime.gif",
                     "https://media1.tenor.com/m/g7bSW61_zQEAAAAC/anime-hug.gif",
                     "https://media1.tenor.com/m/YuwEoQvncPgAAAAC/hug.gif",
-                    "https://media1.tenor.com/m/lrLGwMxjIMMAAAAC/shio-anime.gif"
+                    "https://media1.tenor.com/m/lrLGwMxjIMMAAAAC/shio-anime.gif",
+                    "https://media1.tenor.com/m/qfQaTR-jTzoAAAAd/anime-hug-kunoichi-tsubaki-no-mune-no-uchi.gif"
                 ];
                 const gif = link[Math.floor(Math.random() * link.length)];
         
@@ -437,6 +449,58 @@ module.exports = {
                 const embed = new EmbedBuilder()
                 .setColor("Fuchsia")
                 .setAuthor({ name: `${interaction.member.displayName} spits on ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'tuck-in':
+                const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
+                const ID = user.id;
+                const link = [
+                    "https://media1.tenor.com/m/9VhTkHsT0toAAAAC/lawrence-holo.gif",
+                    "https://media1.tenor.com/m/eV8K1qwgDBcAAAAC/last-order-last.gif",
+                    "https://media1.tenor.com/m/9J_bIAmXEeAAAAAC/anime-sleep.gif",
+                    "https://media1.tenor.com/m/53x8ihyYsrAAAAAd/maid-anime.gif",
+                    "https://media1.tenor.com/m/yvClUNKNi7UAAAAC/sailor-moon-chibiusa.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                if (interaction.member.id === ID) return await interaction.reply({ content: "You cannot use this command on yourself", ephemeral: true });
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} tucks in ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
+                .setImage(gif)
+        
+                await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'throw':
+                const user = interaction.options.getUser('user');
+                const member = await interaction.guild.members.fetch(user.id);
+                const ID = user.id;
+                const link = [
+                    "https://media1.tenor.com/m/VaRDRo2dqSAAAAAC/vnc-vanitas.gif",
+                    "https://media1.tenor.com/m/MSJazsGdIcAAAAAC/out-fly.gif",
+                    "https://media1.tenor.com/m/CpfHvvJBoxwAAAAd/swim-throw.gif",
+                    "https://media1.tenor.com/m/rvsoX8t1XQYAAAAC/away-with-you-bitch-please.gif",
+                    "https://media1.tenor.com/m/BwVhHs5XfDsAAAAC/haikyuu-sh%C5%8Dy%C5%8Dhinata.gif",
+                    "https://media1.tenor.com/m/a7_eqUHaC64AAAAC/anime-yeet.gif",
+                    "https://media1.tenor.com/m/ftK0hpFM3VYAAAAd/anime-re-zero.gif",
+                    "https://media1.tenor.com/m/sIBmF8vS9xgAAAAC/joshiraku-hit.gif",
+                    "https://media1.tenor.com/m/tehNy251B_oAAAAC/toss-throw.gif"
+                ];
+                const gif = link[Math.floor(Math.random() * link.length)];
+        
+                if (interaction.member.id === ID) return await interaction.reply({ content: "You cannot use this command on yourself", ephemeral: true });
+        
+                const embed = new EmbedBuilder()
+                .setColor("Fuchsia")
+                .setAuthor({ name: `${interaction.member.displayName} throws ${member.displayName}!`, iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}` })
                 .setImage(gif)
         
                 await interaction.reply({ embeds: [embed] });
