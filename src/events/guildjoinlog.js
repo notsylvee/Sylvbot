@@ -26,16 +26,13 @@ module.exports = {
         .setFooter({ text: `Server join` })
         .setTimestamp();
 
-        const button = new ButtonBuilder()
-        .setCustomId('invite')
-        .setLabel(`Get Server Invite`)
-        .setStyle(ButtonStyle.Success);
+        const button = new ActionRowBuilder()
+            .addComponents(
+                new ButtonBuilder()
+                .setCustomId('invite')
+                .setLabel('Get server invite')
+                .setStyle(ButtonStyle.Success))
 
-        const row = new ActionRowBuilder()
-        .addComponents(
-            button
-        );
-
-        await sendChannel.send({ embeds: [embed], components: [row] }).catch(err => {});
+        await sendChannel.send({ embeds: [embed], components: [button] }).catch(err => {});
     }
 }
