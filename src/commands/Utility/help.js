@@ -184,6 +184,7 @@ module.exports = {
             .addFields({ name: "aw man", value: "> creeper! aw man" })
             .addFields({ name: "cap", value: "> 🧢" })
             .addFields({ name: "crazy", value: "> crazy? i was crazy once" })
+            .addFields({ name: "cwazy", value: "> cwazy? i was cwazy once" })
             .addFields({ name: "erm", value: "> what the (fish, flip, heck, scallop, sigma, skibidi, tuna, or what)" })
             .addFields({ name: "ligma", value: "> balls" })
             .addFields({ name: "real", value: "> chat, is this real?" })
