@@ -13,11 +13,12 @@ module.exports = {
         const response = msg[Math.floor(Math.random() * msg.length)];
 
         if (message.content.toLowerCase().startsWith("good morning") && message.content.toLowerCase().endsWith("good morning")) {
-            message.channel.send(`${response}`)
-        } else if (message.content.toLowerCase().startsWith("morning") && message.content.toLowerCase().endsWith("morning")) {
-            message.channel.send(`${response}`)
-        } else if (message.content.toLowerCase().startsWith("gm") && message.content.toLowerCase().endsWith("gm")) {
-            message.channel.send(`${response}`)
-        }
+            message.channel.send(`${response}`)}
+        
+        if (message.content.toLowerCase().startsWith("morning") && message.content.toLowerCase().endsWith("morning")) {
+            message.channel.send(`${response}`)}
+        
+        if (message.content.toLowerCase().startsWith("gm") && message.content.toLowerCase().endsWith("gm")) {
+            message.channel.send(`${response}`)}
     }
 }
