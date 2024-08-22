@@ -28,7 +28,7 @@ module.exports = {
         if (message.content.toLowerCase().startsWith("ligma") && message.content.toLowerCase().endsWith("ligma")) {
             message.channel.send("-# balls")}
 
-        if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("real")) {
+        if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("l")) {
             message.channel.send("-# chat, is this real?")}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
