@@ -7,6 +7,8 @@ module.exports = {
         const ermmsg = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
         const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
 
+        const realpercent = Math.random() * 1000;
+
         if (message.content.toLowerCase().startsWith("cap") && message.content.toLowerCase().endsWith("cap")) {
             message.channel.send("-# 🧢")}
 
@@ -29,7 +31,7 @@ module.exports = {
             message.channel.send("-# balls")}
 
         if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("l")) {
-            message.channel.send("-# chat, is this real?")}
+            if (realpercent < 999) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# ***chat, am i real..?***")}}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
             message.channel.send("-# shit")}
