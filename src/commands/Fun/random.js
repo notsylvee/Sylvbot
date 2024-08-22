@@ -129,6 +129,7 @@ module.exports = {
                     "https://cdn.sylvee.xyz/hsr_hook.webp",
                     "https://cdn.sylvee.xyz/hsr_huohuo.webp",
                     "https://cdn.sylvee.xyz/hsr_jade.webp",
+                    "https://cdn.sylvee.xyz/hsr_jiaoqiu.webp",
                     "https://cdn.sylvee.xyz/hsr_jing_yuan.webp",
                     "https://cdn.sylvee.xyz/hsr_jingliu.webp",
                     "https://cdn.sylvee.xyz/hsr_kafka.webp",
@@ -191,6 +192,7 @@ module.exports = {
                 if (character === "https://cdn.sylvee.xyz/hsr_hook.webp") name = 'Hook'
                 if (character === "https://cdn.sylvee.xyz/hsr_huohuo.webp") name = 'Huohuo'
                 if (character === "https://cdn.sylvee.xyz/hsr_jade.webp") name = 'Jade'
+                if (character === "https://cdn.sylvee.xyz/hsr_jiaoqiu.webp") name = 'Jiaoqiu'
                 if (character === "https://cdn.sylvee.xyz/hsr_jing_yuan.webp") name = 'Jing Yuan'
                 if (character === "https://cdn.sylvee.xyz/hsr_jingliu.webp") name = 'Jingliu'
                 if (character === "https://cdn.sylvee.xyz/hsr_kafka.webp") name = 'Kafka'
