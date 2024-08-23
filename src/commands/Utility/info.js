@@ -159,11 +159,8 @@ module.exports = {
                     var content = `${client.user.username}'s server list:\n\n`;
 
                     var guilds = await client.guilds.fetch()
-                    for (const guild of guilds.values()) {
-                        const owner = await guild.fetchOwner()
-                    };
                     await guilds.forEach(async guild => {
-                        content += `Server: ${guild.name}, ID: ${guild.id}, Owner: ${owner.user.tag}\n`;
+                        content += `Server: ${guild.name}, ID: ${guild.id}\n`;
                     });
 
                     var listBin = await fetch('https://sourceb.in/api/bins', {
@@ -189,4 +186,4 @@ module.exports = {
                 }
         }
     }
-}
+}}
