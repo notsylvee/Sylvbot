@@ -9,6 +9,15 @@ module.exports = {
 
         const realpercent = Math.random() * 1000;
 
+        let lovename = `${message.member.displayName}`
+        if (message.author.id === "1018686464000807003") lovename = "mom"
+        if (message.author.id === "529405805686947843") lovename = "grandma"
+        if (message.author.id === "431220802797568001") lovename = "step parent"
+        if (message.author.id === "743907112165310475") lovename = "step mom"
+
+        let lovemsg = "I love you too"
+        if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också"
+
         if (message.content.toLowerCase().startsWith("cap") && message.content.toLowerCase().endsWith("cap")) {
             message.channel.send("-# 🧢")}
 
@@ -20,6 +29,9 @@ module.exports = {
 
         if (message.content.toLowerCase().includes("cwazy")) {
             message.channel.send("-# cwazy? i was cwazy once")}
+
+        if (message.content.toLowerCase().includes("cway cway")) {
+            message.channel.send("-# cway cway? i was cway cway once")}
 
         if (message.content.toLowerCase().startsWith("aw man") && message.content.toLowerCase().endsWith("aw man")) {
             message.channel.send("-# creeper! aw man")}
@@ -35,5 +47,8 @@ module.exports = {
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
             message.channel.send("-# shit")}
+
+        if (message.content.toLowerCase().startsWith("i love you sylvbot") && message.content.toLowerCase().endsWith("i love you sylvbot")) {
+            message.channel.send(`${lovemsg} ${lovename}!`)}
     }
 }

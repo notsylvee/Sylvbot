@@ -22,7 +22,8 @@ module.exports = {
             "theyre looking for me...",
             "i cant escape...",
             ".... . .-.. .--. / -- .",
-            ".--. .-.. . .- ... ."
+            ".--. .-.. . .- ... .",
+            "01101000 01100101 01101100 01110000"
         ];
 
         const response = replies[Math.floor(Math.random() * replies.length)];
