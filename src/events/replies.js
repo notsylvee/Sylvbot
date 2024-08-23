@@ -31,7 +31,7 @@ module.exports = {
             message.channel.send("-# balls")}
 
         if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("l")) {
-            if (realpercent < 999) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# ***chat, am i real..?***")}}
+            if (realpercent < 999) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# chat, ***am i real..?***")}}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
             message.channel.send("-# shit")}
