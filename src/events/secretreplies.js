@@ -1,10 +1,12 @@
 module.exports = {
     name: 'messageCreate',
-    async execute (message) {
+    async execute (message, client) {
 
         if (message.author.bot || !message.guild) return;
 
         const percent = Math.random() * 10000;
+
+        const logsChannel = await client.channels.fetch('1245963741460430858');
 
         const replies = [
             "help me...",
@@ -25,13 +27,13 @@ module.exports = {
             ".--. .-.. . .- ... .",
             "01101000 01100101 01101100 01110000"
         ];
-
         const response = replies[Math.floor(Math.random() * replies.length)];
 
         if (percent < 9999) {
             return;
         } else {
             message.channel.send(`-# ***${response}***`)
+            logsChannel.send(`\`${response}\` sent in <#${message.channel.id}>`)
         };
     }
 }
