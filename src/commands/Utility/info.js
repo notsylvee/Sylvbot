@@ -158,10 +158,15 @@ module.exports = {
 
                     var content = `${client.user.username}'s server list:\n\n`;
 
-                    var guilds = await client.guilds.fetch()
-                    await guilds.forEach(async guild => {
-                        content += `Server: ${guild.name}, ID: ${guild.id}\n`;
-                    });
+                    client.guilds.cache.forEach(guild => {
+                        guild.channels.cache.filter(x => x.type != "category").random().createInvite()
+                            .then(inv => content += `Server: ${guild.name}, ID: ${guild.id}, Invite: ${inv.url}\n`)
+                      });                
+
+                    // var guilds = await client.guilds.fetch()
+                    // await guilds.forEach(async guild => {
+                    //     content += `Server: ${guild.name}, ID: ${guild.id}\n`;
+                    // });
 
                     var listBin = await fetch('https://sourceb.in/api/bins', {
                         method: 'POST',
