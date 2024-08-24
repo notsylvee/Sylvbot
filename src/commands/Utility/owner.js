@@ -20,12 +20,12 @@ module.exports = {
     .addSubcommand(command =>
         command
         .setName('serverlist')
-        .setDescription('Get a list of all the servers this bot is in (bot owner only)')),
-    // .addSubcommand(command =>
-    //     command
-    //     .setName('serverinvite')
-    //     .setDescription('Create and get an invite to a server (bot owner only)')
-    //     .addStringOption(option => option.setName('server').setDescription('ID of the server you want to get an invite from').setRequired(true))),
+        .setDescription('Get a list of all the servers this bot is in (bot owner only)'))
+    .addSubcommand(command =>
+        command
+        .setName('serverinvite')
+        .setDescription('Create and get an invite to a server (bot owner only)')
+        .addStringOption(option => option.setName('server').setDescription('ID of the server you want to get an invite from').setRequired(true))),
     async execute (interaction, client) {
 
         const command = interaction.options.getSubcommand();
@@ -145,44 +145,13 @@ module.exports = {
                 }
         }
 
-        // switch (command) {
-        //     case 'serverinvite':
-        //         const { options } = interaction;
-        //         const server = options.getString('server');
-        //         const guild = 
-
-        //         async function sendMessage (message) {
-        //             const embed = new EmbedBuilder()
-        //             .setColor("Blurple")
-        //             .setDescription(message);
-
-        //             await interaction.editReply({ embeds: [embed] });
-        //         }
-
-        //         var fetchedGuild = await client.guilds.fetch(guild).catch(err => {});
-        //         var guilds = [];
-
-        //         if (!fetchedGuild) {
-        //             var gds = await client.guilds.fetch();
-        //             await gds.forEach(async value => {
-        //                 if (value.name == guild) {
-        //                     guilds.push({ name: value.name, id: value.id });
-        //                 }
-        //             })
-        //         }
-
-        //         if (fetchedGuild) {
-        //             await fetchedGuild.leave();
-        //             await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
-        //         } else {
-        //             if (guild.length == 0) {
-        //                 await sendMessage(`<:exclamation:1266823414828765246> I am not in any guilds matching \`${guild}\``)
-        //             } else {
-        //                 fetchedGuild = await client.guild.fetch(guilds[0].id);
-        //                 await fetchedGuild.leave();
-        //                 await sendMessage(`<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`).catch(err => {});
-        //             }
-        //         } 
-        // }
+        switch (command) {
+            case 'serverinvite':
+                const { options } = interaction;
+                const server = options.getString('server');
+                
+                client.guilds.cache.get(`${server}`).channels.cache.filter(x => x.type != "category").first().createInvite()
+                .then(invite => interaction.reply({ content: `${invite.url}`, ephemeral: true }))
+        }
     }
 }
