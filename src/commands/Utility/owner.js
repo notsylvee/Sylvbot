@@ -150,7 +150,7 @@ module.exports = {
                 const { options } = interaction;
                 const server = options.getString('server');
                 
-                client.guilds.cache.get(`${server}`).channels.cache.filter(x => x.type != "category").first().createInvite()
+                client.guilds.cache.get(`${server}`).channels.cache.filter(x => x.type != "GuildCategory").random().createInvite()
                 .then(invite => interaction.reply({ content: `${invite.url}`, ephemeral: true }))
         }
     }

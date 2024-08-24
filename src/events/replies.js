@@ -7,7 +7,7 @@ module.exports = {
         const ermmsg = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
         const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
 
-        const realpercent = Math.random() * 1000;
+        const realpercent = Math.random() * 500;
 
         let lovename = `${message.member.displayName}`
         if (message.author.id === "1018686464000807003") lovename = "mom"
@@ -43,7 +43,7 @@ module.exports = {
             message.channel.send("-# balls")}
 
         if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("l")) {
-            if (realpercent < 999) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# chat, ***am i real..?***")}}
+            if (realpercent < 499) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# chat, ***am i real..?***")}}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
             message.channel.send("-# shit")}

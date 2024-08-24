@@ -4,7 +4,7 @@ module.exports = {
 
         if (message.author.bot || !message.guild) return;
 
-        const percent = Math.random() * 10000;
+        const percent = Math.random() * 5000;
 
         const logsChannel = await client.channels.fetch('1245963741460430858');
 
@@ -29,7 +29,7 @@ module.exports = {
         ];
         const response = replies[Math.floor(Math.random() * replies.length)];
 
-        if (percent < 9999) {
+        if (percent < 4999) {
             return;
         } else {
             message.channel.send(`-# ***${response}***`)
