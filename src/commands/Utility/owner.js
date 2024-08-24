@@ -120,7 +120,7 @@ module.exports = {
 
                 var guilds = await client.guilds.fetch()
                 await guilds.forEach(async guild => {
-                    content += `Server: ${guild.name}, ID: ${guild.id}\n`;
+                    content += `Server: ${guild.name}\nID: ${guild.id}\n\n`;
                 });
 
                 var listBin = await fetch('https://sourceb.in/api/bins', {
