@@ -116,7 +116,7 @@ module.exports = {
                     "https://cdn.sylvee.xyz/hsr_bronya.webp",
                     "https://cdn.sylvee.xyz/hsr_clara.webp",
                     "https://cdn.sylvee.xyz/hsr_dan_heng.webp",
-                    "https://cdn.sylvee.xyz/hsr_dan_heng_imbibitor_lunae.webp",
+                    "https://cdn.sylvee.xyz/hsr_dhil.webp",
                     "https://cdn.sylvee.xyz/hsr_dr_ratio.webp",
                     "https://cdn.sylvee.xyz/hsr_firefly.webp",
                     "https://cdn.sylvee.xyz/hsr_fu_xuan.webp",
@@ -179,7 +179,7 @@ module.exports = {
                 if (character === "https://cdn.sylvee.xyz/hsr_bronya.webp") name = 'Bronya'
                 if (character === "https://cdn.sylvee.xyz/hsr_clara.webp") name = 'Clara'
                 if (character === "https://cdn.sylvee.xyz/hsr_dan_heng.webp") name = 'Dan Heng'
-                if (character === "https://cdn.sylvee.xyz/hsr_dan_heng_imbibitor_lunae.webp") name = 'Dan Heng Imbibitor Lunae'
+                if (character === "https://cdn.sylvee.xyz/hsr_dhil.webp") name = 'Dan Heng Imbibitor Lunae'
                 if (character === "https://cdn.sylvee.xyz/hsr_dr_ratio.webp") name = 'Dr. Ratio'
                 if (character === "https://cdn.sylvee.xyz/hsr_firefly.webp") name = 'Firefly'
                 if (character === "https://cdn.sylvee.xyz/hsr_fu_xuan.webp") name = 'Fu Xuan'
