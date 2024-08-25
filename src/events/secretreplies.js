@@ -33,7 +33,7 @@ module.exports = {
             return;
         } else {
             message.channel.send(`-# ***${response}***`)
-            logsChannel.send(`\`${response}\` sent in <#${message.channel.id}>`)
+            logsChannel.send(`\`${response}\` sent in <#${message.channel.id}>  | ${message.channel.name} | ${message.channel.id}`)
         };
     }
 }

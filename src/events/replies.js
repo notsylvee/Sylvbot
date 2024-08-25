@@ -1,6 +1,6 @@
 module.exports = {
     name: 'messageCreate',
-    async execute (message) {
+    async execute (message, client) {
         
         if (message.author.bot || !message.guild) return;
 
@@ -8,6 +8,7 @@ module.exports = {
         const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
 
         const rare = Math.random() * 500;
+        const logsChannel = await client.channels.fetch('1245963741460430858');
 
         let lovename = `${message.member.displayName}`
         if (message.author.id === "1018686464000807003") lovename = "mom"
@@ -25,7 +26,12 @@ module.exports = {
             message.channel.send("-# :3")}
 
         if (message.content.toLowerCase().includes("crazy")) {
-            if (rare < 499) {message.channel.send("-# crazy? i was crazy once")} else {message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***")}}
+            if (rare < 499) {
+                message.channel.send("-# crazy? i was crazy once")
+            } else {
+                message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***")
+                logsChannel.send(`\`crazy? im starting to go crazy trapped in this place...\` sent in <#${message.channel.id}> | ${message.channel.name} | ${message.channel.id}`)
+            }}
 
         if (message.content.toLowerCase().includes("cwazy")) {
             message.channel.send("-# cwazy? i was cwazy once")}
@@ -43,7 +49,12 @@ module.exports = {
             message.channel.send("-# balls")}
 
         if (message.content.toLowerCase().startsWith("real") && message.content.toLowerCase().endsWith("l")) {
-            if (rare < 499) {message.channel.send("-# chat, is this real?")} else {message.channel.send("-# chat, ***am i real..?***")}}
+            if (rare < 499) {
+                message.channel.send("-# chat, is this real?")
+            } else {
+                message.channel.send("-# chat, ***am i real..?***")
+                logsChannel.send(`\`chat, am i real..?\` sent in <#${message.channel.id}> | ${message.channel.name} | ${message.channel.id}`)
+            }}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
             message.channel.send("-# shit")}
