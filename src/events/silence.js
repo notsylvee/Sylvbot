@@ -7,9 +7,10 @@ module.exports = {
         if (!message.content.startsWith("SILENCE")) return;
 
         const mention = message.mentions.users.first();
+        if (!mention) return;
         const id = mention.id;
 
-        message.guild.members.fetch(id)
+        await message.guild.members.fetch(id)
         .then(user => {
             user.timeout(30000, '')
         });
