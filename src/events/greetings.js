@@ -41,7 +41,7 @@ module.exports = {
         if (message.content.toLowerCase().startsWith("whats up") && message.content.toLowerCase().endsWith("whats up")) {
             message.channel.send(`${response}`)}
         
-        if (message.content.toLowerCase().startsWith("yo") && message.content.toLowerCase().endsWith("o")) {
+        if (message.content.toLowerCase().startsWith("yo") && message.content.toLowerCase().endsWith("yo")) {
             message.channel.send(`${response}`)}
         
         if (message.content.toLowerCase().startsWith("hallo") && message.content.toLowerCase().endsWith("o")) {

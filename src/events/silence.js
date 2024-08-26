@@ -12,7 +12,7 @@ module.exports = {
 
         await message.guild.members.fetch(id)
         .then(user => {
-            user.timeout(30000, '')
+            user.timeout(10000, '')
         });
     }
 }
