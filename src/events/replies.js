@@ -1,8 +1,11 @@
+const { EmbedBuilder, Embed } = require("discord.js");
+
 module.exports = {
     name: 'messageCreate',
     async execute (message, client) {
         
         if (message.author.bot || !message.guild) return;
+        if (message.channel.id === `1219415504884731994`) return;
 
         const ermmsg = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
         const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
@@ -19,6 +22,22 @@ module.exports = {
         let lovemsg = "I love you too"
         if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också"
 
+        const crazyembed = new EmbedBuilder()
+        .setDescription(`crazy? ***im starting to go crazy trapped in this place...***`)
+        .addFields(
+            { name: 'Triggered by:', value: `${message.member.displayName}\n${message.member.id}`, inline: true },
+            { name: 'Channel:', value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`, inline: true },
+            { name: 'Server:', value: `${message.guild.name}\n${message.guild.id}`, inline: true },
+        )
+
+        const realembed = new EmbedBuilder()
+        .setDescription(`chat, ***am i real..?***`)
+        .addFields(
+            { name: 'Triggered by:', value: `${message.member.displayName}\n${message.member.id}`, inline: true },
+            { name: 'Channel:', value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`, inline: true },
+            { name: 'Server:', value: `${message.guild.name}\n${message.guild.id}`, inline: true },
+        )
+
         if (message.content.toLowerCase().startsWith("cap") && message.content.toLowerCase().endsWith("cap")) {
             message.channel.send("-# 🧢")}
 
@@ -29,8 +48,8 @@ module.exports = {
             if (rare < 499) {
                 message.channel.send("-# crazy? i was crazy once")
             } else {
-                message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***")
-                logsChannel.send(`\`crazy? im starting to go crazy trapped in this place...\` sent in <#${message.channel.id}> | ${message.channel.name} | ${message.channel.id}`)
+                message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***");
+                logsChannel.send({ embeds: [crazyembed] });
             }}
 
         if (message.content.toLowerCase().includes("cwazy")) {
@@ -52,8 +71,8 @@ module.exports = {
             if (rare < 499) {
                 message.channel.send("-# chat, is this real?")
             } else {
-                message.channel.send("-# chat, ***am i real..?***")
-                logsChannel.send(`\`chat, am i real..?\` sent in <#${message.channel.id}> | ${message.channel.name} | ${message.channel.id}`)
+                message.channel.send("-# chat, ***am i real..?***");
+                logsChannel.send({ embeds: [realembed] });
             }}
             
         if (message.content.toLowerCase().startsWith("type shit") && message.content.toLowerCase().endsWith("type shit")) {
