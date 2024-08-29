@@ -63,7 +63,8 @@ module.exports = {
                     "https://cdn.sylvee.xyz/valorant_gekko.webp",
                     "https://cdn.sylvee.xyz/valorant_deadlock.webp",
                     "https://cdn.sylvee.xyz/valorant_iso.webp",
-                    "https://cdn.sylvee.xyz/valorant_clove.webp"
+                    "https://cdn.sylvee.xyz/valorant_clove.webp",
+                    "https://cdn.sylvee.xyz/valorant_vyse.webp"
                 ];
                 const agent = agents[Math.floor(Math.random() * agents.length)];
         
@@ -92,6 +93,7 @@ module.exports = {
                 if (agent === "https://cdn.sylvee.xyz/valorant_deadlock.webp") name = 'Deadlock'
                 if (agent === "https://cdn.sylvee.xyz/valorant_iso.webp") name = 'Iso'
                 if (agent === "https://cdn.sylvee.xyz/valorant_clove.webp") name = 'Clove'
+                if (agent === "https://cdn.sylvee.xyz/valorant_vyse.webp") name = 'Vyse'
 
                 const embed = new EmbedBuilder()
                 .setColor("Purple")
@@ -270,7 +272,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor("Purple")
-            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is... ${name}!`)
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley villager is... ${name}!`)
             .setImage(character)
 
             await interaction.reply({ embeds: [embed] });
@@ -332,7 +334,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor("Purple")
-            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is... ${name}!`)
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley villager is... ${name}!`)
             .setImage(character)
             
             await interaction.reply({ embeds: [embed] });
@@ -373,7 +375,7 @@ module.exports = {
 
             const embed = new EmbedBuilder()
             .setColor("Purple")
-            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley character is... ${name}!`)
+            .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley villager is... ${name}!`)
             .setImage(character)
 
             await interaction.reply({ embeds: [embed] });
