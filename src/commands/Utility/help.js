@@ -280,7 +280,7 @@ module.exports = {
         switch (command) {
             case 'giveaway':
             
-            const modembed = new EmbedBuilder()
+            const giveawayembed = new EmbedBuilder()
             .setColor("#e5302d")
             .setTitle("Giveaway commands")
             .addFields({ name: "start", value: "Start a giveaway" })
@@ -290,7 +290,7 @@ module.exports = {
             .setFooter({ text: "Giveaway commands || These commands start with /giveaway" })
             .setTimestamp()
 
-            await interaction.reply({ embeds: [modembed] })
+            await interaction.reply({ embeds: [giveawayembed] })
         }
     }
 }
