@@ -1,17 +1,22 @@
 const mongoose = require('mongoose');
 const mongoURL = process.env.mongoURL
+const { ActivityType } = require('discord.js')
 
 module.exports = {
     name: 'ready',
     once: true,
     async execute(client) {
-        console.log('Ready!');
 
-        client.user.setActivity({
-            name: "/help",
-            type: 1,
-            url: `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+        client.user.setPresence({
+            status: 'idle',
+            activities: [{
+            type: ActivityType.Custom,
+            name: 'customstatus',
+            state: '<3'
+            }]
         });
+
+        console.log('Ready!');
 
         if (!mongoURL) return;
         await mongoose.connect(mongoURL || '', {
