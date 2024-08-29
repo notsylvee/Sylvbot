@@ -14,10 +14,9 @@ module.exports = {
         const logsChannel = await client.channels.fetch('1245963741460430858');
 
         let lovename = `${message.member.displayName}`
-        if (message.author.id === "1018686464000807003") lovename = "mom"
+        if (message.author.id === "1018686464000807003") lovename = "mama"
         if (message.author.id === "529405805686947843") lovename = "grandma"
         if (message.author.id === "431220802797568001") lovename = "step parent"
-        if (message.author.id === "743907112165310475") lovename = "step mom"
 
         let lovemsg = "I love you too"
         if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också"
