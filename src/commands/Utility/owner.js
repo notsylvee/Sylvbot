@@ -25,7 +25,12 @@ module.exports = {
         command
         .setName('serverinvite')
         .setDescription('Create and get an invite to a server (bot owner only)')
-        .addStringOption(option => option.setName('server').setDescription('ID of the server you want to get an invite from').setRequired(true))),
+        .addStringOption(option => option.setName('server').setDescription('ID of the server you want to get an invite from').setRequired(true)))
+    .addSubcommand(command =>
+        command
+        .setName('say')
+        .setDescription('Make the bot say anything (bot owner only)')
+        .addStringOption(option => option.setName('message').setDescription('The message you want the bot to say').setRequired(true))),
     async execute (interaction, client) {
 
         const command = interaction.options.getSubcommand();
@@ -152,6 +157,15 @@ module.exports = {
                 
                 client.guilds.cache.get(`${server}`).channels.cache.filter(x => x.type != "GuildCategory").random().createInvite()
                 .then(invite => interaction.reply({ content: `${invite.url}`, ephemeral: true }))
+        }
+
+        switch (command) {
+            case 'say':
+                const { options } = interaction;
+                const message = options.getString('message');
+
+                await interaction.channel.send(message)
+                await interaction.reply({ content: '<:check:1266815137587920937> Message sent', ephemeral: true })
         }
     }
 }
