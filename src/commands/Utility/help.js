@@ -187,8 +187,12 @@ module.exports = {
             .addFields({ name: "cwazy", value: "> cwazy? i was cwazy once" })
             .addFields({ name: "erm", value: "> what the (fish, flip, heck, scallop, sigma, skibidi, tuna, or what)" })
             .addFields({ name: "ligma", value: "> balls" })
+            .addFields({ name: "nya", value: "> nya~!" })
+            .addFields({ name: "rawr", value: "> x3" })
             .addFields({ name: "real", value: "> chat, is this real?" })
             .addFields({ name: "type shit", value: "> shit" })
+            .addFields({ name: "uwu", value: "> uwu" })
+            .addFields({ name: "x3", value: "> x3" })
             .setFooter({ text: "Text replies" })
             .setTimestamp()
 

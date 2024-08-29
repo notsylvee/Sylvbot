@@ -79,5 +79,17 @@ module.exports = {
 
         if (message.content.toLowerCase().includes("i love you sylvbot") || message.content.toLowerCase().includes("sylvbot i love you") || message.content.toLowerCase().includes("<@953885359668871238> i love you")) {
             message.channel.send(`${lovemsg} ${lovename}!`)}
+
+        if (message.content.toLowerCase().includes("uwu")) {
+            message.channel.send("-# uwu")}
+
+        if (message.content.toLowerCase().startsWith("nya") && message.content.toLowerCase().endsWith("nya")) {
+            message.channel.send("-# nya~!")}
+
+        if (message.content.toLowerCase().includes("x3")) {
+            message.channel.send("-# x3")}
+
+        if (message.content.toLowerCase().startsWith("rawr") && message.content.toLowerCase().endsWith("rawr")) {
+            message.channel.send("-# x3")}
     }
 }
