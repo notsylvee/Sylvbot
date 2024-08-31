@@ -145,7 +145,8 @@ module.exports = {
     if (
       message.content.toLowerCase().includes("i love you sylvbot") ||
       message.content.toLowerCase().includes("sylvbot i love you") ||
-      message.content.toLowerCase().includes("<@953885359668871238> i love you")
+      message.content.toLowerCase().includes("<@953885359668871238> i love you") ||
+      message.content.toLowerCase().includes("i love you <@953885359668871238>")
     ) {
       message.channel.send(`${lovemsg} ${lovename}!`);
     }
