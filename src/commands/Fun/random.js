@@ -590,7 +590,6 @@ module.exports = {
             const arcanist = arcanists[Math.floor(Math.random() * arcanists.length)];
 
             let name = '';
-            if (arcanist === "") name = ''
             if (arcanist === "https://cdn.sylvee.xyz/r1999_37.webp") name = '37'
             if (arcanist === "https://cdn.sylvee.xyz/r1999_6.webp") name = '6'
             if (arcanist === "https://cdn.sylvee.xyz/r1999_A_Knight.webp") name = 'A Knight'
@@ -681,7 +680,7 @@ module.exports = {
             const embed = new EmbedBuilder()
             .setColor("Purple")
             .setDescription(`<:r1999:1279264343007170581> ${interaction.member.displayName}, your random Reverse: 1999 arcanist is... ${name}!`)
-            .setImage(arcanists)
+            .setImage(arcanist)
 
             await interaction.reply({ embeds: [embed] });
         }
