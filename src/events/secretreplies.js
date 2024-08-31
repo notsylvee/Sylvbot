@@ -30,25 +30,23 @@ module.exports = {
     ];
     const response = replies[Math.floor(Math.random() * replies.length)];
 
-    const embed = new EmbedBuilder()
-      .setDescription(`${response}`)
-      .addFields(
-        {
-          name: "Triggered by:",
-          value: `${message.member.displayName}\n${message.member.id}`,
-          inline: true,
-        },
-        {
-          name: "Channel:",
-          value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`,
-          inline: true,
-        },
-        {
-          name: "Server:",
-          value: `${message.guild.name}\n${message.guild.id}`,
-          inline: true,
-        },
-      );
+    const embed = new EmbedBuilder().setDescription(`${response}`).addFields(
+      {
+        name: "Triggered by:",
+        value: `${message.member.displayName}\n${message.member.id}`,
+        inline: true,
+      },
+      {
+        name: "Channel:",
+        value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`,
+        inline: true,
+      },
+      {
+        name: "Server:",
+        value: `${message.guild.name}\n${message.guild.id}`,
+        inline: true,
+      },
+    );
 
     if (percent < 4999) {
       return;
