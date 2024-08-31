@@ -1,33 +1,34 @@
-const mongoose = require('mongoose');
-const mongoURL = process.env.mongoURL
-const { ActivityType } = require('discord.js')
+const mongoose = require("mongoose");
+const mongoURL = process.env.mongoURL;
+const { ActivityType } = require("discord.js");
 
 module.exports = {
-    name: 'ready',
-    once: true,
-    async execute(client) {
+  name: "ready",
+  once: true,
+  async execute(client) {
+    client.user.setPresence({
+      status: "idle",
+      activities: [
+        {
+          type: ActivityType.Custom,
+          name: "customstatus",
+          state: "<3",
+        },
+      ],
+    });
 
-        client.user.setPresence({
-            status: 'idle',
-            activities: [{
-            type: ActivityType.Custom,
-            name: 'customstatus',
-            state: '<3'
-            }]
-        });
+    console.log("Ready!");
 
-        console.log('Ready!');
+    if (!mongoURL) return;
+    await mongoose.connect(mongoURL || "", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
-        if (!mongoURL) return;
-        await mongoose.connect(mongoURL || '', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-
-        if (mongoose.connect) {
-            console.log('Connected to MongoDB')
-        } else {
-            console.log('Failed to connect to MongoDB')
-        }
-    },
+    if (mongoose.connect) {
+      console.log("Connected to MongoDB");
+    } else {
+      console.log("Failed to connect to MongoDB");
+    }
+  },
 };
