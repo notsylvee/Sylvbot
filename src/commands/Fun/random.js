@@ -42,7 +42,7 @@ module.exports = {
         const command = interaction.options.getSubcommand();
 
         switch (command) {
-            case 'valorant':
+            case 'valorant': {
                 const agents = [
                     "https://cdn.sylvee.xyz/valorant_brimstone.webp",
                     "https://cdn.sylvee.xyz/valorant_phoenix.webp",
@@ -105,10 +105,9 @@ module.exports = {
                 .setImage(agent)
         
                 await interaction.reply({ embeds: [embed] });
+                break;
         }
-
-        switch (command) {
-            case 'hsr':
+            case 'hsr': {
                 const characters = [
                     "https://cdn.sylvee.xyz/hsr_acheron.webp",
                     "https://cdn.sylvee.xyz/hsr_argenti.webp",
@@ -239,10 +238,9 @@ module.exports = {
                 .setImage(character)
         
                 await interaction.reply({ embeds: [embed] });
+                break;
         }
-
-        switch (command) {
-            case 'sv-marriageable':
+            case 'sv-marriageable': {
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
@@ -280,10 +278,10 @@ module.exports = {
             .setImage(character)
 
             await interaction.reply({ embeds: [embed] });
+            break;
         }
 
-        switch (command) {
-            case 'sv-nonmarriageable':
+            case 'sv-nonmarriageable': {
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
@@ -335,17 +333,16 @@ module.exports = {
             if (character === "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png") name = 'Willy'
             if (character === "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png") name = 'Wizard'
 
-
             const embed = new EmbedBuilder()
             .setColor("Purple")
             .setDescription(`<:sv:1266866016500191322> ${interaction.member.displayName}, your random Stardew Valley villager is... ${name}!`)
             .setImage(character)
             
             await interaction.reply({ embeds: [embed] });
+            break;
         }
 
-        switch (command) {
-            case 'sv-nongiftable':
+            case 'sv-nongiftable': {
 
             const characters = [
                 "https://stardewvalleywiki.com/mediawiki/images/4/46/Birdie.png",
@@ -383,10 +380,10 @@ module.exports = {
             .setImage(character)
 
             await interaction.reply({ embeds: [embed] });
+            break;
         }
 
-        switch (command) {
-            case 'wuwa':
+            case 'wuwa': {
 
             const resonators = [
                 "https://cdn.sylvee.xyz/wuwa_aalto.webp",
@@ -441,10 +438,10 @@ module.exports = {
             .setImage(resonator)
 
             await interaction.reply({ embeds: [embed] });
+            break;
         }
 
-        switch (command) {
-            case 'zzz':
+            case 'zzz': {
 
             const agents = [
                 "https://cdn.sylvee.xyz/zzz_rina.webp",
@@ -494,10 +491,10 @@ module.exports = {
             .setImage(agent)
 
             await interaction.reply({ embeds: [embed] });
+            break;
         }
 
-        switch (command) {
-            case 'r1999':
+            case 'r1999': {
 
             const arcanists = [
                 "https://cdn.sylvee.xyz/r1999_37.webp",
@@ -683,6 +680,8 @@ module.exports = {
             .setImage(arcanist)
 
             await interaction.reply({ embeds: [embed] });
+            break;
+        }
         }
     }
 }
