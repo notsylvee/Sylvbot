@@ -61,12 +61,7 @@ module.exports = {
                     new ButtonBuilder()
                     .setLabel('Invite')
                     .setStyle(ButtonStyle.Link)
-                    .setURL('https://discord.com/oauth2/authorize?client_id=953885359668871238'),
-
-                    new ButtonBuilder()
-                    .setLabel('User Install')
-                    .setStyle(ButtonStyle.Link)
-                    .setURL('https://discord.com/oauth2/authorize?client_id=1278632100819370038')
+                    .setURL('https://discord.com/oauth2/authorize?client_id=953885359668871238')
                 )
 
                 await interaction.reply({ embeds: [embed], components: [row] });

@@ -31,7 +31,11 @@ module.exports = {
     .addSubcommand(command => 
         command
         .setName('zzz')
-        .setDescription('Get a randomly chosen Zenless Zone Zero agent')),
+        .setDescription('Get a randomly chosen Zenless Zone Zero agent'))
+    .addSubcommand(command => 
+        command
+        .setName('r1999')
+        .setDescription('Get a randomly chosen Reverse: 1999 arcanist')),
 
     async execute (interaction) {
 
@@ -488,6 +492,196 @@ module.exports = {
             .setColor("Purple")
             .setDescription(`<:zzz:1271601970624331827> ${interaction.member.displayName}, your random Zenless Zone Zero agent is... ${name}!`)
             .setImage(agent)
+
+            await interaction.reply({ embeds: [embed] });
+        }
+
+        switch (command) {
+            case 'r1999':
+
+            const arcanists = [
+                "https://cdn.sylvee.xyz/r1999_37.webp",
+                "https://cdn.sylvee.xyz/r1999_6.webp",
+                "https://cdn.sylvee.xyz/r1999_A_Knight.webp",
+                "https://cdn.sylvee.xyz/r1999_APPLe.webp",
+                "https://cdn.sylvee.xyz/r1999_AliEn_T.webp",
+                "https://cdn.sylvee.xyz/r1999_An_an_Lee.webp",
+                "https://cdn.sylvee.xyz/r1999_Argus.webp",
+                "https://cdn.sylvee.xyz/r1999_Avgust.webp",
+                "https://cdn.sylvee.xyz/r1999_Baby_Blue.webp",
+                "https://cdn.sylvee.xyz/r1999_Balloon_Party.webp",
+                "https://cdn.sylvee.xyz/r1999_Barbara.webp",
+                "https://cdn.sylvee.xyz/r1999_Bette.webp",
+                "https://cdn.sylvee.xyz/r1999_Bkornblume.webp",
+                "https://cdn.sylvee.xyz/r1999_Blonney.webp",
+                "https://cdn.sylvee.xyz/r1999_Bunny_Bunny.webp",
+                "https://cdn.sylvee.xyz/r1999_Centurion.webp",
+                "https://cdn.sylvee.xyz/r1999_Charlie.webp",
+                "https://cdn.sylvee.xyz/r1999_Click.webp",
+                "https://cdn.sylvee.xyz/r1999_Cristallo.webp",
+                "https://cdn.sylvee.xyz/r1999_Darley_Clatter.webp",
+                "https://cdn.sylvee.xyz/r1999_Desert_Flannel.webp",
+                "https://cdn.sylvee.xyz/r1999_Diggers.webp",
+                "https://cdn.sylvee.xyz/r1999_Dikke.webp",
+                "https://cdn.sylvee.xyz/r1999_Door.webp",
+                "https://cdn.sylvee.xyz/r1999_Druvis_III.webp",
+                "https://cdn.sylvee.xyz/r1999_Eagle.webp",
+                "https://cdn.sylvee.xyz/r1999_Erick.webp",
+                "https://cdn.sylvee.xyz/r1999_Eternity.webp",
+                "https://cdn.sylvee.xyz/r1999_Ezra.webp",
+                "https://cdn.sylvee.xyz/r1999_Getian.webp",
+                "https://cdn.sylvee.xyz/r1999_Horropedia.webp",
+                "https://cdn.sylvee.xyz/r1999_Isolde.webp",
+                "https://cdn.sylvee.xyz/r1999_Jessica.webp",
+                "https://cdn.sylvee.xyz/r1999_Jiu_Niangzi.webp",
+                "https://cdn.sylvee.xyz/r1999_Joe.webp",
+                "https://cdn.sylvee.xyz/r1999_John_Titor.webp",
+                "https://cdn.sylvee.xyz/r1999_Kaalaa_Baunaa.webp",
+                "https://cdn.sylvee.xyz/r1999_Kakania.webp",
+                "https://cdn.sylvee.xyz/r1999_Kanjira.webp",
+                "https://cdn.sylvee.xyz/r1999_La_source.webp",
+                "https://cdn.sylvee.xyz/r1999_Leilani.webp",
+                "https://cdn.sylvee.xyz/r1999_Lilya.webp",
+                "https://cdn.sylvee.xyz/r1999_Lorelei.webp",
+                "https://cdn.sylvee.xyz/r1999_Lucy.webp",
+                "https://cdn.sylvee.xyz/r1999_Marcus.webp",
+                "https://cdn.sylvee.xyz/r1999_Matilda.webp",
+                "https://cdn.sylvee.xyz/r1999_Medicine_Pocket.webp",
+                "https://cdn.sylvee.xyz/r1999_Melania.webp",
+                "https://cdn.sylvee.xyz/r1999_Mercuria.webp",
+                "https://cdn.sylvee.xyz/r1999_Mesmer_Jr..webp",
+                "https://cdn.sylvee.xyz/r1999_Mondlicht.webp",
+                "https://cdn.sylvee.xyz/r1999_Ms._Moissan.webp",
+                "https://cdn.sylvee.xyz/r1999_Ms._NewBabel.webp",
+                "https://cdn.sylvee.xyz/r1999_Ms._Radio.webp",
+                "https://cdn.sylvee.xyz/r1999_Necrologist.webp",
+                "https://cdn.sylvee.xyz/r1999_Nick_Bottom.webp",
+                "https://cdn.sylvee.xyz/r1999_ONiON.webp",
+                "https://cdn.sylvee.xyz/r1999_Oliver_Fog.webp",
+                "https://cdn.sylvee.xyz/r1999_Pavia.webp",
+                "https://cdn.sylvee.xyz/r1999_Pickles.webp",
+                "https://cdn.sylvee.xyz/r1999_Pioneer.webp",
+                "https://cdn.sylvee.xyz/r1999_Poltergeist.webp",
+                "https://cdn.sylvee.xyz/r1999_Rabies.webp",
+                "https://cdn.sylvee.xyz/r1999_Regulus.webp",
+                "https://cdn.sylvee.xyz/r1999_Satsuki.webp",
+                "https://cdn.sylvee.xyz/r1999_Schneider.webp",
+                "https://cdn.sylvee.xyz/r1999_Semmelweis.webp",
+                "https://cdn.sylvee.xyz/r1999_Shamane.webp",
+                "https://cdn.sylvee.xyz/r1999_Sonetto.webp",
+                "https://cdn.sylvee.xyz/r1999_Sotheby.webp",
+                "https://cdn.sylvee.xyz/r1999_Spathodea.webp",
+                "https://cdn.sylvee.xyz/r1999_Sputnik.webp",
+                "https://cdn.sylvee.xyz/r1999_Sweetheart.webp",
+                "https://cdn.sylvee.xyz/r1999_TTT.webp",
+                "https://cdn.sylvee.xyz/r1999_Tennant.webp",
+                "https://cdn.sylvee.xyz/r1999_The_Fool.webp",
+                "https://cdn.sylvee.xyz/r1999_Tooth_Fairy.webp",
+                "https://cdn.sylvee.xyz/r1999_Tuesday.webp",
+                "https://cdn.sylvee.xyz/r1999_Twins_Sleep.webp",
+                "https://cdn.sylvee.xyz/r1999_Ulu.webp",
+                "https://cdn.sylvee.xyz/r1999_Vila.webp",
+                "https://cdn.sylvee.xyz/r1999_Voyager.webp",
+                "https://cdn.sylvee.xyz/r1999_Windsong.webp",
+                "https://cdn.sylvee.xyz/r1999_X.webp",
+                "https://cdn.sylvee.xyz/r1999_Yenisei.webp",
+                "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp"
+            ];
+            const arcanist = arcanists[Math.floor(Math.random() * arcanists.length)];
+
+            let name = '';
+            if (arcanist === "") name = ''
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_37.webp") name = '37'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_6.webp") name = '6'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_A_Knight.webp") name = 'A Knight'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_APPLe.webp") name = 'APPLe'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_AliEn_T.webp") name = 'ALiEn T'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_An_an_Lee.webp") name = 'An-an Lee'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Argus.webp") name = 'Argus'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Avgust.webp") name = 'Avgust'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Baby_Blue.webp") name = 'Baby Blue'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Balloon_Party.webp") name = 'Balloon Party'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Barbara.webp") name = 'Barbara'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Bette.webp") name = 'Bette'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Bkornblume.webp") name = 'Bkornblume'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Blonney.webp") name = 'Blonney'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Bunny_Bunny.webp") name = 'Bunny Bunny'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Centurion.webp") name = 'Centurion'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Charlie.webp") name = 'Charlie'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Click.webp") name = 'Click'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Cristallo.webp") name = 'Cristallo'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Darley_Clatter.webp") name = 'Darley Clatter'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Desert_Flannel.webp") name = 'Dessert Flannel'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Diggers.webp") name = 'Diggers'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Dikke.webp") name = 'Dikke'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Door.webp") name = 'Door'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Druvis_III.webp") name = 'Druvis III'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Eagle.webp") name = 'Eagle'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Erick.webp") name = 'Erick'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Eternity.webp") name = 'Eternity'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Ezra.webp") name = 'Ezra'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Getian.webp") name = 'Getian'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Horropedia.webp") name = 'Horropedia'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Isolde.webp") name = 'Isolde'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Jessica.webp") name = 'Jessica'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Jiu_Niangzi.webp") name = 'Jiu Niangzi'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Joe.webp") name = 'Joe'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_John_Titor.webp") name = 'John Titor'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Kaalaa_Baunaa.webp") name = 'Kaalaa Baunaa'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Kakania.webp") name = 'Kakania'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Kanjira.webp") name = 'Kanjira'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_La_source.webp") name = 'La Source'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Leilani.webp") name = 'Leilani'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Lilya.webp") name = 'Lilya'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Lorelei.webp") name = 'Lorelei'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Lucy.webp") name = 'Lucy'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Marcus.webp") name = 'Marcus'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Matilda.webp") name = 'Matilda'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Medicine_Pocket.webp") name = 'Medicine Pocket'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Melania.webp") name = 'Melania'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Mercuria.webp") name = 'Mercuria'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Mesmer_Jr..webp") name = 'Mesmer Jr.'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Mondlicht.webp") name = 'Mondlicht'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Ms._Moissan.webp") name = 'Ms. Moissan'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Ms._NewBabel.webp") name = 'Ms. NewBabel'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Ms._Radio.webp") name = 'Ms. Radio'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Necrologist.webp") name = 'Necrologist'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Nick_Bottom.webp") name = 'Nick Bottom'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_ONiON.webp") name = 'ONiON'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Oliver_Fog.webp") name = 'Oliver Fog'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Pavia.webp") name = 'Pavia'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Pickles.webp") name = 'Pickles'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Pioneer.webp") name = 'Pioneer'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Poltergeist.webp") name = 'Poltergeist'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Rabies.webp") name = 'Rabies'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Regulus.webp") name = 'Regulus'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Satsuki.webp") name = 'Satsuki'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Schneider.webp") name = 'Schneider'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Semmelweis.webp") name = 'Semmelweis'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Shamane.webp") name = 'Shamane'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Sonetto.webp") name = 'Sonetto'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Sotheby.webp") name = 'Sotheby'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Spathodea.webp") name = 'Spathodea'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Sputnik.webp") name = 'Sputnik'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Sweetheart.webp") name = 'Sweetheart'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_TTT.webp") name = 'TTT'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Tennant.webp") name = 'Tennant'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_The_Fool.webp") name = 'The Fool'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Tooth_Fairy.webp") name = 'Tooth Fairy'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Tuesday.webp") name = 'Tuesday'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Twins_Sleep.webp") name = 'Twins Sleep'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Ulu.webp") name = 'UlU'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Vila.webp") name = 'Vila'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Voyager.webp") name = 'Voyager'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Windsong.webp") name = 'Windsong'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_X.webp") name = 'X'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_Yenisei.webp") name = 'Yenisei'
+            if (arcanist === "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp") name = 'Зима'
+            
+            const embed = new EmbedBuilder()
+            .setColor("Purple")
+            .setDescription(`<:r1999:1279264343007170581> ${interaction.member.displayName}, your random Reverse: 1999 arcanist is... ${name}!`)
+            .setImage(arcanists)
 
             await interaction.reply({ embeds: [embed] });
         }
