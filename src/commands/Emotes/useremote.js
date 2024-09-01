@@ -317,7 +317,7 @@ module.exports = {
         const embed = new EmbedBuilder()
           .setColor("Fuchsia")
           .setAuthor({
-            name: `${interaction.member.displayName} hugs ${member.displayName}! 🫂`,
+            name: `${interaction.member.displayName} hugs ${member.displayName}!`,
             iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}`,
           })
           .setImage(gif);
