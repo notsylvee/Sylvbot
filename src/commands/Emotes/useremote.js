@@ -175,7 +175,37 @@ module.exports = {
   async execute(interaction, client) {
     const command = interaction.options.getSubcommand();
 
-    switch (command) {
+    const user = interaction.options.getUser("user");
+    const member = await interaction.guild.members.fetch(user.id);
+    const ID = user.id;
+
+    if (interaction.member.id === ID)
+      return await interaction.reply({
+        content: "You cannot use this command on yourself",
+        ephemeral: true,
+      });
+
+    const emoteJsonData = await fs.readFile("data/characters.json", {
+      encoding: "utf8",
+    });
+    
+    const emotesMap = JSON.parse(emoteJsonData);
+    const emotes = emotesMap[command];
+    const emote = emotes.url[Math.floor(Math.random() * emotes.url.length)];
+
+    const embed = new EmbedBuilder()
+      .setColor("Fuchsia")
+      .setAuthor({
+        name: `${interaction.member.displayName} ${emotes.text} ${member.displayName}!`,
+        iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}`,
+      })
+      .setImage(emote);
+
+    await interaction.reply({ embeds: [embed] });
+  },
+};
+
+/*switch (command) {
       case "bite":
         const user = interaction.options.getUser("user");
         const member = await interaction.guild.members.fetch(user.id);
@@ -701,3 +731,4 @@ module.exports = {
     }
   },
 };
+*/

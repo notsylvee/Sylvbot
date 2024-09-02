@@ -33,18 +33,17 @@ module.exports = {
     const embed = new EmbedBuilder().setDescription(`${response}`).addFields(
       {
         name: "Triggered by:",
-        value: `${message.member.displayName}\n${message.member.id}`,
+        value: `Username: ${message.member.displayName}\nID: ${message.member.id}`,
         inline: true,
       },
       {
         name: "Channel:",
-        value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`,
+        value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}`,
         inline: true,
       },
       {
         name: "Server:",
-        value: `${message.guild.name}\n${message.guild.id}`,
-        inline: true,
+        value: `Name: ${message.guild.name}\nID: ${message.guild.id}`,
       },
     );
 

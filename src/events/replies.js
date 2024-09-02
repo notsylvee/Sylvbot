@@ -37,18 +37,17 @@ module.exports = {
       .addFields(
         {
           name: "Triggered by:",
-          value: `${message.member.displayName}\n${message.member.id}`,
+          value: `Username: ${message.member.displayName}\nID: ${message.member.id}`,
           inline: true,
         },
         {
           name: "Channel:",
-          value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`,
+          value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}`,
           inline: true,
         },
         {
           name: "Server:",
-          value: `${message.guild.name}\n${message.guild.id}`,
-          inline: true,
+          value: `Name: ${message.guild.name}\nID: ${message.guild.id}`,
         },
       );
 
@@ -57,18 +56,17 @@ module.exports = {
       .addFields(
         {
           name: "Triggered by:",
-          value: `${message.member.displayName}\n${message.member.id}`,
+          value: `Username: ${message.member.displayName}\nID: ${message.member.id}`,
           inline: true,
         },
         {
           name: "Channel:",
-          value: `<#${message.channel.id}>\n${message.channel.name}\n${message.channel.id}`,
+          value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}`,
           inline: true,
         },
         {
           name: "Server:",
-          value: `${message.guild.name}\n${message.guild.id}`,
-          inline: true,
+          value: `Name: ${message.guild.name}\nID: ${message.guild.id}`,
         },
       );
 
@@ -145,7 +143,9 @@ module.exports = {
     if (
       message.content.toLowerCase().includes("i love you sylvbot") ||
       message.content.toLowerCase().includes("sylvbot i love you") ||
-      message.content.toLowerCase().includes("<@953885359668871238> i love you") ||
+      message.content
+        .toLowerCase()
+        .includes("<@953885359668871238> i love you") ||
       message.content.toLowerCase().includes("i love you <@953885359668871238>")
     ) {
       message.channel.send(`${lovemsg} ${lovename}!`);

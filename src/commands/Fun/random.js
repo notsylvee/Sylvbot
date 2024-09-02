@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
-const fs = require('fs/promises');
+const fs = require("fs/promises");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -55,20 +55,28 @@ module.exports = {
   async execute(interaction) {
     const command = interaction.options.getSubcommand();
 
-    const charactersJsonData = await fs.readFile("data/characters.json", { encoding: "utf8" });
-    const gamesJsonData = await fs.readFile("data/games.json", { encoding: "utf8" });
+    const charactersJsonData = await fs.readFile("data/characters.json", {
+      encoding: "utf8",
+    });
+
+    const gamesJsonData = await fs.readFile("data/games.json", {
+      encoding: "utf8",
+    });
+
     const charactersMap = JSON.parse(charactersJsonData);
     const gamesMap = JSON.parse(gamesJsonData);
 
-    const game = gamesMap[command];
     const characters = charactersMap[command];
     const character = characters[Math.floor(Math.random() * characters.length)];
+    const game = gamesMap[command];
 
     const embed = new EmbedBuilder()
-          .setColor("Purple")
-          .setDescription(`${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.character_word} is... ${character.name}!`,)
-          .setImage(character.url);
+      .setColor("Purple")
+      .setDescription(
+        `${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.word} is... ${character.name}!`,
+      )
+      .setImage(character.url);
 
     await interaction.reply({ embeds: [embed] });
-  }
-}
+  },
+};

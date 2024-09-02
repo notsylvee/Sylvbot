@@ -18,7 +18,7 @@ module.exports = {
     });
 
     const updates = await client.channels.fetch("1265926416168517693");
-    updates.send('Update live!');
+    updates.send("Update live!");
 
     console.log("Ready!");
 

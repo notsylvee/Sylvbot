@@ -82,7 +82,27 @@ module.exports = {
   async execute(interaction, client) {
     const command = interaction.options.getSubcommand();
 
-    switch (command) {
+    const emoteJsonData = await fs.readFile("data/characters.json", {
+      encoding: "utf8",
+    });
+    
+    const emotesMap = JSON.parse(emoteJsonData);
+    const emotes = emotesMap[command];
+    const emote = emotes.url[Math.floor(Math.random() * emotes.url.length)];
+
+    const embed = new EmbedBuilder()
+      .setColor("Fuchsia")
+      .setAuthor({
+        name: `${interaction.member.displayName} ${emotes.text}`,
+        iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}`,
+      })
+      .setImage(emote);
+
+    await interaction.reply({ embeds: [embed] });
+  },
+};
+
+/*switch (command) {
       case "cry":
         const link = [
           "https://media1.tenor.com/m/vEcyUvOTLI4AAAAC/adeus-volte-sempre.gif",
@@ -763,3 +783,4 @@ module.exports = {
     }
   },
 };
+*/

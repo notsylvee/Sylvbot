@@ -1,42 +1,42 @@
 {
-    "valorant": {
-        "emoji": "<:valorant:1266815187445485725>",
-        "name": "Valorant",
-        "character_word": "agent"
-    },
-    "hsr": {
-        "emoji": "<:hsr:1266840602730037340>",
-        "name": "Honkai: Star Rail",
-        "character_word": "character"
-    },
-    "sv-marriageable": {
-        "emoji": "<:sv:1266866016500191322>",
-        "name": "Stardey Valley",
-        "character_word": "villager"
-    },
-    "sv-nonmarriageable": {
-        "emoji": "<:sv:1266866016500191322>",
-        "name": "Stardey Valley",
-        "character_word": "villager"
-    },
-    "sv-nongiftable": {
-        "emoji": "<:sv:1266866016500191322>",
-        "name": "Stardey Valley",
-        "character_word": "villager"
-    },
-    "wuwa": {
-        "emoji": "<:wuwa:1271601771961126914>",
-        "name": "Wuthering Waves",
-        "character_word": "resonator"
-    },    
-    "zzz": {
-        "emoji": "<:zzz:1271601970624331827>",
-        "name": "Zenless Zone Zero",
-        "character_word": "agent"
-    },
-    "r1999": {
-        "emoji": "<:r1999:1279264343007170581>",
-        "name": "Reverse: 1999",
-        "character_word": "arcanist"
-    }
+  "valorant": {
+    "emoji": "<:valorant:1266815187445485725>",
+    "name": "Valorant",
+    "word": "agent"
+  },
+  "hsr": {
+    "emoji": "<:hsr:1266840602730037340>",
+    "name": "Honkai: Star Rail",
+    "word": "character"
+  },
+  "sv-marriageable": {
+    "emoji": "<:sv:1266866016500191322>",
+    "name": "Stardey Valley",
+    "word": "villager"
+  },
+  "sv-nonmarriageable": {
+    "emoji": "<:sv:1266866016500191322>",
+    "name": "Stardey Valley",
+    "word": "villager"
+  },
+  "sv-nongiftable": {
+    "emoji": "<:sv:1266866016500191322>",
+    "name": "Stardey Valley",
+    "word": "villager"
+  },
+  "wuwa": {
+    "emoji": "<:wuwa:1271601771961126914>",
+    "name": "Wuthering Waves",
+    "word": "resonator"
+  },
+  "zzz": {
+    "emoji": "<:zzz:1271601970624331827>",
+    "name": "Zenless Zone Zero",
+    "word": "agent"
+  },
+  "r1999": {
+    "emoji": "<:r1999:1279264343007170581>",
+    "name": "Reverse: 1999",
+    "word": "arcanist"
+  }
 }
