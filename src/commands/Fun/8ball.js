@@ -36,7 +36,7 @@ module.exports = {
     const answer = answers[Math.floor(Math.random() * answers.length)];
 
     const embed = new EmbedBuilder()
-      .setColor("Purple")
+      .setColor("f3b3a2")
       .setAuthor({
         name: `${interaction.member.displayName} used the 8ball 🎱`,
         iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}`,

@@ -75,8 +75,8 @@ const GiveawaysManager = require("./giveaways");
 client.giveawayManager = new GiveawaysManager(client, {
   default: {
     botsCanWin: false,
-    embedColor: "#e5302d",
-    embedColorEnd: "#e5302d",
+    embedColor: "#f3b3a2",
+    embedColorEnd: "#f3b3a2",
     reaction: "🎉",
   },
 });

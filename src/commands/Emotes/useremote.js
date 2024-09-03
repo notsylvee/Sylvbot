@@ -195,7 +195,7 @@ module.exports = {
     const emote = emotes.url[Math.floor(Math.random() * emotes.url.length)];
 
     const embed = new EmbedBuilder()
-      .setColor("Fuchsia")
+      .setColor("f3b3a2")
       .setAuthor({
         name: `${interaction.member.displayName} ${emotes.text} ${member.displayName}!`,
         iconURL: `${interaction.member.displayAvatarURL({ dynamic: true })}`,

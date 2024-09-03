@@ -205,14 +205,14 @@ module.exports = {
         if (!reason) reason = "No reason provided";
 
         const dmEmbed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> You have been banned from ${interaction.guild.name} for "${reason}"`,
           )
           .setTimestamp();
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${users.tag} has been banned for "${reason}"`,
           )
@@ -264,7 +264,7 @@ module.exports = {
         });
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> Deleted ${amount} message(s)`,
           )
@@ -312,14 +312,14 @@ module.exports = {
         if (!reason) reason = "No reason provided";
 
         const dmEmbed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> You have been kicked from ${interaction.guild.name} for "${reason}"`,
           )
           .setTimestamp();
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${kickUser.tag} has been kicked for "${reason}"`,
           )
@@ -356,7 +356,7 @@ module.exports = {
           });
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> Slowmode has been enabled in ${channel} with a cooldown of ${duration} second(s)`,
           )
@@ -439,7 +439,7 @@ module.exports = {
         if (duration === "2332800") time = "1 month";
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${user.tag} has been timed out for ${time} for "${reason}"`,
           )
@@ -472,7 +472,7 @@ module.exports = {
         if (!reason) reason = "No reason provided";
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${userID} has been unbanned for "${reason}"`,
           )
@@ -546,7 +546,7 @@ module.exports = {
         await member.timeout(null, reason);
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${user.tag} has been untimed out for "${reason}"`,
           )
@@ -575,7 +575,7 @@ module.exports = {
         });
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${channel} has been **locked**`,
           )
@@ -604,7 +604,7 @@ module.exports = {
         });
 
         const embed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> ${channel} has been **unlocked**`,
           )

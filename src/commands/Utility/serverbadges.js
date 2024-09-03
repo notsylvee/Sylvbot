@@ -31,7 +31,7 @@ module.exports = {
       }
     }
     const embed = new EmbedBuilder()
-      .setColor("Green")
+      .setColor("f3b3a2")
       .setTitle(`Badges - ${interaction.guild.name}`)
       .setDescription(
         `${staff} ${counts["Staff"] || 0}\n${partner} ${counts["Partner"] || 0}\n${moderator} ${counts["CertifiedModerator"] || 0}\n${hypesquad} ${counts["Hypesquad"] || 0}\n${bravery} ${counts["HypeSquadOnlineHouse1"] || 0}\n${brilliance} ${counts["HypeSquadOnlineHouse2"] || 0}\n${balance} ${counts["HypeSquadOnlineHouse3"] || 0}\n${bughunter1} ${counts["BugHunterLevel1"] || 0}\n${bughunter2} ${counts["BugHunterLevel2"] || 0}\n${activedeveloper} ${counts["ActiveDeveloper"] || 0}\n${verifieddeveloper} ${counts["VerifiedDeveloper"] || 0}\n${earlysupporter} ${counts["PremiumEarlySupporter"] || 0}\n${verifiedbot} ${counts["VerifiedBot"] || 0}\n`,

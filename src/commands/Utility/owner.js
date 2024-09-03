@@ -100,7 +100,7 @@ module.exports = {
         });
 
         const embed = new EmbedBuilder()
-          .setColor("Blurple")
+          .setColor("f3b3a2")
           .setDescription(
             `<:check:1266815137587920937> The bots status has been set to \`${status}\``,
           );
@@ -116,7 +116,7 @@ module.exports = {
 
         async function sendMessage(message) {
           const embed = new EmbedBuilder()
-            .setColor("Blurple")
+            .setColor("f3b3a2")
             .setDescription(message);
 
           await interaction.editReply({ embeds: [embed] });
@@ -164,7 +164,7 @@ module.exports = {
 
         async function sendMessage(message, key) {
           const embed = new EmbedBuilder()
-            .setColor("Blurple")
+            .setColor("f3b3a2")
             .setDescription(message);
 
           if (key) {

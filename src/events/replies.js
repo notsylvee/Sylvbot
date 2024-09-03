@@ -38,12 +38,10 @@ module.exports = {
         {
           name: "Triggered by:",
           value: `Username: ${message.member.displayName}\nID: ${message.member.id}`,
-          inline: true,
         },
         {
           name: "Channel:",
           value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}`,
-          inline: true,
         },
         {
           name: "Server:",
@@ -57,12 +55,10 @@ module.exports = {
         {
           name: "Triggered by:",
           value: `Username: ${message.member.displayName}\nID: ${message.member.id}`,
-          inline: true,
         },
         {
           name: "Channel:",
           value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}`,
-          inline: true,
         },
         {
           name: "Server:",

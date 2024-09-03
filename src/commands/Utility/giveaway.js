@@ -131,7 +131,7 @@ module.exports = {
               enabled: false,
               content: contentmain,
               threshold: 60000000000_000,
-              embedColor: "#e5302d",
+              embedColor: "#f3b3a2",
             },
           });
         else if (!channel)
@@ -144,7 +144,7 @@ module.exports = {
               enabled: true,
               content: contentmain,
               threshold: 60000000000_000,
-              embedColor: "#e5302d",
+              embedColor: "#f3b3a2",
             },
           });
         else if (!contentmain)
@@ -157,7 +157,7 @@ module.exports = {
               enabled: false,
               content: contentmain,
               threshold: 60000000000_000,
-              embedColor: "#e5302d",
+              embedColor: "#f3b3a2",
             },
           });
         else
@@ -170,7 +170,7 @@ module.exports = {
               enabled: true,
               content: contentmain,
               threshold: 60000000000_000,
-              embedColor: "#e5302d",
+              embedColor: "#f3b3a2",
             },
           });
 
@@ -263,7 +263,7 @@ module.exports = {
           .reroll(messageId2)
           .then(() => {
             interaction.editReply({
-              content: `<:check:1266815137587920937> Rerolles giveaway`,
+              content: `<:check:1266815137587920937> Rerolled giveaway`,
             });
           })
           .catch((err) => {

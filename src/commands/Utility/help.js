@@ -45,7 +45,7 @@ module.exports = {
     switch (command) {
       case "moderation":
         const modembed = new EmbedBuilder()
-          .setColor("Blue")
+          .setColor("f3b3a2")
           .setTitle("Moderation commands")
           .addFields({ name: "ban", value: "Ban a user from this server" })
           .addFields({ name: "unban", value: "Unban a user from this server" })
@@ -79,7 +79,7 @@ module.exports = {
     switch (command) {
       case "utility":
         const utilembed = new EmbedBuilder()
-          .setColor("Green")
+          .setColor("f3b3a2")
           .setTitle("Utility commands")
           .addFields({
             name: "/expression (copy, emoji, sticker)",
@@ -106,7 +106,7 @@ module.exports = {
     switch (command) {
       case "fun":
         const funembed = new EmbedBuilder()
-          .setColor("Purple")
+          .setColor("f3b3a2")
           .setTitle("Fun commands")
           .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
           .addFields({ name: "/coinflip", value: "Flip a coin" })
@@ -125,7 +125,7 @@ module.exports = {
     switch (command) {
       case "emote":
         const useremoteembed = new EmbedBuilder()
-          .setColor("Fuchsia")
+          .setColor("f3b3a2")
           .setTitle("User emotes")
           .addFields({ name: "bite", value: "Bite someone!" })
           .addFields({ name: "cuddle", value: "Cuddle someone!" })
@@ -146,7 +146,7 @@ module.exports = {
           .setTimestamp();
 
         const selfemoteembed = new EmbedBuilder()
-          .setColor("Fuchsia")
+          .setColor("f3b3a2")
           .setTitle("Self emotes")
           .addFields({ name: "blush", value: "Sends a blushing gif!" })
           .addFields({ name: "cry", value: "Sends a crying gif" })
@@ -220,7 +220,7 @@ module.exports = {
     switch (command) {
       case "replies":
         const repliesembed = new EmbedBuilder()
-          .setColor("Orange")
+          .setColor("f3b3a2")
           .setTitle("Text replies")
           .addFields({ name: ":3", value: "> :3" })
           .addFields({ name: "aw man", value: "> creeper! aw man" })
@@ -247,7 +247,7 @@ module.exports = {
           .setTimestamp();
 
         const greetingsembed = new EmbedBuilder()
-          .setColor("Orange")
+          .setColor("f3b3a2")
           .addFields({
             name: "Greetings",
             value:
@@ -257,7 +257,7 @@ module.exports = {
           .setTimestamp();
 
         const goodbyesembed = new EmbedBuilder()
-          .setColor("Orange")
+          .setColor("f3b3a2")
           .addFields({
             name: "Goodbyes",
             value:
@@ -267,7 +267,7 @@ module.exports = {
           .setTimestamp();
 
         const morningandnightembed = new EmbedBuilder()
-          .setColor("Orange")
+          .setColor("f3b3a2")
           .addFields({
             name: "Morning",
             value:
@@ -358,7 +358,7 @@ module.exports = {
     switch (command) {
       case "giveaway":
         const giveawayembed = new EmbedBuilder()
-          .setColor("#e5302d")
+          .setColor("f3b3a2")
           .setTitle("Giveaway commands")
           .addFields({ name: "start", value: "Start a giveaway" })
           .addFields({ name: "edit", value: "Edit a giveaway" })

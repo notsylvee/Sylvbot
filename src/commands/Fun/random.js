@@ -71,7 +71,7 @@ module.exports = {
     const game = gamesMap[command];
 
     const embed = new EmbedBuilder()
-      .setColor("Purple")
+      .setColor("f3b3a2")
       .setDescription(
         `${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.word} is... ${character.name}!`,
       )

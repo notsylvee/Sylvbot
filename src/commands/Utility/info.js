@@ -110,7 +110,7 @@ module.exports = {
         if (baseVerification == 4) baseVerification = "Highest";
 
         const embed = new EmbedBuilder()
-          .setColor("Green")
+          .setColor("f3b3a2")
           .setAuthor({ name: name, iconURL: icon })
           .setThumbnail(icon)
           .addFields({ name: "Name", value: `${name}`, inline: false })
@@ -151,7 +151,7 @@ module.exports = {
         const tag = user.tag;
 
         const embed = new EmbedBuilder()
-          .setColor("Green")
+          .setColor("f3b3a2")
           .setAuthor({ name: tag, iconURL: icon })
           .setThumbnail(icon)
           .addFields({ name: "Member", value: `${user}`, inline: false })
