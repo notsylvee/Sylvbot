@@ -43,7 +43,7 @@ module.exports = {
       })
       .addFields({ name: "Question", value: `${question}`, inline: true })
       .addFields({ name: "Answer", value: `${answer}`, inline: true })
-      .setFooter({ text: "8Ball" })
+      .setFooter({ text: "8ball" })
       .setTimestamp();
 
     await interaction.reply({ embeds: [embed] });
