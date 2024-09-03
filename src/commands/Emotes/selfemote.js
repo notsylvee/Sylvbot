@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { EmbedBuilder, Embed } = require("discord.js");
+const fs = require("fs/promises");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -82,7 +83,7 @@ module.exports = {
   async execute(interaction, client) {
     const command = interaction.options.getSubcommand();
 
-    const emoteJsonData = await fs.readFile("data/characters.json", {
+    const emoteJsonData = await fs.readFile("selfemote.json", {
       encoding: "utf8",
     });
     

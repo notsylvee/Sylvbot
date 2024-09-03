@@ -55,11 +55,11 @@ module.exports = {
   async execute(interaction) {
     const command = interaction.options.getSubcommand();
 
-    const charactersJsonData = await fs.readFile("data/characters.json", {
+    const charactersJsonData = await fs.readFile("characters.json", {
       encoding: "utf8",
     });
 
-    const gamesJsonData = await fs.readFile("data/games.json", {
+    const gamesJsonData = await fs.readFile("games.json", {
       encoding: "utf8",
     });
 
