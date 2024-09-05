@@ -47,30 +47,16 @@ module.exports = {
         const modembed = new EmbedBuilder()
           .setColor("f3b3a2")
           .setTitle("Moderation commands")
-          .addFields({ name: "ban", value: "Ban a user from this server" })
-          .addFields({ name: "unban", value: "Unban a user from this server" })
-          .addFields({ name: "kick", value: "Kick a user from this server" })
-          .addFields({
-            name: "timeout",
-            value: "Timeout a user in this server",
-          })
-          .addFields({
-            name: "untimeout",
-            value: "Remove timeout a user in this server",
-          })
-          .addFields({
-            name: "clear",
-            value: "Clear messages from this channel",
-          })
-          .addFields({
-            name: "slowmode",
-            value: "Enable slowmode in a channel",
-          })
+          .addFields({ name: "slowmode", value: "Enable slowmode in a channel" })
           .addFields({ name: "lock", value: "Lock a channel" })
           .addFields({ name: "unlock", value: "Unlock a channel" })
-          .setFooter({
-            text: "Moderation commands || These commands start with /mod",
-          })
+          .addFields({ name: "clear", value: "Clear messages from this channel" })
+          .addFields({ name: "timeout", value: "Timeout a user in this server" })
+          .addFields({ name: "untimeout", value: "Remove timeout a user in this server" })
+          .addFields({ name: "kick", value: "Kick a user from this server" })
+          .addFields({ name: "ban", value: "Ban a user from this server" })
+          .addFields({ name: "unban", value: "Unban a user from this server" })
+          .setFooter({ text: "Moderation commands || These commands start with /mod" })
           .setTimestamp();
 
         await interaction.reply({ embeds: [modembed] });
@@ -110,11 +96,8 @@ module.exports = {
           .setTitle("Fun commands")
           .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
           .addFields({ name: "/coinflip", value: "Flip a coin" })
-          .addFields({
-            name: "/random",
-            value:
-              "Get a random character from a specified game\n> Honkai: Star Rail, Stardew Valley, or Valorant",
-          })
+          .addFields({ name: "/hangman", value: "Play a game of hangman" })
+          .addFields({name: "/random",value: "Get a random character from a specified game\n> Honkai: Star Rail, Stardew Valley, Valorant, Wuthering Waves, or Zenless Zone Zero"})
           .addFields({ name: "/roll", value: "Roll some dice" })
           .setFooter({ text: "Fun commands" })
           .setTimestamp();
@@ -139,10 +122,10 @@ module.exports = {
           .addFields({ name: "poke", value: "Poke someone!" })
           .addFields({ name: "slap", value: "Slap someone!" })
           .addFields({ name: "spit", value: "Spit on someone!" })
+          .addFields({ name: "throw", value: "Throw someone!" })
           .addFields({ name: "tickle", value: "Tickle someone!" })
-          .setFooter({
-            text: "User emotes || These commands start with /useremote",
-          })
+          .addFields({ name: "tuck-in", value: "Tuck someone in!" })
+          .setFooter({ text: "User emotes || These commands start with /useremote" })
           .setTimestamp();
 
         const selfemoteembed = new EmbedBuilder()
@@ -159,6 +142,7 @@ module.exports = {
           .addFields({ name: "happy", value: "Sends a happy gif!" })
           .addFields({ name: "mad", value: "Sends a mad gif!" })
           .addFields({ name: "nod", value: "Sends a nodding gif!" })
+          .addFields({ name: "peace", value: "Sends an peace sign gif!" })
           .addFields({ name: "plead", value: "Sends a pleading gif!" })
           .addFields({ name: "pout", value: "Sends a pouting gif!" })
           .addFields({ name: "sad", value: "Sends a sad gif" })
@@ -171,9 +155,7 @@ module.exports = {
           .addFields({ name: "thumbsup", value: "Sends a thumbs up gif!" })
           .addFields({ name: "tired", value: "Sends a tired gif!" })
           .addFields({ name: "wave", value: "Sends a waving gif!" })
-          .setFooter({
-            text: "Self emotes || These commands start with /selfemote",
-          })
+          .setFooter({ text: "Self emotes || These commands start with /selfemote" })
           .setTimestamp();
 
         const button = new ActionRowBuilder().addComponents(
