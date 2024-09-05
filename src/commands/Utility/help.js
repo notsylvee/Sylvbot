@@ -72,6 +72,14 @@ module.exports = {
             value: "Add an expression to this server",
           })
           .addFields({
+            name: "/calculator",
+            value: "Use a calculator",
+          })
+          .addFields({
+            name: "/enlarge",
+            value: "Enlarge a custom emoji",
+          })
+          .addFields({
             name: "/help (moderation, utility, emote, fun, giveaway, replies)",
             value: "Get a list of all available commands and replies",
           })
