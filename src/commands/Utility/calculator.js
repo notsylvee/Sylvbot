@@ -23,6 +23,10 @@ module.exports = {
             .setCustomId(idPrefix + "_(")
             .setStyle(ButtonStyle.Primary),
             new ButtonBuilder()
+            .setLabel(")")
+            .setCustomId(idPrefix + "_)")
+            .setStyle(ButtonStyle.Primary),
+            new ButtonBuilder()
             .setLabel("<=")
             .setCustomId(idPrefix + "_backspace")
             .setStyle(ButtonStyle.Primary)
