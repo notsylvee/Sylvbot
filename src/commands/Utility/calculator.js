@@ -27,7 +27,7 @@ module.exports = {
             .setCustomId(idPrefix + "_)")
             .setStyle(ButtonStyle.Primary),
             new ButtonBuilder()
-            .setLabel("<=")
+            .setLabel("←")
             .setCustomId(idPrefix + "_backspace")
             .setStyle(ButtonStyle.Primary)
         )
