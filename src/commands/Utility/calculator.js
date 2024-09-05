@@ -109,7 +109,7 @@ module.exports = {
             new ButtonBuilder()
             .setLabel("+")
             .setCustomId(idPrefix + "_+")
-            .setStyle(ButtonStyle.Success)
+            .setStyle(ButtonStyle.Primary)
         )
 
         const msg = await interaction.reply({ embeds: [embed], components: [row, row1, row2, row3, row4] });
