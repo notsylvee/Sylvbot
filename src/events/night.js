@@ -3,19 +3,22 @@ module.exports = {
   async execute(message) {
     if (message.author.bot || !message.guild) return;
 
+    let name = `${message.member.displayName}`;
+    if (message.author.id === "1018686464000807003") lovename = "mama";
+
     const msg = [
-      `Good night ${message.member.displayName}!`,
-      `Night ${message.member.displayName}!`,
-      `Good night ${message.member.displayName}! Dont let the bed bugs bite!`,
-      `Night ${message.member.displayName}! Dont let the bed bugs bite!`,
-      `Night night ${message.member.displayName}!`,
-      `Night night ${message.member.displayName}! Dont let the bed bugs bite!`,
-      `Nini ${message.member.displayName}!`,
-      `Nini ${message.member.displayName}! Dont let the bed bugs bite!`,
-      `Nighty ${message.member.displayName}!`,
-      `Nighty ${message.member.displayName}! Dont let the bed bugs bite!`,
-      `Nighty night ${message.member.displayName}!`,
-      `Nighty night ${message.member.displayName}! Dont let the bed bugs bite!`,
+      `Good night ${name}!`,
+      `Night ${name}!`,
+      `Good night ${name}! Dont let the bed bugs bite!`,
+      `Night ${name}! Dont let the bed bugs bite!`,
+      `Night night ${name}!`,
+      `Night night ${name}! Dont let the bed bugs bite!`,
+      `Nini ${name}!`,
+      `Nini ${name}! Dont let the bed bugs bite!`,
+      `Nighty ${name}!`,
+      `Nighty ${name}! Dont let the bed bugs bite!`,
+      `Nighty night ${name}!`,
+      `Nighty night ${name}! Dont let the bed bugs bite!`,
     ];
     const response = msg[Math.floor(Math.random() * msg.length)];
 

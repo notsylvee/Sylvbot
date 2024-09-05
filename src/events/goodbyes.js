@@ -3,15 +3,18 @@ module.exports = {
   async execute(message) {
     if (message.author.bot || !message.guild) return;
 
+    let name = `${message.member.displayName}`;
+    if (message.author.id === "1018686464000807003") lovename = "mama";
+
     const msg = [
-      `Bye ${message.member.displayName}!`,
-      `Bye bye ${message.member.displayName}!`,
-      `Cya ${message.member.displayName}!`,
-      `See ya ${message.member.displayName}!`,
-      `Cya later ${message.member.displayName}!`,
-      `See ya later ${message.member.displayName}!`,
-      `Goodbye ${message.member.displayName}!`,
-      `Bai ${message.member.displayName}!`,
+      `Bye ${name}!`,
+      `Bye bye ${name}!`,
+      `Cya ${name}!`,
+      `See ya ${name}!`,
+      `Cya later ${name}!`,
+      `See ya later ${name}!`,
+      `Goodbye ${name}!`,
+      `Bai ${name}!`,
     ];
     const response = msg[Math.floor(Math.random() * msg.length)];
 
