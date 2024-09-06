@@ -43,5 +43,10 @@
     "emoji": "<:league:1281278249917354034>",
     "name": "League of Legends",
     "word": "champion"
+  },
+  "minecraft": {
+    "emoji": "<:minecraft:1281447325138550804>",
+    "name": "Minecraft",
+    "word": "mob"
   }
 }

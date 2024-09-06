@@ -50,6 +50,11 @@ module.exports = {
       command
         .setName("r1999")
         .setDescription("Get a randomly chosen Reverse: 1999 arcanist"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("minecraft")
+        .setDescription("Get a randomly chosen Minecraft mob"),
     ),
 
   async execute(interaction) {
