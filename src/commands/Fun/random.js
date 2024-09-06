@@ -78,9 +78,9 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setDescription(
-        `${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.word} is... ${character.name}`,
-      )
-      .setImage(character.url);
+        `${interaction.member.displayName}, your random ${game.name} ${game.word} is... ${character.name}`)
+      .setImage(character.url)
+      .setFooter({ text: `${game.emoji} random ${command}` });
 
     await interaction.reply({ embeds: [embed] });
   },
