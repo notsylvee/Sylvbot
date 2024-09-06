@@ -216,20 +216,15 @@ module.exports = {
           .addFields({ name: "aw man", value: "> creeper! aw man" })
           .addFields({ name: "cap", value: "> 🧢" })
           .addFields({ name: "crazy", value: "> crazy? i was crazy once" })
-          .addFields({
-            name: "cway cway",
-            value: "> cway cway? i was cway cway once",
-          })
+          .addFields({ name: "cway cway", value: "> cway cway? i was cway cway once" })
           .addFields({ name: "cwazy", value: "> cwazy? i was cwazy once" })
-          .addFields({
-            name: "erm",
-            value:
-              "> what the (fish, flip, heck, scallop, sigma, skibidi, tuna, or what)",
-          })
+          .addFields({ name: "erm", value: "> what the (fish, flip, heck, scallop, sigma, skibidi, tuna, or what)" })
+          .addFields({ name: "i love you sylvbot || sylvbot i love you", value: "> I love you too (user)!" })
           .addFields({ name: "ligma", value: "> balls" })
           .addFields({ name: "nya", value: "> nya~!" })
           .addFields({ name: "rawr", value: "> x3" })
           .addFields({ name: "real", value: "> chat, is this real?" })
+          .addFields({ name: "thank you sylvbot || thanks sylvbot", value: "> You're welcome (user)!" })
           .addFields({ name: "type shit", value: "> shit" })
           .addFields({ name: "uwu", value: "> uwu" })
           .addFields({ name: "x3", value: "> x3" })
@@ -240,9 +235,7 @@ module.exports = {
           .setColor("f3b3a2")
           .addFields({
             name: "Greetings",
-            value:
-              "> Aloha (user)!\n> Greetings (user)!\n> Hai (user)!\n> Hallo (user)!\n> Hello (user)!\n> Hewwo (user)!\n> Hey (user)!\n> Hi (user)!\n> Howdy (user)!\n> Sup (user)?\n> Whats up (user)?\n> Yo (user)!",
-          })
+            value: "> Aloha (user)!\n> Greetings (user)!\n> Hai (user)!\n> Hallo (user)!\n> Hello (user)!\n> Hewwo (user)!\n> Hey (user)!\n> Hi (user)!\n> Howdy (user)!\n> Sup (user)?\n> Whats up (user)?\n> Yo (user)!" })
           .setFooter({ text: "Greetings || All replies are randomized" })
           .setTimestamp();
 
@@ -250,9 +243,7 @@ module.exports = {
           .setColor("f3b3a2")
           .addFields({
             name: "Goodbyes",
-            value:
-              "> Bai (user)!\n> Bye (user)!\n> Bye bye (user)!\n> Cya (user)!\n> Cya later (user)!\n> Goodbye (user)!\n> See ya (user)!\n> See ya later (user)!",
-          })
+            value: "> Bai (user)!\n> Bye (user)!\n> Bye bye (user)!\n> Cya (user)!\n> Cya later (user)!\n> Goodbye (user)!\n> See ya (user)!\n> See ya later (user)!" })
           .setFooter({ text: "Goodbyes || All replies are randomized" })
           .setTimestamp();
 
@@ -260,14 +251,10 @@ module.exports = {
           .setColor("f3b3a2")
           .addFields({
             name: "Morning",
-            value:
-              "> Good morning (user)!\n> Good morning (user)! How did you sleep?\n> Morning (user)!\n> Morning (user)! How did you sleep?",
-          })
+            value: "> Good morning (user)!\n> Good morning (user)! How did you sleep?\n> Morning (user)!\n> Morning (user)! How did you sleep?" })
           .addFields({
             name: "Night",
-            value:
-              "> Good night (user)!\n> Good night (user)! Dont let the bed bugs bite!\n> Night (user)!\n> Night (user)! Dont let the bedbugs bite!",
-          })
+            value: "> Good night (user)!\n> Good night (user)! Dont let the bed bugs bite!\n> Night (user)!\n> Night (user)! Dont let the bedbugs bite!" })
           .setFooter({ text: "Morning/Night || All replies are randomized" })
           .setTimestamp();
 

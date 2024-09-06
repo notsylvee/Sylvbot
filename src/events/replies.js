@@ -21,10 +21,10 @@ module.exports = {
     const rare = Math.random() * 500;
     const logsChannel = await client.channels.fetch("1245963741460430858");
 
-    let lovename = `${message.member.displayName}`;
-    if (message.author.id === "1018686464000807003") lovename = "mama";
-    if (message.author.id === "529405805686947843") lovename = "grandma";
-    if (message.author.id === "431220802797568001") lovename = "step parent";
+    let name = `${message.member.displayName}`;
+    if (message.author.id === "1018686464000807003") name = "mama";
+    if (message.author.id === "529405805686947843") name = "grandma";
+    if (message.author.id === "431220802797568001") name = "step parent";
 
     let lovemsg = "I love you too";
     if (message.author.id === "788222689126776832")
@@ -32,7 +32,7 @@ module.exports = {
 
     const crazyembed = new EmbedBuilder()
       .setDescription(
-        `crazy? ***im starting to go crazy trapped in this place...***`,
+        `crazy? im starting to go crazy trapped in this place...`,
       )
       .addFields(
         {
@@ -50,7 +50,7 @@ module.exports = {
       );
 
     const realembed = new EmbedBuilder()
-      .setDescription(`chat, ***am i real..?***`)
+      .setDescription(`chat, am i real..?`)
       .addFields(
         {
           name: "Triggered by:",
@@ -144,7 +144,7 @@ module.exports = {
         .includes("<@953885359668871238> i love you") ||
       message.content.toLowerCase().includes("i love you <@953885359668871238>")
     ) {
-      message.channel.send(`${lovemsg} ${lovename}!`);
+      message.channel.send(`${lovemsg} ${name}!`);
     }
 
     if (message.content.toLowerCase().includes("uwu")) {
@@ -167,6 +167,13 @@ module.exports = {
       message.content.toLowerCase().endsWith("rawr")
     ) {
       message.channel.send("-# x3");
+    }
+
+    if (
+      message.content.toLowerCase().includes("thanks sylvbot") ||
+      message.content.toLowerCase().includes("thank you sylvbot")
+    ) {
+      message.channel.send(`You're welcome ${name}!`)
     }
   },
 };
