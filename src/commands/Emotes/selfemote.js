@@ -6,7 +6,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("selfemote")
     .setDescription("Use an emote command")
-    //24
+    //25
     .addSubcommand((command) =>
       command.setName("cry").setDescription("Sends a crying gif"),
     )
@@ -78,6 +78,9 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command.setName("peace").setDescription("Sends an peace sign gif!"),
+    )
+    .addSubcommand((command) =>
+      command.setName("wink").setDescription("Sends an winking gif!"),
     ),
 
   async execute(interaction, client) {
