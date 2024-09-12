@@ -12,7 +12,7 @@ module.exports = {
     const answers = [
         "H-hello.",
         "Hey.",
-        "I think there's someone else here...",
+        "*I think there's someone else here...*",
         "Where'd it go?",
         "I hear music..",
         "Hey!",
@@ -20,20 +20,20 @@ module.exports = {
         "Do you hear them?",
         "What's that noise?!",
         "How are you doing?",
-        "What's that sound?",
-        "Come closer..",
-        "Hi there!",
+        "*What's that sound?*",
+        "*Come closer..*",
+        "*giggles* Hi there!",
         "Can you hear me?",
         "It's crawling all over you...",
         "What are you doing?",
         "Where are you going?",
         "Hehe.",
         "I love you.",
-        "The walls are painted with blood.",
-        "There's something beneath your skin!",
+        "***The walls are painted with blood.***",
+        "*There's something beneath your skin!*",
         "Behind you.",
         "Can you hear me?",
-        "We are not alone in this room."
+        "*We are not alone in this room.*"
     ];
     const answer = answers[Math.floor(Math.random() * answers.length)];
 
