@@ -105,7 +105,8 @@ module.exports = {
           .addFields({ name: "/8ball", value: "Ask the 8ball a question" })
           .addFields({ name: "/coinflip", value: "Flip a coin" })
           .addFields({ name: "/hangman", value: "Play a game of hangman" })
-          .addFields({name: "/random",value: "Get a random character from a specified game\n> Honkai: Star Rail, Stardew Valley, Valorant, Wuthering Waves, or Zenless Zone Zero"})
+          .addFields({ name: "/imaginaryfriend", value: "Get a random Imaginary Friend voiceline from Roblox: Pressure" })
+          .addFields({ name: "/random",value: "Get a random character from a specified game\n> Honkai: Star Rail, Stardew Valley, Valorant, Wuthering Waves, or Zenless Zone Zero"})
           .addFields({ name: "/roll", value: "Roll some dice" })
           .setFooter({ text: "Fun commands" })
           .setTimestamp();
