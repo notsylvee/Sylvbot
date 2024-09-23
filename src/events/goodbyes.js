@@ -26,13 +26,6 @@ module.exports = {
     }
 
     if (
-      message.content.toLowerCase().startsWith("bye bye") &&
-      message.content.toLowerCase().endsWith("e")
-    ) {
-      message.channel.send(`${response}`);
-    }
-
-    if (
       message.content.toLowerCase().startsWith("cya") &&
       message.content.toLowerCase().endsWith("a")
     ) {
