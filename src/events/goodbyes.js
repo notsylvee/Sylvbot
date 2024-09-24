@@ -25,6 +25,12 @@ module.exports = {
     }
 
     if (
+      message.content.toLowerCase() === "bye bye"
+    ) {
+      message.channel.send(`${response}`);
+    }
+
+    if (
       message.content.toLowerCase() === "cya"
     ) {
       message.channel.send(`${response}`);
