@@ -4,7 +4,7 @@ module.exports = {
     if (message.author.bot || !message.guild) return;
 
     let name = `${message.member.displayName}`;
-    if (message.author.id === "1018686464000807003") lovename = "mama";
+    if (message.author.id === "1018686464000807003") name = "mama";
 
     const msg = [
       `Good morning ${name}!`,
@@ -15,22 +15,19 @@ module.exports = {
     const response = msg[Math.floor(Math.random() * msg.length)];
 
     if (
-      message.content.toLowerCase().startsWith("good morning") &&
-      message.content.toLowerCase().endsWith("good morning")
+      message.content.toLowerCase() === "good morning"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("morning") &&
-      message.content.toLowerCase().endsWith("morning")
+      message.content.toLowerCase() === "morning"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("gm") &&
-      message.content.toLowerCase().endsWith("gm")
+      message.content.toLowerCase() === "gm"
     ) {
       message.channel.send(`${response}`);
     }

@@ -4,7 +4,7 @@ module.exports = {
     if (message.author.bot || !message.guild) return;
 
     let name = `${message.member.displayName}`;
-    if (message.author.id === "1018686464000807003") lovename = "mama";
+    if (message.author.id === "1018686464000807003") name = "mama";
 
     const msg = [
       `Bye ${name}!`,
@@ -19,50 +19,43 @@ module.exports = {
     const response = msg[Math.floor(Math.random() * msg.length)];
 
     if (
-      message.content.toLowerCase().startsWith("bye") &&
-      message.content.toLowerCase().endsWith("e")
+      message.content.toLowerCase() === "bye"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("cya") &&
-      message.content.toLowerCase().endsWith("a")
+      message.content.toLowerCase() === "cya"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("see ya") &&
-      message.content.toLowerCase().endsWith("a")
+      message.content.toLowerCase() === "see ya"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("cya later") &&
-      message.content.toLowerCase().endsWith("cya later")
+      message.content.toLowerCase() === "cya later"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("see ya later") &&
-      message.content.toLowerCase().endsWith("see ya later")
+      message.content.toLowerCase() === "see ya later"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("goodbye") &&
-      message.content.toLowerCase().endsWith("e")
+      message.content.toLowerCase() === "goodbye"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("bai") &&
-      message.content.toLowerCase().endsWith("i")
+      message.content.toLowerCase() === "bai"
     ) {
       message.channel.send(`${response}`);
     }

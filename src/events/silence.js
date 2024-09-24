@@ -10,7 +10,7 @@ module.exports = {
     const id = mention.id;
 
     await message.guild.members.fetch(id).then((user) => {
-      user.timeout(10000, "");
+      user.timeout(30000, "silenced");
     });
   },
 };

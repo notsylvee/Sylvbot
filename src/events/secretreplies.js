@@ -7,7 +7,7 @@ module.exports = {
 
     const percent = Math.random() * 5000;
 
-    const logsChannel = await client.channels.fetch("1245963741460430858");
+    //const logsChannel = await client.channels.fetch("1245963741460430858");
 
     const replies = [
       "help me...",

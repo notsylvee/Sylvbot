@@ -19,7 +19,7 @@ module.exports = {
     const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
 
     const rare = Math.random() * 500;
-    const logsChannel = await client.channels.fetch("1245963741460430858");
+    //const logsChannel = await client.channels.fetch("1245963741460430858");
 
     let name = `${message.member.displayName}`;
     if (message.author.id === "1018686464000807003") name = "mama";
@@ -67,8 +67,7 @@ module.exports = {
       );
 
     if (
-      message.content.toLowerCase().startsWith("cap") &&
-      message.content.toLowerCase().endsWith("cap")
+      message.content.toLowerCase() === "cap"
     ) {
       message.channel.send("-# 🧢");
     }
@@ -96,30 +95,30 @@ module.exports = {
       message.channel.send("-# cway cway? i was cway cway once");
     }
 
+    if (message.content.toLowerCase().includes("cray cray")) {
+      message.channel.send("-# cray cray? i was cray cray once");
+    }
+
     if (
-      message.content.toLowerCase().startsWith("aw man") &&
-      message.content.toLowerCase().endsWith("aw man")
+      message.content.toLowerCase() === "aw man"
     ) {
       message.channel.send("-# creeper! aw man");
     }
 
     if (
-      message.content.toLowerCase().startsWith("erm") &&
-      message.content.toLowerCase().endsWith("m")
+      message.content.toLowerCase() === "erm"
     ) {
       message.channel.send(`-# what the ${ermresp}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("ligma") &&
-      message.content.toLowerCase().endsWith("ligma")
+      message.content.toLowerCase() === "ligma"
     ) {
       message.channel.send("-# balls");
     }
 
     if (
-      message.content.toLowerCase().startsWith("real") &&
-      message.content.toLowerCase().endsWith("l")
+      message.content.toLowerCase() === "real"
     ) {
       if (rare < 499) {
         message.channel.send("-# chat, is this real?");
@@ -130,8 +129,7 @@ module.exports = {
     }
 
     if (
-      message.content.toLowerCase().startsWith("type shit") &&
-      message.content.toLowerCase().endsWith("type shit")
+      message.content.toLowerCase() === "type shit"
     ) {
       message.channel.send("-# shit");
     }
@@ -152,8 +150,7 @@ module.exports = {
     }
 
     if (
-      message.content.toLowerCase().startsWith("nya") &&
-      message.content.toLowerCase().endsWith("nya")
+      message.content.toLowerCase() === "nya"
     ) {
       message.channel.send("-# nya~!");
     }
@@ -163,8 +160,7 @@ module.exports = {
     }
 
     if (
-      message.content.toLowerCase().startsWith("rawr") &&
-      message.content.toLowerCase().endsWith("rawr")
+      message.content.toLowerCase() === "rawr"
     ) {
       message.channel.send("-# x3");
     }

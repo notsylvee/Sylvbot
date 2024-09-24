@@ -4,7 +4,7 @@ module.exports = {
     if (message.author.bot || !message.guild) return;
 
     let name = `${message.member.displayName}`;
-    if (message.author.id === "1018686464000807003") lovename = "mama";
+    if (message.author.id === "1018686464000807003") name = "mama";
 
     const msg = [
       `Good night ${name}!`,
@@ -23,57 +23,49 @@ module.exports = {
     const response = msg[Math.floor(Math.random() * msg.length)];
 
     if (
-      message.content.toLowerCase().startsWith("good night") &&
-      message.content.toLowerCase().endsWith("good night")
+      message.content.toLowerCase() === "good night"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("night") &&
-      message.content.toLowerCase().endsWith("night")
+      message.content.toLowerCase() === "night"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("gn") &&
-      message.content.toLowerCase().endsWith("gn")
+      message.content.toLowerCase() === "gn"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("night night") &&
-      message.content.toLowerCase().endsWith("night night")
+      message.content.toLowerCase() === "night night"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("nini") &&
-      message.content.toLowerCase().endsWith("nini")
+      message.content.toLowerCase() === "nini"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("goodnight") &&
-      message.content.toLowerCase().endsWith("goodnight")
+      message.content.toLowerCase() === "goodnight"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("nighty") &&
-      message.content.toLowerCase().endsWith("y")
+      message.content.toLowerCase() === "nighty"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("nighty night") &&
-      message.content.toLowerCase().endsWith("nighty night")
+      message.content.toLowerCase() === "nighty night"
     ) {
       message.channel.send(`${response}`);
     }

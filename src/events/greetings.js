@@ -4,7 +4,7 @@ module.exports = {
     if (message.author.bot || !message.guild) return;
 
     let name = `${message.member.displayName}`;
-    if (message.author.id === "1018686464000807003") lovename = "mama";
+    if (message.author.id === "1018686464000807003") name = "mama";
 
     const msg = [
       `Hi ${name}!`,
@@ -23,85 +23,73 @@ module.exports = {
     const response = msg[Math.floor(Math.random() * msg.length)];
 
     if (
-      message.content.toLowerCase().startsWith("hi") &&
-      message.content.toLowerCase().endsWith("i")
+      message.content.toLowerCase() === "hi"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("hello") &&
-      message.content.toLowerCase().endsWith("o")
+      message.content.toLowerCase() === "hello"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("hey") &&
-      message.content.toLowerCase().endsWith("y")
+      message.content.toLowerCase() === "hey"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("howdy") &&
-      message.content.toLowerCase().endsWith("y")
+      message.content.toLowerCase() === "howdy"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("hai") &&
-      message.content.toLowerCase().endsWith("i")
+      message.content.toLowerCase() === "hai"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("hewwo") &&
-      message.content.toLowerCase().endsWith("o")
+      message.content.toLowerCase() === "hewwo"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("whats up") &&
-      message.content.toLowerCase().endsWith("whats up")
+      message.content.toLowerCase() === "whats up"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("yo") &&
-      message.content.toLowerCase().endsWith("yo")
+      message.content.toLowerCase() === "yo"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("hallo") &&
-      message.content.toLowerCase().endsWith("o")
+      message.content.toLowerCase() === "hallo"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("sup") &&
-      message.content.toLowerCase().endsWith("sup")
+      message.content.toLowerCase() === "sup"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("aloha") &&
-      message.content.toLowerCase().endsWith("aloha")
+      message.content.toLowerCase() === "aloha"
     ) {
       message.channel.send(`${response}`);
     }
 
     if (
-      message.content.toLowerCase().startsWith("greetings") &&
-      message.content.toLowerCase().endsWith("greetings")
+      message.content.toLowerCase() === "greetings"
     ) {
       message.channel.send(`${response}`);
     }
