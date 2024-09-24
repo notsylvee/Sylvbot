@@ -3,7 +3,7 @@
     "axios": "^1.7.2",
     "discord-gamecord": "^4.4.2",
     "discord-giveaways": "^6.0.1",
-    "discord.js": "^14.15.3",
+    "discord.js": "^14.16.2",
     "dotenv": "^16.4.5",
     "mathjs": "^13.1.1",
     "mongodb": "^6.8.0",
