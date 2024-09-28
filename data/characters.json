@@ -86,7 +86,8 @@
     { "url": "https://cdn.sylvee.xyz/hsr_yanqing.webp", "name": "Yanqing! <:hsr_the_hunt:1280596052222935090> <:hsr_ice:1280600254919610549>" },
     { "url": "https://cdn.sylvee.xyz/hsr_yukong.webp", "name": "Yukong! <:hsr_harmony:1280596019125686302> <:hsr_imaginary:1280600265497509898>" },
     { "url": "https://cdn.sylvee.xyz/hsr_yunli.webp", "name": "Yunli! <:hsr_destruction:1280595996057014393> <:hsr_physical:1280600290994950187>" },
-    { "url": "https://cdn.sylvee.xyz/hsr_feixiao.webp", "name": "Feixiao! <:hsr_the_hunt:1280596052222935090> <:hsr_wind:1280600313220435998>" }
+    { "url": "https://cdn.sylvee.xyz/hsr_feixiao.webp", "name": "Feixiao! <:hsr_the_hunt:1280596052222935090> <:hsr_wind:1280600313220435998>" },
+    { "url": "https://cdn.sylvee.xyz/hsr_moze.webp", "name": "Moze! <:hsr_the_hunt:1280596052222935090> <:hsr_lightning:1280600275643666593>" }
   ],
   "sv-marriageable": [
     { "url": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png", "name": "Alex!" },
@@ -182,7 +183,9 @@
     { "url": "https://cdn.sylvee.xyz/zzz_soldier_11.webp", "name": "Soldier 11! <:zzz_fire:1280610544625123390>" },
     { "url": "https://cdn.sylvee.xyz/zzz_soukaku.webp", "name": "Soukaku! <:zzz_ice:1280610555400552509>" },
     { "url": "https://cdn.sylvee.xyz/zzz_von_lycaon.webp", "name": "Von Lycaon! <:zzz_ice:1280610555400552509>" },
-    { "url": "https://cdn.sylvee.xyz/zzz_zhu_yuan.webp", "name": "Zhu Yuan! <:zzz_ether:1280610533300637746>" }
+    { "url": "https://cdn.sylvee.xyz/zzz_zhu_yuan.webp", "name": "Zhu Yuan! <:zzz_ether:1280610533300637746>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_seth_lowell.webp", "name": "Seth Lowell! <:zzz_electric:1280610523066400910>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_ceaser_king.webp", "name": "Ceaser King! <:zzz_physical:1280610567203065999>" }
   ],
   "r1999": [
     { "url": "https://cdn.sylvee.xyz/r1999_37.webp", "name": "37!" },
