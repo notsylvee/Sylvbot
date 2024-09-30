@@ -39,14 +39,14 @@
     "name": "Reverse: 1999",
     "word": "arcanist"
   },
-  "league": {
-    "emoji": "<:league:1281278249917354034>",
-    "name": "League of Legends",
-    "word": "champion"
-  },
   "minecraft": {
     "emoji": "<:minecraft:1281719006130212864>",
     "name": "Minecraft",
     "word": "mob"
+  },
+  "league": {
+    "emoji": "<:league:1281278249917354034>",
+    "name": "League of Legends",
+    "word": "champion"
   }
 }
