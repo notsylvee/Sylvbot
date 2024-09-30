@@ -48,5 +48,10 @@
     "emoji": "<:league:1281278249917354034>",
     "name": "League of Legends",
     "word": "champion"
+  },
+  "overwatch": {
+    "emoji": "<:overwatch:1290392660460306503>",
+    "name": "Overwatch",
+    "word": "hero"
   }
 }

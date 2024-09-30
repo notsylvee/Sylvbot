@@ -55,6 +55,11 @@ module.exports = {
       command
         .setName("minecraft")
         .setDescription("Get a randomly chosen Minecraft mob"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("overwatch")
+        .setDescription("Get a randomly chosen Overwatch hero"),
     ),
 
   async execute(interaction) {
