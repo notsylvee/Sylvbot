@@ -53,5 +53,10 @@
     "emoji": "<:overwatch:1290392660460306503>",
     "name": "Overwatch",
     "word": "hero"
+  },
+  "tf2": {
+    "emoji": "<:tf2:1290417510591496284>",
+    "name": "Team Fortress 2",
+    "word": "mercenary"
   }
 }

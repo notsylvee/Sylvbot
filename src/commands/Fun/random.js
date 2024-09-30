@@ -8,58 +8,63 @@ module.exports = {
     .addSubcommand((command) =>
       command
         .setName("valorant")
-        .setDescription("Get a randomly chosen Valorant agent"),
+        .setDescription("Get a random Valorant agent"),
     )
     .addSubcommand((command) =>
       command
         .setName("hsr")
-        .setDescription("Get a randomly chosen Honkai: Star Rail character"),
+        .setDescription("Get a random Honkai: Star Rail character"),
     )
     .addSubcommand((command) =>
       command
         .setName("sv-marriageable")
         .setDescription(
-          "Get a randomly chosen marriageable Stardew Valley NPC",
+          "Get a random marriageable Stardew Valley villager",
         ),
     )
     .addSubcommand((command) =>
       command
         .setName("sv-nonmarriageable")
         .setDescription(
-          "Get a randomly chosen non-marriageable Stardew Valley NPC",
+          "Get a random non-marriageable Stardew Valley villager",
         ),
     )
     .addSubcommand((command) =>
       command
         .setName("sv-nongiftable")
         .setDescription(
-          "Get a randomly chosen non-giftable Stardew Valley NPC",
+          "Get a random non-giftable Stardew Valley villager",
         ),
     )
     .addSubcommand((command) =>
       command
         .setName("wuwa")
-        .setDescription("Get a randomly chosen Wuthering Waves resonator"),
+        .setDescription("Get a random Wuthering Waves resonator"),
     )
     .addSubcommand((command) =>
       command
         .setName("zzz")
-        .setDescription("Get a randomly chosen Zenless Zone Zero agent"),
+        .setDescription("Get a random Zenless Zone Zero agent"),
     )
     .addSubcommand((command) =>
       command
         .setName("r1999")
-        .setDescription("Get a randomly chosen Reverse: 1999 arcanist"),
+        .setDescription("Get a random Reverse: 1999 arcanist"),
     )
     .addSubcommand((command) =>
       command
         .setName("minecraft")
-        .setDescription("Get a randomly chosen Minecraft mob"),
+        .setDescription("Get a random Minecraft mob"),
     )
     .addSubcommand((command) =>
       command
         .setName("overwatch")
-        .setDescription("Get a randomly chosen Overwatch hero"),
+        .setDescription("Get a random Overwatch hero"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("tf2")
+        .setDescription("Get a random Team Fortress 2 mercenary"),
     ),
 
   async execute(interaction) {

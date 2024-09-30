@@ -439,6 +439,7 @@
     { "url": "https://cdn.sylvee.xyz/mc_zombievillager.png", "name": "a Zombie Villager! <:overworld:1281720978203742291>" }
   ],
   "league": [
+
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
@@ -482,5 +483,16 @@
     { "url": "https://cdn.sylvee.xyz/OW2_Wrecking_Ball.webp", "name": "Wrecking Ball! <:ow_tank:1290401317084332123>" },
     { "url": "https://cdn.sylvee.xyz/OW2_Zarya.webp", "name": "Zarya! <:ow_tank:1290401317084332123>" },
     { "url": "https://cdn.sylvee.xyz/OW2_Zenyatta.webp", "name": "Zenyatta! <:ow_support:1290401331202490428>" }
+  ],
+  "tf2": [
+    { "url": "https://cdn.sylvee.xyz/tf2_demoman.png", "name": "Demoman!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_engineer.png", "name": "Engineer!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_heavy.png", "name": "Heavy!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_medic.png", "name": "Medic!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_pyro.png", "name": "Pyro!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_scout.png", "name": "Scout!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_sniper.png", "name": "Sniper!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_soldier.png", "name": "Soldier!" },
+    { "url": "https://cdn.sylvee.xyz/tf2_spy.png", "name": "Spy!" }
   ]
 }
