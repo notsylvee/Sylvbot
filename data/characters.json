@@ -439,7 +439,18 @@
     { "url": "https://cdn.sylvee.xyz/mc_zombievillager.png", "name": "a Zombie Villager! <:overworld:1281720978203742291>" }
   ],
   "league": [
-
+    { "url": "https://cdn.sylvee.xyz/league_Aatrox.webp", "name": "Aatrox! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Ahri.webp", "name": "Ahri! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Akali.webp", "name": "Akali! <:league_slayer:1280955645469655153>" },
+    { "url": "https://cdn.sylvee.xyz/league_Akshan.webp", "name": "Akshan! <:league_slayer:1280955645469655153> <:league_marksman:1280955633616818278>" },
+    { "url": "https://cdn.sylvee.xyz/league_Alistar.webp", "name": "Alistar! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Amumu.webp", "name": "Amumu! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Anivia.webp", "name": "Anivia! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Annie.webp", "name": "Annie! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Aphelios.webp", "name": "Aphelios! <:league_marksman:1280955633616818278>" },
+    { "url": "https://cdn.sylvee.xyz/league_Ashe.webp", "name": "Ashe! <:league_marksman:1280955633616818278>" },
+    { "url": "https://cdn.sylvee.xyz/league_Aurelion_Sol.webp", "name": "Aurelion Sol! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Aurora.webp", "name": "Aurora! <:league_mage:1280955620647895180> <:league_slayer:1280955645469655153>" }
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
@@ -496,11 +507,16 @@
     { "url": "https://cdn.sylvee.xyz/tf2_spy.png", "name": "Spy!" }
   ],
   "mc-user": [
-    { "url": "https://cdn.sylvee.xyz/mc_wpve.png", "name": "`@notsylvee`! Bot owner & Developer" },
-    { "url": "https://cdn.sylvee.xyz/mc_valkyrie_pilot.png", "name": "`@valkyrie_pilot`! Bot hosting & Developer" },
-    { "url": "https://cdn.sylvee.xyz/mc_crimsonlights.png", "name": "`@crimsonlights00`! Developer" },
-    { "url": "https://cdn.sylvee.xyz/mc_plutoeats.png", "name": "`@plutosexy`! Suggester" },
-    { "url": "https://cdn.sylvee.xyz/mc_blozzyz.png", "name": "`@yeuoii.`!" },
-    { "url": "https://cdn.sylvee.xyz/mc_justpokie.png", "name": "`@pookjay`!" }
+    { "url": "https://cdn.sylvee.xyz/mc_wpve.png", "name": "wpve <:discord:1291059657720201306>`@notsylvee`! Bot owner & developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_valkyrie_pilot.png", "name": "valkyrie_pilot <:discord:1291059657720201306>`@valkyrie_pilot`! Bot hosting & developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_crimsonlights.png", "name": "CrimsonLights <:discord:1291059657720201306>`@crimsonlights00`! Bot developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_plutoeats.png", "name": "plutoeats <:discord:1291059657720201306>`@plutosexy`! Certified yapper" },
+    { "url": "https://cdn.sylvee.xyz/mc_blozzyz.png", "name": "Blozzyz <:discord:1291059657720201306>`@yeuoii.`!" },
+    { "url": "https://cdn.sylvee.xyz/mc_justpokie.png", "name": "JustPokie <:discord:1291059657720201306>`@pookjay`!" },
+    { "url": "https://cdn.sylvee.xyz/mc_dinnerbone.png", "name": "Dinnerbone! Minecraft developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_gnembon.png", "name": "gnembon! Minecraft developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_grumm.png", "name": "Grumm! Minecraft developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_jeb_.png", "name": "jeb_! Minecraft developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_notch.png", "name": "Notch! Minecraft creator" }
   ]
 }
