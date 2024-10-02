@@ -39,7 +39,7 @@
     "name": "Reverse: 1999",
     "word": "arcanist"
   },
-  "minecraft": {
+  "mc-mob": {
     "emoji": "<:minecraft:1281719006130212864>",
     "name": "Minecraft",
     "word": "mob"
@@ -58,5 +58,10 @@
     "emoji": "<:tf2:1290417510591496284>",
     "name": "Team Fortress 2",
     "word": "mercenary"
+  },
+  "mc-user": {
+    "emoji": "<:minecraft:1281719006130212864>",
+    "name": "Minecraft",
+    "word": "user"
   }
 }

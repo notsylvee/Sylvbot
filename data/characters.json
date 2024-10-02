@@ -276,7 +276,7 @@
     { "url": "https://cdn.sylvee.xyz/r1999_Yenisei.webp", "name": "Yenisei!" },
     { "url": "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp", "name": "Зима!" }
   ],
-  "minecraft": [
+  "mc-mob": [
     { "url": "https://cdn.sylvee.xyz/mc_allay.gif", "name": "an Allay! <:overworld:1281720978203742291>" },
     { "url": "https://cdn.sylvee.xyz/mc_armadillo.gif", "name": "an Armadillo! <:overworld:1281720978203742291>" },    
     { "url": "https://cdn.sylvee.xyz/mc_axolotl1.gif", "name": "an Axolotl! <:lushcave:1281722301632483370>" },
@@ -494,5 +494,12 @@
     { "url": "https://cdn.sylvee.xyz/tf2_sniper.png", "name": "Sniper!" },
     { "url": "https://cdn.sylvee.xyz/tf2_soldier.png", "name": "Soldier!" },
     { "url": "https://cdn.sylvee.xyz/tf2_spy.png", "name": "Spy!" }
+  ],
+  "mc-user": [
+    { "url": "https://cdn.sylvee.xyz/mc_wpve.png", "name": "`@notsylvee`!\nBot owner & Developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_valkyrie_pilot.png", "name": "`@valkyrie_pilot`!\nBot hosting & Coding help" },
+    { "url": "https://cdn.sylvee.xyz/mc_crimsonlights.png", "name": "`@crimsonlights00`!\nCo-Developer" },
+    { "url": "https://cdn.sylvee.xyz/mc_plutoeats.png", "name": "`@plutosexy`!" },
+    { "url": "https://cdn.sylvee.xyz/mc_blozzyz.png", "name": "`@yeuoii.`!" }
   ]
 }

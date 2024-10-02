@@ -53,7 +53,7 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command
-        .setName("minecraft")
+        .setName("mc-mob")
         .setDescription("Get a random Minecraft mob"),
     )
     .addSubcommand((command) =>
@@ -65,6 +65,11 @@ module.exports = {
       command
         .setName("tf2")
         .setDescription("Get a random Team Fortress 2 mercenary"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("mc-user")
+        .setDescription("Get a random Minecraft user"),
     ),
 
   async execute(interaction) {
