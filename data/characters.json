@@ -87,7 +87,8 @@
     { "url": "https://cdn.sylvee.xyz/hsr_yukong.webp", "name": "Yukong! <:hsr_harmony:1280596019125686302> <:hsr_imaginary:1280600265497509898>" },
     { "url": "https://cdn.sylvee.xyz/hsr_yunli.webp", "name": "Yunli! <:hsr_destruction:1280595996057014393> <:hsr_physical:1280600290994950187>" },
     { "url": "https://cdn.sylvee.xyz/hsr_feixiao.webp", "name": "Feixiao! <:hsr_the_hunt:1280596052222935090> <:hsr_wind:1280600313220435998>" },
-    { "url": "https://cdn.sylvee.xyz/hsr_moze.webp", "name": "Moze! <:hsr_the_hunt:1280596052222935090> <:hsr_lightning:1280600275643666593>" }
+    { "url": "https://cdn.sylvee.xyz/hsr_moze.webp", "name": "Moze! <:hsr_the_hunt:1280596052222935090> <:hsr_lightning:1280600275643666593>" },
+    { "url": "https://cdn.sylvee.xyz/hsr_lingsha.webp", "name": "Linghsa! <:hsr_abundance:1280595981540528212> <:hsr_fire:1280600243855167528>" }
   ],
   "sv-marriageable": [
     { "url": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png", "name": "Alex!" },
@@ -450,7 +451,23 @@
     { "url": "https://cdn.sylvee.xyz/league_Aphelios.webp", "name": "Aphelios! <:league_marksman:1280955633616818278>" },
     { "url": "https://cdn.sylvee.xyz/league_Ashe.webp", "name": "Ashe! <:league_marksman:1280955633616818278>" },
     { "url": "https://cdn.sylvee.xyz/league_Aurelion_Sol.webp", "name": "Aurelion Sol! <:league_mage:1280955620647895180>" },
-    { "url": "https://cdn.sylvee.xyz/league_Aurora.webp", "name": "Aurora! <:league_mage:1280955620647895180> <:league_slayer:1280955645469655153>" }
+    { "url": "https://cdn.sylvee.xyz/league_Aurora.webp", "name": "Aurora! <:league_mage:1280955620647895180> <:league_slayer:1280955645469655153>" },
+    { "url": "https://cdn.sylvee.xyz/league_Azir.webp", "name": "Azir! <:league_specialist:1280955655695503423>" },
+    { "url": "https://cdn.sylvee.xyz/league_Bard.webp", "name": "Bard! <:league_controller:1280955600263450685>" },
+    { "url": "https://cdn.sylvee.xyz/league_Bel'Veth.webp", "name": "Bel'Veth! <:league_slayer:1280955645469655153>" },
+    { "url": "https://cdn.sylvee.xyz/league_Blitzcrank.webp", "name": "Blitzcrank! <:league_controller:1280955600263450685>" },
+    { "url": "https://cdn.sylvee.xyz/league_Brand.webp", "name": "Brand! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Braum.webp", "name": "Braum! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Briar.webp", "name": "Briar! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Caitlyn.webp", "name": "Caitlyn! <:league_marksman:1280955633616818278>" },
+    { "url": "https://cdn.sylvee.xyz/league_Camille.webp", "name": "Camille! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Cassiopeia.webp", "name": "Cassiopeia! <:league_mage:1280955620647895180> " },
+    { "url": "https://cdn.sylvee.xyz/league_Cho'Gath.webp", "name": "Cho'Gath! <:league_specialist:1280955655695503423>" },
+    { "url": "https://cdn.sylvee.xyz/league_Corki.webp", "name": "Corki! <:league_marksman:1280955633616818278>" },
+    { "url": "https://cdn.sylvee.xyz/league_Darius.webp", "name": "Darius! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Diana.webp", "name": "Diana! <:league_fighter:1280955610502004756> <:league_slayer:1280955645469655153>" },
+    { "url": "https://cdn.sylvee.xyz/league_Dr.Mundo.webp", "name": "Dr.Mundo! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Draven.webp", "name": "Draven! <:league_marksman:1280955633616818278>" }
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
