@@ -90,11 +90,15 @@ module.exports = {
     const character = characters[Math.floor(Math.random() * characters.length)];
     const game = gamesMap[command];
 
+    let footer = character.footer
+    if (footer === undefined) footer = ' '
+
     const embed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setDescription(
         `${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.word} is...\n${character.name}`)
       .setImage(character.url)
+      .setFooter({ text: `${footer}`})
 
     await interaction.reply({ embeds: [embed] });
   },
