@@ -536,5 +536,10 @@
     { "url": "https://cdn.sylvee.xyz/mc_grumm.png", "name": "Grumm!", "footer": "Minecraft developer" },
     { "url": "https://cdn.sylvee.xyz/mc_jeb_.png", "name": "jeb_!", "footer": "Minecraft developer" },
     { "url": "https://cdn.sylvee.xyz/mc_notch.png", "name": "Notch!", "footer": "Minecraft founder" }
+  ],
+  "nte": [
+    { "url": "https://cdn.sylvee.xyz/NTE_Mint.png", "name": "Mint!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Nanally.png", "name": "Nanally!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Sakiri.png", "name": "Sakiri!" }
   ]
 }

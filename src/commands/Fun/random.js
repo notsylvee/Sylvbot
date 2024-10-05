@@ -70,6 +70,11 @@ module.exports = {
       command
         .setName("mc-user")
         .setDescription("Get a random Minecraft user"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("nte")
+        .setDescription("Get a random Neverness to Everness character"),
     ),
 
   async execute(interaction) {
