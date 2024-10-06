@@ -75,6 +75,11 @@ module.exports = {
       command
         .setName("nte")
         .setDescription("Get a random Neverness to Everness character"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("hi3")
+        .setDescription("Get a random Honkai Impact 3rd valkyrie"),
     ),
 
   async execute(interaction) {
@@ -101,7 +106,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setDescription(
-        `${game.emoji} ${interaction.member.displayName}, your random ${game.name} ${game.word} is...\n${character.name}`)
+        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is...\n${character.name}`)
       .setImage(character.url)
       .setFooter({ text: `${footer}`})
 
