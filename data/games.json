@@ -73,5 +73,10 @@
     "emoji": "<:hi3:1292593726685712395>",
     "name": "Honkai Impact 3rd",
     "word": "valkyrie"
+  },
+  "genshin": {
+    "emoji": "<:genshin:1295504066943647875>",
+    "name": "Genshin Impact",
+    "word": "character"
   }
 }

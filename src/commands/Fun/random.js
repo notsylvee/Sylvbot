@@ -80,6 +80,11 @@ module.exports = {
       command
         .setName("hi3")
         .setDescription("Get a random Honkai Impact 3rd valkyrie"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("genshin")
+        .setDescription("Get a random Genshin Impact character"),
     ),
 
   async execute(interaction) {
