@@ -275,7 +275,8 @@
     { "url": "https://cdn.sylvee.xyz/r1999_Windsong.webp", "name": "Windsong!" },
     { "url": "https://cdn.sylvee.xyz/r1999_X.webp", "name": "X!" },
     { "url": "https://cdn.sylvee.xyz/r1999_Yenisei.webp", "name": "Yenisei!" },
-    { "url": "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp", "name": "Зима!" }
+    { "url": "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp", "name": "Зима!" },
+    { "url": "https://cdn.sylvee.xyz/r1999_Anjo_Nala.webp", "name": "Anjo Nala!" }
   ],
   "mc-mob": [
     { "url": "https://cdn.sylvee.xyz/mc_allay.gif", "name": "an Allay! <:overworld:1281720978203742291>" },
