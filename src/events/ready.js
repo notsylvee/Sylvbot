@@ -23,15 +23,17 @@ module.exports = {
     console.log("Ready!");
 
     if (!mongoURL) return;
-    await mongoose.connect(mongoURL || "", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    mongoose.set('strictQuery', false);
 
-    if (mongoose.connect) {
-      console.log("Connected to MongoDB");
-    } else {
-      console.log("Failed to connect to MongoDB");
-    }
+        await mongoose.connect(mongoURL || '', {
+            //keepAlive: true,
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        })
+
+        if (mongoose.connect) {
+            mongoose.set('strictQuery', true);
+            console.log("The database is running!")
+        }
   },
 };
