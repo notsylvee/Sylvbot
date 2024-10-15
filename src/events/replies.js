@@ -19,7 +19,7 @@ module.exports = {
     const ermresp = ermmsg[Math.floor(Math.random() * ermmsg.length)];
 
     const rare = Math.random() * 500;
-    //const logsChannel = await client.channels.fetch("1245963741460430858");
+    const logsChannel = await client.channels.fetch("1245963741460430858");
 
     let name = `${message.member.displayName}`;
     if (message.author.id === "1018686464000807003") name = "mama";

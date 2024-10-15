@@ -520,7 +520,21 @@
     { "url": "https://cdn.sylvee.xyz/league_Lissandra.webp", "name": "Lissandra! <:league_mage:1280955620647895180>" },
     { "url": "https://cdn.sylvee.xyz/league_LeBlanc.webp", "name": "LeBlanc! <:league_mage:1280955620647895180>" },
     { "url": "https://cdn.sylvee.xyz/league_Karma.webp", "name": "Karma! <:league_mage:1280955620647895180>" },
-    { "url": "https://cdn.sylvee.xyz/league_Karthus.webp", "name": "Karthus! <:league_mage:1280955620647895180>" }
+    { "url": "https://cdn.sylvee.xyz/league_Karthus.webp", "name": "Karthus! <:league_mage:1280955620647895180>" },
+    { "url": "https://cdn.sylvee.xyz/league_Zac.webp", "name": "Zac! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Taric.webp", "name": "Taric! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Tahm_Kench.webp", "name": "Tahm Kench! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Skarner.webp", "name": "Skarner! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Sion.webp", "name": "Sion! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Shen.webp", "name": "Shen! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Rell.webp", "name": "Rell! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Sejuani.webp", "name": "Sejuani! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Rammus.webp", "name": "Rammus! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Poppy.webp", "name": "Poppy! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Nunu_&_Willump.webp", "name": "Nunu & Willump! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Nautilus.webp", "name": "Nautilus! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Malphite.webp", "name": "Malphite! <:league_tank:1280955665845719103>" },
+    { "url": "https://cdn.sylvee.xyz/league_Maokai.webp", "name": "Maokai! <:league_tank:1280955665845719103>" }
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
