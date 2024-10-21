@@ -85,6 +85,11 @@ module.exports = {
       command
         .setName("genshin")
         .setDescription("Get a random Genshin Impact character"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("strinova")
+        .setDescription("Get a random Strinova character"),
     ),
 
   async execute(interaction) {
