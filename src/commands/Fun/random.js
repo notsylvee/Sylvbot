@@ -95,6 +95,11 @@ module.exports = {
       command
         .setName("league")
         .setDescription("Get a random League of Legends champion"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("astralparty")
+        .setDescription("!SLIGHT NSFW/LEWD! Get a random Astral Party character"),
     ),
 
   async execute(interaction) {
