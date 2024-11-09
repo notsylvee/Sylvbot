@@ -72,11 +72,11 @@ module.exports = {
       message.channel.send("-# 🧢");
     }
 
-    if (message.content.toLowerCase().includes(":3")) {
+    if (message.content.toLowerCase().includes(":3") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# :3");
     }
 
-    if (message.content.toLowerCase().includes("crazy")) {
+    if (message.content.toLowerCase().includes("crazy") && !message.content.toLowerCase().endsWith("?")) {
       if (rare < 499) {
         message.channel.send("-# crazy? i was crazy once");
       } else {
@@ -87,15 +87,15 @@ module.exports = {
       }
     }
 
-    if (message.content.toLowerCase().includes("cwazy")) {
+    if (message.content.toLowerCase().includes("cwazy") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# cwazy? i was cwazy once");
     }
 
-    if (message.content.toLowerCase().includes("cway cway")) {
+    if (message.content.toLowerCase().includes("cway cway") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# cway cway? i was cway cway once");
     }
 
-    if (message.content.toLowerCase().includes("cray cray")) {
+    if (message.content.toLowerCase().includes("cray cray") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# cray cray? i was cray cray once");
     }
 
@@ -145,7 +145,7 @@ module.exports = {
       message.channel.send(`${lovemsg} ${name}!`);
     }
 
-    if (message.content.toLowerCase().includes("uwu")) {
+    if (message.content.toLowerCase().includes("uwu") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# uwu");
     }
 
@@ -155,7 +155,7 @@ module.exports = {
       message.channel.send("-# nya~!");
     }
 
-    if (message.content.toLowerCase().includes("x3")) {
+    if (message.content.toLowerCase().includes("x3") && !message.content.toLowerCase().endsWith("?")) {
       message.channel.send("-# x3");
     }
 
