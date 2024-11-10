@@ -105,6 +105,8 @@ module.exports = {
   async execute(interaction) {
     const command = interaction.options.getSubcommand();
 
+    if (interaction.guild.id === "1100254675913166898" && command === "astralparty") return await interaction.reply({ content: "<:forbidden:1266829648344645694> You cannot use this command in this server", ephemeral: true });
+
     const charactersJsonData = await fs.readFile("data/characters.json", {
       encoding: "utf8",
     });
