@@ -156,7 +156,7 @@
     { "url": "https://cdn.sylvee.xyz/wuwa_jiyan.webp", "name": "Jiyan! <:wuwa_aero:1280604630975512636> <:wuwa_broadblade:1280606462061838376>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_lingyang.webp", "name": "Lingyang! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_mortefi.webp", "name": "Mortefi! <:wuwa_fusion:1280604652097896448> <:wuwa_pistols:1280606485134442619>" },
-    { "url": "https://cdn.sylvee.xyz/wuwa_rover.webp", "name": "Rover! <:wuwa_spectro:1280604686277279806>//<:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_rover.webp", "name": "Rover! <:wuwa_spectro:1280604686277279806>/<:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_sanhua.webp", "name": "Sanhua! <:wuwa_glacio:1280604663636430888> <:wuwa_sword:1280606507041558558>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_taoqi.webp", "name": "Taoqi! <:wuwa_havoc:1280604674352877568> <:wuwa_broadblade:1280606462061838376>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_verina.webp", "name": "Verina! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" },
@@ -165,7 +165,9 @@
     { "url": "https://cdn.sylvee.xyz/wuwa_yinlin.webp", "name": "Yinlin! <:wuwa_electro:1280604641834307594> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_yuanwu.webp", "name": "Yuanwu! <:wuwa_electro:1280604641834307594> <:wuwa_gauntlets:1280606473809952768>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_zhezhi.webp", "name": "Zhezhi! <:wuwa_glacio:1280604663636430888> <:wuwa_rectifier:1280606495762808977>" },
-    { "url": "https://cdn.sylvee.xyz/wuwa_shorekeeper.webp", "name": "The Shorekeeper! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" }
+    { "url": "https://cdn.sylvee.xyz/wuwa_shorekeeper.webp", "name": "The Shorekeeper! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_Camellya.webp", "name": "Camellya! <:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_Youhu.webp", "name": "Youhu! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" }
   ],
   "zzz": [
     { "url": "https://cdn.sylvee.xyz/zzz_rina.webp", "name": "Alexandrina (Rina) Sebastiane! <:zzz_electric:1280610523066400910>" },
@@ -189,7 +191,8 @@
     { "url": "https://cdn.sylvee.xyz/zzz_zhu_yuan.webp", "name": "Zhu Yuan! <:zzz_ether:1280610533300637746>" },
     { "url": "https://cdn.sylvee.xyz/zzz_seth_lowell.webp", "name": "Seth Lowell! <:zzz_electric:1280610523066400910>" },
     { "url": "https://cdn.sylvee.xyz/zzz_ceaser_king.webp", "name": "Ceaser King! <:zzz_physical:1280610567203065999>" },
-    { "url": "https://cdn.sylvee.xyz/zzz_burnice.webp", "name": "Burnice White! <:zzz_fire:1280610544625123390>" }
+    { "url": "https://cdn.sylvee.xyz/zzz_burnice.webp", "name": "Burnice White! <:zzz_fire:1280610544625123390>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_Tsukishiro_Yanagi.webp", "name": "Tsukishiro Yanagi! <:zzz_electric:1280610523066400910>" }
   ],
   "r1999": [
     { "url": "https://cdn.sylvee.xyz/r1999_37.webp", "name": "37!" },
@@ -278,7 +281,10 @@
     { "url": "https://cdn.sylvee.xyz/r1999_X.webp", "name": "X!" },
     { "url": "https://cdn.sylvee.xyz/r1999_Yenisei.webp", "name": "Yenisei!" },
     { "url": "https://cdn.sylvee.xyz/r1999_%D0%97%D0%B8%D0%BC%D0%B0.webp", "name": "Зима!" },
-    { "url": "https://cdn.sylvee.xyz/r1999_Anjo_Nala.webp", "name": "Anjo Nala!" }
+    { "url": "https://cdn.sylvee.xyz/r1999_Anjo_Nala.webp", "name": "Anjo Nala!" },
+    { "url": "https://cdn.sylvee.xyz/r1999_Flutterpage.webp", "name": "Flutterpage!" },
+    { "url": "https://cdn.sylvee.xyz/r1999_Lopera.webp", "name": "Lopera!" },
+    { "url": "https://cdn.sylvee.xyz/r1999_Willow.webp", "name": "Willow!" }
   ],
   "mc-mob": [
     { "url": "https://cdn.sylvee.xyz/mc_allay.gif", "name": "an Allay! <:overworld:1281720978203742291>" },
