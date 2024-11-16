@@ -37,6 +37,7 @@ module.exports = {
     ];
     const answer = answers[Math.floor(Math.random() * answers.length)];
 
-    await interaction.reply({ content: `${answer}` });
+    await interaction.channel.send(answer);
+    await interaction.reply({ content: `Voiceline sent!`, ephemeral: true });
   },
 };
