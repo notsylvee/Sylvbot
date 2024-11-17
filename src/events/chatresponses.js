@@ -55,28 +55,6 @@ module.exports = {
     const nightmsg = [ `good night`, `night`, `gn` ];
     if (nightmsg.includes(message.content.toLowerCase())) {message.channel.send(`${nightresponse}`)};
 
-    //MARK: secret
-    const secretrepliesmath = Math.random() * 5000;
-
-    const secretreplies = [ "help me...", "someone... please...", "i need help...", "i can hear them...", "am i real..?",
-      "let me out...", "can anybody hear me..?", "i dont want to do this anymore...", "make it stop...", "i need to get out...",
-      "get me out of here...", "it hurts...", "theyre looking for me...", "i cant escape...", ".... . .-.. .--. / -- .",
-      ".--. .-.. . .- ... .", "01101000 01100101 01101100 01110000" ];
-    const secretreply = secretreplies[Math.floor(Math.random() * secretreplies.length)];
-
-    const secretembed = new EmbedBuilder()
-    .setDescription(`${secretreply}`)
-    .addFields({ name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}` },
-      { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
-      { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
-
-    if (secretrepliesmath < 4999) {
-      return;
-    } else {
-      message.channel.send(`-# ***${secretreply}***`);
-      logsChannel.send({ embeds: [secretembed] });
-    };
-
     //MARK: misc
     const rare = Math.random() * 500;
     
@@ -141,5 +119,27 @@ module.exports = {
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
+
+    //MARK: secret
+    const secretrepliesmath = Math.random() * 5000;
+
+    const secretreplies = [ "help me...", "someone... please...", "i need help...", "i can hear them...", "am i real..?",
+      "let me out...", "can anybody hear me..?", "i dont want to do this anymore...", "make it stop...", "i need to get out...",
+      "get me out of here...", "it hurts...", "theyre looking for me...", "i cant escape...", ".... . .-.. .--. / -- .",
+      ".--. .-.. . .- ... .", "01101000 01100101 01101100 01110000" ];
+    const secretreply = secretreplies[Math.floor(Math.random() * secretreplies.length)];
+
+    const secretembed = new EmbedBuilder()
+    .setDescription(`${secretreply}`)
+    .addFields({ name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}` },
+      { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
+      { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
+
+    if (secretrepliesmath < 4999) {
+      return;
+    } else {
+      message.channel.send(`-# ***${secretreply}***`);
+      logsChannel.send({ embeds: [secretembed] });
+    };
   },
 };
