@@ -18,7 +18,7 @@ module.exports = {
     const answers = [
       "As I see it, yes.",
       "Don't count on it.",
-      "It is certian.",
+      "It is certain.",
       "It is decidedly so.",
       "Most likely.",
       "My reply is no.",
