@@ -137,5 +137,6 @@ module.exports = {
     if (message.content.toLowerCase().includes("uwu")) {message.channel.send("-# uwu")}
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
+    if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
   },
 };
