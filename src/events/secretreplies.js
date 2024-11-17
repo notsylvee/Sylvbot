@@ -4,6 +4,9 @@ module.exports = {
   name: "messageCreate",
   async execute(message, client) {
     if (message.author.bot || !message.guild) return;
+    if (message.channel.id === `1219415504884731994`) return; /*scok*/
+    if (message.channel.id === `1100258238697590824`) return; /*tgses*/
+    if (message.channel.id === `1100255684727152660`) return; /*tgsp*/
 
     const percent = Math.random() * 5000;
 
