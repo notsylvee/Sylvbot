@@ -11,11 +11,7 @@ module.exports = {
       ];
       const response = msg[Math.floor(Math.random() * msg.length)];
   
-      if (
-        message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?")
-      ) {
-        message.channel.send(`${response}`);
-      }
+      if (message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?"))
+        {message.channel.send(`${response}`)}
     },
   };
-  
