@@ -65,7 +65,7 @@ module.exports = {
     const secretreply = secretreplies[Math.floor(Math.random() * secretreplies.length)];
 
     const secretembed = new EmbedBuilder()
-    .setDescription(`${response}`)
+    .setDescription(`${secretreply}`)
     .addFields({ name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}` },
       { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
       { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
@@ -83,7 +83,7 @@ module.exports = {
     //erm
     const ermreplies = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
     const ermreply = ermreplies[Math.floor(Math.random() * ermreplies.length)];
-    if (message.content.toLowerCase() === "erm") {message.channel.send(`-# what the ${ermresp}`)}
+    if (message.content.toLowerCase() === "erm") {message.channel.send(`-# what the ${ermreply}`)}
 
     //crazy
     const crazyembed = new EmbedBuilder()
