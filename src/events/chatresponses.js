@@ -59,7 +59,7 @@ module.exports = {
     const rare = Math.random() * 500;
     
     //erm
-    const ermreplies = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish" ];
+    const ermreplies = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish", "shark", "freak" ];
     const ermreply = ermreplies[Math.floor(Math.random() * ermreplies.length)];
     if (message.content.toLowerCase() === "erm") {message.channel.send(`-# what the ${ermreply}`)}
 
