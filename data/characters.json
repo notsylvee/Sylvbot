@@ -284,7 +284,8 @@
     { "url": "https://cdn.sylvee.xyz/r1999_Anjo_Nala.webp", "name": "Anjo Nala!" },
     { "url": "https://cdn.sylvee.xyz/r1999_Flutterpage.webp", "name": "Flutterpage!" },
     { "url": "https://cdn.sylvee.xyz/r1999_Lopera.webp", "name": "Lopera!" },
-    { "url": "https://cdn.sylvee.xyz/r1999_Willow.webp", "name": "Willow!" }
+    { "url": "https://cdn.sylvee.xyz/r1999_Willow.webp", "name": "Willow!" },
+    { "url": "https://cdn.sylvee.xyz/r1999_J.webp", "name": "J!" }
   ],
   "mc-mob": [
     { "url": "https://cdn.sylvee.xyz/mc_allay.gif", "name": "an Allay! <:overworld:1281720978203742291>" },
@@ -616,7 +617,8 @@
     { "url": "https://cdn.sylvee.xyz/league_Vi.webp", "name": "Vi! <:league_fighter:1280955610502004756>" },
     { "url": "https://cdn.sylvee.xyz/league_Warwick.webp", "name": "Warwick! <:league_fighter:1280955610502004756>" },
     { "url": "https://cdn.sylvee.xyz/league_Wukong.webp", "name": "Wukong! <:league_fighter:1280955610502004756>" },
-    { "url": "https://cdn.sylvee.xyz/league_Volibear.webp", "name": "Volibear! <:league_fighter:1280955610502004756>" }
+    { "url": "https://cdn.sylvee.xyz/league_Volibear.webp", "name": "Volibear! <:league_fighter:1280955610502004756>" },
+    { "url": "https://cdn.sylvee.xyz/league_Ambessa.png", "name": "Ambessa! <:league_fighter:1280955610502004756>  <:league_slayer:1280955645469655153> " }
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
@@ -825,7 +827,9 @@
     { "url": "https://cdn.sylvee.xyz/genshin_Yelan.webp", "name": "Yelan!" },
     { "url": "https://cdn.sylvee.xyz/genshin_Yoimiya.webp", "name": "Yoimiya!" },
     { "url": "https://cdn.sylvee.xyz/genshin_Yun_Jin.webp", "name": "Yun Jin!" },
-    { "url": "https://cdn.sylvee.xyz/genshin_Zhongli.webp", "name": "Zhongli!" }
+    { "url": "https://cdn.sylvee.xyz/genshin_Zhongli.webp", "name": "Zhongli!" },
+    { "url": "https://cdn.sylvee.xyz/genshin_Ororon.webp", "name": "Ororon!" },
+    { "url": "https://cdn.sylvee.xyz/genshin_Chasca.webp", "name": "Chasca!" }
   ],
   "strinova": [
     { "url": "https://cdn.sylvee.xyz/strinova_Audrey.png", "name": "Audrey!" },
@@ -844,7 +848,8 @@
     { "url": "https://cdn.sylvee.xyz/strinova_Ming.png", "name": "Ming!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Nobunaga.png", "name": "Nobunaga!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Reiichi.png", "name": "Reiichi!" },
-    { "url": "https://cdn.sylvee.xyz/strinova_Yvette.png", "name": "Yvette!" }
+    { "url": "https://cdn.sylvee.xyz/strinova_Yvette.png", "name": "Yvette!" },
+    { "url": "https://cdn.sylvee.xyz/strinova_Yugiri.png", "name": "Yugiri!" }
   ],
   "astralparty": [
     { "url": "https://cdn.sylvee.xyz/ap_alana.png", "name": "Alana!" },
