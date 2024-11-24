@@ -88,5 +88,10 @@
     "emoji": "<:astralparty:1302455368399716415>",
     "name": "Astral Party",
     "word": "character"
+  },
+  "mc-plant": {
+    "emoji": "<:minecraft:1281719006130212864>",
+    "name": "Minecraft",
+    "word": "plant"
   }
 }

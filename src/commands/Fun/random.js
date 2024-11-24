@@ -100,6 +100,11 @@ module.exports = {
       command
         .setName("astralparty")
         .setDescription("!SLIGHT NSFW/LEWD! Get a random Astral Party character"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("mc-plant")
+        .setDescription("Get a random Minectaft potted plant"),
     ),
 
   async execute(interaction) {
