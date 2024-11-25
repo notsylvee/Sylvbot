@@ -105,6 +105,11 @@ module.exports = {
       command
         .setName("mc-plant")
         .setDescription("Get a random Minectaft potted plant"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("projectsekai")
+        .setDescription("Get a random Project Sekai character"),
     ),
 
   async execute(interaction) {
