@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, Embed } = require("discord.js");
 const fs = require("fs/promises");
 
 module.exports = {
@@ -110,6 +110,11 @@ module.exports = {
       command
         .setName("projectsekai")
         .setDescription("Get a random Project Sekai character"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("pressure")
+        .setDescription("Get a random Roblox: Pressure badge"),
     ),
 
   async execute(interaction) {
@@ -142,6 +147,17 @@ module.exports = {
       .setImage(character.url)
       .setFooter({ text: `${footer}`})
 
-    await interaction.reply({ embeds: [embed] });
+      const pressureembed = new EmbedBuilder()
+      .setColor("f3b3a2")
+      .setTitle(
+        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is...\n${character.name}`)
+        .setDescription(`${character.description}`)
+      .setThumbnail(character.url)
+
+      if (command === pressure) {
+        await interaction.reply({ embeds: [pressureembed] });
+      } else {
+        await interaction.reply({ embeds: [embed] });
+      }
   },
 };
