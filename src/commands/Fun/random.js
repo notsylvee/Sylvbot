@@ -155,9 +155,9 @@ module.exports = {
       .setThumbnail(character.url)
 
       if (command === pressure) {
-        await interaction.reply({ embeds: [pressureembed] });
+        interaction.reply({ embeds: [pressureembed] });
       } else {
-        await interaction.reply({ embeds: [embed] });
+        interaction.reply({ embeds: [embed] });
       }
   },
 };
