@@ -150,7 +150,7 @@ module.exports = {
       const pressureembed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setTitle(
-        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is...\n${character.name}`)
+        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is... ${character.name}`)
         .setDescription(`${character.description}`)
       .setThumbnail(character.url)
 
