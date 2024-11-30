@@ -154,7 +154,7 @@ module.exports = {
         .setDescription(`${character.description}`)
       .setThumbnail(character.url)
 
-      if (command === pressure) {
+      if (command === "pressure") {
         interaction.reply({ embeds: [pressureembed] });
       } else {
         interaction.reply({ embeds: [embed] });
