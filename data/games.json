@@ -84,7 +84,7 @@
     "name": "Strinova",
     "word": "character"
   },
-  "astralparty": {
+  "astral-party": {
     "emoji": "<:astralparty:1302455368399716415>",
     "name": "Astral Party",
     "word": "character"
@@ -94,14 +94,19 @@
     "name": "Minecraft",
     "word": "plant"
   },
-  "projectsekai": {
+  "project-sekai": {
     "emoji": "<:projectsekai:1310435011362820116>",
     "name": "Project Sekai",
     "word": "character"
   },
-  "pressure": {
+  "pressure-badge": {
     "emoji": "<:pressure:1312263543894315140>",
     "name": "Roblox: Pressure",
     "word": "badge"
+  },
+  "pressure-entity": {
+    "emoji": "<:pressure:1312263543894315140>",
+    "name": "Roblox: Pressure",
+    "word": "entity"
   }
 }

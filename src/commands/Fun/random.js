@@ -98,7 +98,7 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command
-        .setName("astralparty")
+        .setName("astral-party")
         .setDescription("!SLIGHT NSFW/LEWD! Get a random Astral Party character"),
     )
     .addSubcommand((command) =>
@@ -108,13 +108,18 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command
-        .setName("projectsekai")
+        .setName("project-sekai")
         .setDescription("Get a random Project Sekai character"),
     )
     .addSubcommand((command) =>
       command
-        .setName("pressure")
+        .setName("pressure-badge")
         .setDescription("Get a random Roblox: Pressure badge"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("pressure-entity")
+        .setDescription("Get a random Roblox: Pressure entity"),
     ),
 
   async execute(interaction) {
@@ -154,7 +159,7 @@ module.exports = {
         .setDescription(`${character.description}`)
       .setThumbnail(character.url)
 
-      if (command === "pressure") {
+      if (command === "pressure-badge") {
         interaction.reply({ embeds: [pressureembed] });
       } else {
         interaction.reply({ embeds: [embed] });

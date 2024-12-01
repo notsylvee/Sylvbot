@@ -851,7 +851,7 @@
     { "url": "https://cdn.sylvee.xyz/strinova_Yvette.png", "name": "Yvette!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Yugiri.png", "name": "Yugiri!" }
   ],
-  "astralparty": [
+  "astral-party": [
     { "url": "https://cdn.sylvee.xyz/ap_alana.png", "name": "Alana!" },
     { "url": "https://cdn.sylvee.xyz/ap_alana_bond.png", "name": "Alana!" },
     { "url": "https://cdn.sylvee.xyz/ap_alana_pulsatingbeach.webp", "name": "Alana (Pulsating Beach)!" },
@@ -937,7 +937,7 @@
     { "url": "https://cdn.sylvee.xyz/Potted_White_Tulip_JE5.png", "name": "a White Tulip!" },
     { "url": "https://cdn.sylvee.xyz/Potted_Wither_Rose_JE2.png", "name": "a Wither Rose!" }
   ],
-  "projectsekai": [
+  "project-sekai": [
     { "url": "https://cdn.sylvee.xyz/ps_mikuvs.webp", "name": "Hatsune Miku! (VIRTUAL SINGER)" },
     { "url": "https://cdn.sylvee.xyz/ps_mikuln.webp", "name": "Hatsune Miku! (Leo/need)" },
     { "url": "https://cdn.sylvee.xyz/ps_mikummj.webp", "name": "Hatsune Miku! (MORE MORE JUMP!)" },
@@ -975,7 +975,7 @@
     { "url": "https://cdn.sylvee.xyz/ps_ena.webp", "name": "Shinonome Ena! (25-ji, Nightcord de.)" },
     { "url": "https://cdn.sylvee.xyz/ps_mizuki.webp", "name": "Akiyama Mizuki! (25-ji, Nightcord de.)" }
   ],
-  "pressure": [
+  "pressure-badge": [
     { "url": "https://cdn.sylvee.xyz/225px-Expendable_Badge.webp", "name": "Expendable", "description": "Join the game for the first time." },
     { "url": "https://cdn.sylvee.xyz/225px-Great_Taste_Badge.webp", "name": "You've Got Great Taste!", "description": "You're just so dashing. Buy a new uniform." },
     { "url": "https://cdn.sylvee.xyz/225px-Death_1_Badge.webp", "name": "Send In The Next Team", "description": "We've got plenty in reserve. Die for the first time." },
@@ -1039,5 +1039,15 @@
     { "url": "https://cdn.sylvee.xyz/225px-Never_Dance_Again_Badge.webp", "name": "So I Guess We'll Never Dance Again", "description": "What a party poober!" },
     { "url": "https://cdn.sylvee.xyz/225px-Put_It_On_My_Tab.webp", "name": "Put It On My Tab", "description": "At Club Spectrum, order 10 health tonics in one run." },
     { "url": "https://cdn.sylvee.xyz/225px-Monster_Mash.webp", "name": "Monster Mash", "description": "At Club Spectrum, dance with some friendly skeletons. On PC, ask for H elp. On Console, move harder. On mobile, aim for the money." }
+  ],
+  "pressure-entity": [
+    { "url": "https://cdn.sylvee.xyz/pressure_a60.webp", "name": "A-60! 'The Multi-Monster'" },
+    { "url": "https://cdn.sylvee.xyz/pressure_angler.webp", "name": "Z-283! 'The Angler'" },
+    { "url": "https://cdn.sylvee.xyz/pressure_blitz.webp", "name": "Z-283-Blitz!" },
+    { "url": "https://cdn.sylvee.xyz/pressure_chainsmoker.webp", "name": "Z-283-Chainsmoker!" },
+    { "url": "https://cdn.sylvee.xyz/pressure_deathangel.png", "name": "Death Angel!" },
+    { "url": "https://cdn.sylvee.xyz/pressure_froger.webp", "name": "Z-283-Froger!" },
+    { "url": "https://cdn.sylvee.xyz/pressure_pandemonium.webp", "name": "Z-367! 'Pandemonium'" },
+    { "url": "https://cdn.sylvee.xyz/pressure_pinkie.png", "name": "Z-283-Pinkie!" }
   ]
 }
