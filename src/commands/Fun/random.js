@@ -148,7 +148,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setDescription(
-        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is...\n${character.name}`)
+        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is... ${character.name}`)
       .setImage(character.url)
       .setFooter({ text: `${footer}`})
 
