@@ -120,6 +120,11 @@ module.exports = {
       command
         .setName("pressure-entity")
         .setDescription("Get a random Roblox: Pressure entity"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("regretevator-badge")
+        .setDescription("Get a random Roblox: Regretevator badge"),
     ),
 
   async execute(interaction) {
@@ -159,7 +164,7 @@ module.exports = {
         .setDescription(`${character.description}`)
       .setThumbnail(character.url)
 
-      if (command === "pressure-badge") {
+      if (command === "pressure-badge" || command === "regretevator-badge") {
         interaction.reply({ embeds: [pressureembed] });
       } else {
         interaction.reply({ embeds: [embed] });
