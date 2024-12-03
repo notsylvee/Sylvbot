@@ -157,15 +157,15 @@ module.exports = {
       .setImage(character.url)
       .setFooter({ text: `${footer}`})
 
-      const pressureembed = new EmbedBuilder()
+      const badgeEmbed = new EmbedBuilder()
       .setColor("f3b3a2")
       .setTitle(
         `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is... ${character.name}`)
         .setDescription(`${character.description}`)
       .setThumbnail(character.url)
 
-      if (command === "pressure-badge" || command === "regretevator-badge") {
-        interaction.reply({ embeds: [pressureembed] });
+      if (command.endsWith("badge")) {
+        interaction.reply({ embeds: [badgeEmbed] });
       } else {
         interaction.reply({ embeds: [embed] });
       }
