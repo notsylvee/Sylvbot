@@ -447,7 +447,8 @@
     { "url": "https://cdn.sylvee.xyz/mc_wolf4.png", "name": "a Wolf! <:overworld:1281720978203742291>" },
     { "url": "https://cdn.sylvee.xyz/mc_zoglin/png", "name": "a Zoglin! <:nether:1281720995580874844>" },
     { "url": "https://cdn.sylvee.xyz/mc_zombie.png", "name": "a Zombie! <:cave:1281722154693693470>" },
-    { "url": "https://cdn.sylvee.xyz/mc_zombievillager.png", "name": "a Zombie Villager! <:overworld:1281720978203742291>" }
+    { "url": "https://cdn.sylvee.xyz/mc_zombievillager.png", "name": "a Zombie Villager! <:overworld:1281720978203742291>" },
+    { "url": "https://cdn.sylvee.xyz/mc_creaking.png", "name": "a Creaking! <:palegarden:1315521957776855113>" }
   ],
   "league": [
     { "url": "https://cdn.sylvee.xyz/league_Aatrox.webp", "name": "Aatrox! <:league_fighter:1280955610502004756>" },
@@ -935,7 +936,8 @@
     { "url": "https://cdn.sylvee.xyz/Potted_Warped_Fungus_JE2.png", "name": "Warped Fungus!" },
     { "url": "https://cdn.sylvee.xyz/Potted_Warped_Roots_JE2.png", "name": "Warped Roots!" },
     { "url": "https://cdn.sylvee.xyz/Potted_White_Tulip_JE5.png", "name": "a White Tulip!" },
-    { "url": "https://cdn.sylvee.xyz/Potted_Wither_Rose_JE2.png", "name": "a Wither Rose!" }
+    { "url": "https://cdn.sylvee.xyz/Potted_Wither_Rose_JE2.png", "name": "a Wither Rose!" },
+    { "url": "https://cdn.sylvee.xyz/Potted_Pale_Oak_Sapling_JE1.png", "name": "a Pale Oak sapling!" }
   ],
   "project-sekai": [
     { "url": "https://cdn.sylvee.xyz/ps_mikuvs.webp", "name": "Hatsune Miku! (VIRTUAL SINGER)" },
