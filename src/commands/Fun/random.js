@@ -125,6 +125,11 @@ module.exports = {
       command
         .setName("regretevator-badge")
         .setDescription("Get a random Roblox: Regretevator badge"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("grace-badge")
+        .setDescription("Get a random Roblox: Grace badge"),
     ),
 
   async execute(interaction) {

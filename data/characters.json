@@ -1155,5 +1155,25 @@
     { "url": "https://cdn.sylvee.xyz/SAVED_NPCS.webp", "name": "SAVED NPCS", "description": "Wow! You helped save them! Good job!" },
     { "url": "https://cdn.sylvee.xyz/STAT.webp", "name": "STAT", "description": "She is here." },
     { "url": "https://cdn.sylvee.xyz/S.T.A.T._DEFEATED.webp", "name": "S.T.A.T. DEFEATED", "description": "you've defeated S.T.A.T. How tragic." }
+  ],
+  "grace-badge": [
+    { "url": "https://cdn.sylvee.xyz/Illhelpyoubadgev2.webp", "name": "i'll help you.", "description": "as long as you're here, you can always try again. perish for the first time." },
+    { "url": "https://cdn.sylvee.xyz/AppletreeBadgeV2.webp", "name": "jabłoń", "description": "Survive Carnation" },
+    { "url": "https://cdn.sylvee.xyz/SlightBadgeV2.webp", "name": "eye for an Eye", "description": "Encounter Slight, and don't let him in" },
+    { "url": "https://cdn.sylvee.xyz/SlugBadgeV2.webp", "name": "Peer Pressure", "description": "Stay patient, no greed. Survive Slugfish." },
+    { "url": "https://cdn.sylvee.xyz/PeekabooBadgeV2.webp", "name": "peek-a-boo", "description": "yet he has no eyes. Survive an encounter with Elkman." },
+    { "url": "https://cdn.sylvee.xyz/SnoozeBadgeV2.webp", "name": "STAREDOWN", "description": "Encounter heed, and don't let him in." },
+    { "url": "https://cdn.sylvee.xyz/StaredownBadgeV2.webp", "name": "SNOOZE", "description": "Swallow your ego, or he will. Survive Dozer." },
+    { "url": "https://cdn.sylvee.xyz/GdayBadgeV2.webp", "name": "it's a good day.", "description": "Survive Sorrow." },
+    { "url": "https://cdn.sylvee.xyz/SufferingBadgeV2.webp", "name": "ALWAYS SUFFER", "description": "IT CAN BE TOMMOROW. Survive an encounter with the Goatman." },
+    { "url": "https://cdn.sylvee.xyz/GenesisBadgeV2.webp", "name": "genesis", "description": "I embrace you. I wouldn't have put you here if I didn't." },
+    { "url": "https://cdn.sylvee.xyz/AwwwwBadgeV2.webp", "name": "awwww", "description": "close the warning quickly." },
+    { "url": "https://cdn.sylvee.xyz/HavingfunBadgeV2.webp", "name": "already having fun?", "description": "Look at the warning screen... for a while." },
+    { "url": "https://cdn.sylvee.xyz/BURNOUTBadgeV2.webp", "name": "BURNOUT", "description": "OWW... Slide until you slow down so much you're barely moving." },
+    { "url": "https://cdn.sylvee.xyz/AwooogaBadgeV2.webp", "name": "AWOOOGA", "description": "Set your FOV Addition to -60." },
+    { "url": "https://cdn.sylvee.xyz/StimulatedBadgeV2.webp", "name": "STIMULATED", "description": "You sure can spin that flashlight!" },
+    { "url": "https://cdn.sylvee.xyz/Lapv2badge.webp", "name": "LAP 2", "description": "THE GRACE I DESERVE. Complete 2 timers in under 2 minutes and 30 seconds." },
+    { "url": "https://cdn.sylvee.xyz/TouchelkmanBadgeV2.webp", "name": "DAPPED UP", "description": "Touch the Elkman." },
+    { "url": "https://cdn.sylvee.xyz/NoBadgeV2.webp", "name": "NO", "description": "Flash the Goatman, and then make him go away." }
   ]
 }
