@@ -20,7 +20,6 @@ module.exports = {
   
       let msg = message.content;
       let hex = msg.substr(msg.length - 6);
-      if (message.content.toLowerCase().startsWith("<@953885359668871238> role color #")) role.edit({ color: `#${hex}` });
-      message.channel.send(`-# Your role color has been changed to #${hex}`)
+      if (message.content.toLowerCase().startsWith("<@953885359668871238> role color #")) role.edit({ color: `#${hex}` }), message.channel.send(`-# Your role color has been changed to #${hex}`);
     },
   };
