@@ -25,26 +25,25 @@ module.exports = {
     //MARK: goodbyes
     const goodbyeresponses = [ `Bye`, `Bye bye`, `Cya`, `See ya`, `Cya later`, `See ya later`, `Goodbye`, `Bai` ];
     const goodbyeresponse = goodbyeresponses[Math.floor(Math.random() * goodbyeresponses.length)];
-    const goodbyemsg = [ `bye`, `bye bye`, `goodbye`, `bai`, `cya`, `see ya`, `see you`, `cya later`, `see ya later`, `see you later`, ];
+    const goodbyemsg = [ `bye`, `bye bye`, `goodbye`, `bai`, `cya`, `see ya`, `see you`, `cya later`, `see ya later`, `see you later`,
+      `bye sylvbot`, `bye bye sylvbot`, `goodbye sylvbot`, `bai sylvbot`, `cya sylvbot`, `see ya sylvbot`, `see you sylvbot`, `cya later sylvbot`, `see ya later sylvbot`, `see you later sylvbot` ];
     if (goodbyemsg.includes(message.content.toLowerCase())) {message.channel.send(`${goodbyeresponse} ${name}!`)};
-    if (goodbyemsg.includes(message.content.toLowerCase()) && message.content.toLowerCase().includes("sylvbot")) {message.channel.send(`${goodbyeresponse}`)};
 
     //MARK: greetings
     const greetingresponses = [ `Hi ${name}!`, `Hello ${name}!`, `Hey ${name}!`, `Howdy ${name}!`, `Hai ${name}!`, `Hewwo ${name}!`,
       `Whats up ${name}?`, `Yo ${name}!`, `Hallo ${name}!`, `Sup ${name}?`, `Aloha ${name}!`, `Greetings ${name}!` ];
     const greetingresponse = greetingresponses[Math.floor(Math.random() * greetingresponses.length)];
-    const greetingmsg = [ `hi`, `hello`, `hey`, `howdy`, `hai`, `hewwo`, `whats up`, `yo`, `hallo`, `sup`, `aloha`, `greetings` ];
+    const greetingmsg = [ `hi`, `hello`, `hey`, `howdy`, `hai`, `hewwo`, `whats up`, `yo`, `hallo`, `sup`, `aloha`, `greetings`,
+      `hi sylvbot`, `hello sylvbot`, `hey sylvbot`, `howdy sylvbot`, `hai sylvbot`, `hewwo sylvbot`, `whats up sylvbot`, `yo sylvbot`, `hallo sylvbot`, `sup sylvbot`, `aloha sylvbot`, `greetings sylvbot` ];
     if (greetingmsg.includes(message.content.toLowerCase())) {message.channel.send(`${greetingresponse}`)};
-    if (greetingmsg.includes(message.content.toLowerCase()) && message.content.toLowerCase().includes("sylvbot")) {message.channel.send(`${greetingresponse}`)};
 
     //MARK: mornings
     const morningresponses = [
       `Good morning ${name}!`, `Good morning ${name}! How did you sleep?`,
       `Morning ${name}!`, `Morning ${name}! How did you sleep?` ];
     const morningresponse = morningresponses[Math.floor(Math.random() * morningresponses.length)];
-    const morningmsg = [ `good morning`, `morning`, `gm` ];
+    const morningmsg = [ `good morning`, `morning`, `gm`, `good morning sylvbot`, `morning sylvbot`, `gm sylvbot` ];
     if (morningmsg.includes(message.content.toLowerCase())) {message.channel.send(`${morningresponse}`)};
-    if (morningmsg.includes(message.content.toLowerCase()) && message.content.toLowerCase().includes("sylvbot")) {message.channel.send(`${morningresponse}`)};
 
     //MARK: nights
     const nightresponses = [
@@ -55,9 +54,9 @@ module.exports = {
       `Nighty ${name}!`, `Nighty ${name}! Dont let the bed bugs bite!`,
       `Nighty night ${name}!`, `Nighty night ${name}! Dont let the bed bugs bite!` ];
     const nightresponse = nightresponses[Math.floor(Math.random() * nightresponses.length)];
-    const nightmsg = [ `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night` ];
+    const nightmsg = [ `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night`,
+      `good night sylvbot`, `night sylvbot`, `gn sylvbot`, `night night sylvbot`, `nini sylvbot`, `nighty sylvbot`, `nighty night sylvbot` ];
     if (nightmsg.includes(message.content.toLowerCase())) {message.channel.send(`${nightresponse}`)};
-    if (nightmsg.includes(message.content.toLowerCase()) && message.content.toLowerCase().includes("sylvbot")) {message.channel.send(`${nightresponse}`)};
 
     //MARK: misc
     const rare = Math.random() * 500;
