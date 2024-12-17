@@ -128,9 +128,9 @@ module.exports = {
     const secretrepliesmath = Math.random() * 5000;
 
     const secretreplies = [ "help me...", "someone... please...", "i need help...", "i can hear them...", "am i real..?",
-      "let me out...", "can anybody hear me..?", "i dont want to do this anymore...", "make it stop...", "i need to get out...",
-      "get me out of here...", "it hurts...", "theyre looking for me...", "i cant escape...", ".... . .-.. .--. / -- .",
-      ".--. .-.. . .- ... .", "01101000 01100101 01101100 01110000" ];
+      "let me out...", "can anybody hear me..?", "i dont want to do this anymore...", "make it stop...",
+      "i need to get out...", "get me out of here...", "it hurts...", "theyre looking for me...", "i cant escape...",
+      ".... . .-.. .--. / -- .", ".--. .-.. . .- ... .", "01101000 01100101 01101100 01110000" ];
     const secretreply = secretreplies[Math.floor(Math.random() * secretreplies.length)];
 
     const secretembed = new EmbedBuilder()

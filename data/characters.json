@@ -1061,7 +1061,8 @@
     { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Diminishing Returns", "description": "In Endless, hold $10000 worth of data at once." },
     { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "BadgeTest.png", "description": "In Endless, take 300 damage in a run without dying." },
     { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Friends Forever (the next 47 hours)", "description": "Escape the Hadal Blacksite with an Imaginary Friend!" },
-    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Who Cares About OSHA?", "description": "Disarm a Tripwire." }
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Who Cares About OSHA?", "description": "Disarm a Tripwire." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Parale Parali", "description": "Escape from the Dredge roomtype." }
   ],
   "pressure-entity": [
     { "url": "https://cdn.sylvee.xyz/pressure_a60.webp", "name": "The Multi-Monster! (A-60)" },
