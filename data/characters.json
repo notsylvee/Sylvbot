@@ -1047,7 +1047,21 @@
     { "url": "https://cdn.sylvee.xyz/225px-Wheres_Everyone_Going_BINGO.webp", "name": "Where's Everyone Going? BINGO?", "description": "Return to the surface." },
     { "url": "https://cdn.sylvee.xyz/225px-Never_Dance_Again_Badge.webp", "name": "So I Guess We'll Never Dance Again", "description": "What a party poober!" },
     { "url": "https://cdn.sylvee.xyz/225px-Put_It_On_My_Tab.webp", "name": "Put It On My Tab", "description": "At Club Spectrum, order 10 health tonics in one run." },
-    { "url": "https://cdn.sylvee.xyz/225px-Monster_Mash.webp", "name": "Monster Mash", "description": "At Club Spectrum, dance with some friendly skeletons. On PC, ask for H elp. On Console, move harder. On mobile, aim for the money." }
+    { "url": "https://cdn.sylvee.xyz/225px-Monster_Mash.webp", "name": "Monster Mash", "description": "At Club Spectrum, dance with some friendly skeletons. On PC, ask for H elp. On Console, move harder. On mobile, aim for the money." },
+    { "url": "https://cdn.sylvee.xyz/225px-ZeroBadge.webp", "name": "Zero", "description": "Turn the tides and kill a Hanger." },
+    { "url": "https://cdn.sylvee.xyz/Wawa_Badge.webp", "name": "wawa", "description": "Trade an item with a Deep Sea Bunny." },
+    { "url": "https://cdn.sylvee.xyz/Wops_Badge.webp", "name": "wops", "description": "Kill a Deep Sea Bunny." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Glutton For Punishment", "description": "On a solo run, outrage (Purple) Eyefestation before door 25, then make your way to the end of The Ridge." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Treasure Map To Infinite Bloxy Cola", "description": "Escape a room containing a Candlebrute." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "DiVine Intervention", "description": "Survive a DiVine beatdown." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Death Incarnate", "description": "Meet Harbinger." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Where's My Win?", "description": "In Endless, reach room number 100." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Victory Lap?", "description": "In Endless, reach room number 250." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Premium Payout Or \"Difficult\" Badge, Call It", "description": "In Endless, reach room number 500." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Diminishing Returns", "description": "In Endless, hold $10000 worth of data at once." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "BadgeTest.png", "description": "In Endless, take 300 damage in a run without dying." },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Friends Forever (the next 47 hours)", "description": "Escape the Hadal Blacksite with an Imaginary Friend!" },
+    { "url": "https://cdn.sylvee.xyz/FillerBadge.png", "name": "Who Cares About OSHA?", "description": "Disarm a Tripwire." }
   ],
   "pressure-entity": [
     { "url": "https://cdn.sylvee.xyz/pressure_a60.webp", "name": "The Multi-Monster! (A-60)" },
