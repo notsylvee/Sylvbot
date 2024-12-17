@@ -130,6 +130,11 @@ module.exports = {
       command
         .setName("grace-badge")
         .setDescription("Get a random Roblox: Grace badge"),
+    )
+    .addSubcommand((command) =>
+      command
+        .setName("grace-entity")
+        .setDescription("Get a random Roblox: Grace entity"),
     ),
 
   async execute(interaction) {

@@ -1198,5 +1198,14 @@
     { "url": "https://cdn.sylvee.xyz/Lapv2badge.webp", "name": "LAP 2", "description": "THE GRACE I DESERVE. Complete 2 timers in under 2 minutes and 30 seconds." },
     { "url": "https://cdn.sylvee.xyz/TouchelkmanBadgeV2.webp", "name": "DAPPED UP", "description": "Touch the Elkman." },
     { "url": "https://cdn.sylvee.xyz/NoBadgeV2.webp", "name": "NO", "description": "Flash the Goatman, and then make him go away." }
+  ],
+  "grace-entity": [
+    { "url": "https://cdn.sylvee.xyz/CarnationRender.webp", "name": "Carnation!" },
+    { "url": "https://cdn.sylvee.xyz/DozerSprite.webp", "name": "Dozer!" },
+    { "url": "https://cdn.sylvee.xyz/ElkmanRender.webp", "name": "Elkman!" },
+    { "url": "https://cdn.sylvee.xyz/Goatman.webp", "name": "Goatman!" },
+    { "url": "https://cdn.sylvee.xyz/HeedRender.webp", "name": "Heed!" },
+    { "url": "https://cdn.sylvee.xyz/SlightRender.webp", "name": "Slight!" },
+    { "url": "https://cdn.sylvee.xyz/SlugfishRender.webp", "name": "Slugfish!" }
   ]
 }
