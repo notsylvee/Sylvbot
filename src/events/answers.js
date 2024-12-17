@@ -21,15 +21,16 @@ module.exports = {
         `YASSSS`
       ];
       const response = msg[Math.floor(Math.random() * msg.length)];
-      const faces = [` `, ` `, ` `, ` `, ` `, ` `, ` `, ` `,
+      const faces = [` `, ` `, ` `, ` `, ` `, ` `, ` `, ` `, ` `,
         `:3`,
         `>.<`,
         `>:(`,
         `uwu`,
-        `:(`,
-        `:)`,
+        `:c`,
         `;3`,
-        `;)`,
+        `>:3`,
+        `:<`,
+        `:>`,
       ]
       const face = faces[Math.floor(Math.random() * faces.length)];
   
