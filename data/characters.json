@@ -89,7 +89,8 @@
     { "url": "https://cdn.sylvee.xyz/hsr_feixiao.webp", "name": "Feixiao! <:hsr_the_hunt:1280596052222935090> <:hsr_wind:1280600313220435998>" },
     { "url": "https://cdn.sylvee.xyz/hsr_moze.webp", "name": "Moze! <:hsr_the_hunt:1280596052222935090> <:hsr_lightning:1280600275643666593>" },
     { "url": "https://cdn.sylvee.xyz/hsr_lingsha.webp", "name": "Linghsa! <:hsr_abundance:1280595981540528212> <:hsr_fire:1280600243855167528>" },
-    { "url": "https://cdn.sylvee.xyz/hsr_rappa.webp", "name": "Rappa! <:hsr_erudition:1280596007306137713> <:hsr_imaginary:1280600265497509898>" }
+    { "url": "https://cdn.sylvee.xyz/hsr_rappa.webp", "name": "Rappa! <:hsr_erudition:1280596007306137713> <:hsr_imaginary:1280600265497509898>" },
+    { "url": "https://cdn.sylvee.xyz/hsr_Sunday.webp", "name": "Sunday! <:hsr_harmony:1280596019125686302> <:hsr_imaginary:1280600265497509898>" }
   ],
   "sv-marriageable": [
     { "url": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png", "name": "Alex!" },
@@ -167,7 +168,8 @@
     { "url": "https://cdn.sylvee.xyz/wuwa_zhezhi.webp", "name": "Zhezhi! <:wuwa_glacio:1280604663636430888> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_shorekeeper.webp", "name": "The Shorekeeper! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_Camellya.webp", "name": "Camellya! <:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
-    { "url": "https://cdn.sylvee.xyz/wuwa_Youhu.webp", "name": "Youhu! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" }
+    { "url": "https://cdn.sylvee.xyz/wuwa_Youhu.webp", "name": "Youhu! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_Lumi.webp", "name": "Lumi! <:wuwa_electro:1280604641834307594> <:wuwa_broadblade:1280606462061838376>" }
   ],
   "zzz": [
     { "url": "https://cdn.sylvee.xyz/zzz_rina.webp", "name": "Alexandrina (Rina) Sebastiane! <:zzz_electric:1280610523066400910>" },
@@ -192,7 +194,8 @@
     { "url": "https://cdn.sylvee.xyz/zzz_seth_lowell.webp", "name": "Seth Lowell! <:zzz_electric:1280610523066400910>" },
     { "url": "https://cdn.sylvee.xyz/zzz_ceaser_king.webp", "name": "Ceaser King! <:zzz_physical:1280610567203065999>" },
     { "url": "https://cdn.sylvee.xyz/zzz_burnice.webp", "name": "Burnice White! <:zzz_fire:1280610544625123390>" },
-    { "url": "https://cdn.sylvee.xyz/zzz_Tsukishiro_Yanagi.webp", "name": "Tsukishiro Yanagi! <:zzz_electric:1280610523066400910>" }
+    { "url": "https://cdn.sylvee.xyz/zzz_Tsukishiro_Yanagi.webp", "name": "Tsukishiro Yanagi! <:zzz_electric:1280610523066400910>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_Lighter.webp", "name": "Lighter! <:zzz_fire:1280610544625123390>" }
   ],
   "r1999": [
     { "url": "https://cdn.sylvee.xyz/r1999_37.webp", "name": "37!" },
@@ -662,7 +665,8 @@
     { "url": "https://cdn.sylvee.xyz/OW2_Winston.webp", "name": "Winston! <:ow_tank:1290401317084332123>" },
     { "url": "https://cdn.sylvee.xyz/OW2_Wrecking_Ball.webp", "name": "Wrecking Ball! <:ow_tank:1290401317084332123>" },
     { "url": "https://cdn.sylvee.xyz/OW2_Zarya.webp", "name": "Zarya! <:ow_tank:1290401317084332123>" },
-    { "url": "https://cdn.sylvee.xyz/OW2_Zenyatta.webp", "name": "Zenyatta! <:ow_support:1290401331202490428>" }
+    { "url": "https://cdn.sylvee.xyz/OW2_Zenyatta.webp", "name": "Zenyatta! <:ow_support:1290401331202490428>" },
+    { "url": "https://cdn.sylvee.xyz/OW2_Hazard.webp", "name": "Hazard! <:ow_tank:1290401317084332123>" }
   ],
   "tf2": [
     { "url": "https://cdn.sylvee.xyz/tf2_demoman.png", "name": "Demoman! <:tf2_demoman:1291533418152067093>" },
@@ -900,7 +904,10 @@
     { "url": "https://cdn.sylvee.xyz/ap_ren_cheerleader.png", "name": "Ren (Cheerleader)!" },
     { "url": "https://cdn.sylvee.xyz/ap_ren_cuteycaptain.png", "name": "Ren (Cutey Captain)!" },
     { "url": "https://cdn.sylvee.xyz/ap_Z3000.png", "name": "Z3000!" },
-    { "url": "https://cdn.sylvee.xyz/ap_Z3000_bond.png", "name": "Z3000!" }
+    { "url": "https://cdn.sylvee.xyz/ap_Z3000_bond.png", "name": "Z3000!" },
+    { "url": "https://cdn.sylvee.xyz/ap_Ame.png", "name": "Ame!" },
+    { "url": "https://cdn.sylvee.xyz/ap_KAngel.png", "name": "KAngel!" }
+
   ],
   "mc-plant": [
     { "url": "https://cdn.sylvee.xyz/Potted_Acacia_Sapling_JE5.png", "name": "an Acacia Sapling!" },
