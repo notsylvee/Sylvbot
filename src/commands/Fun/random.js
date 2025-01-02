@@ -113,31 +113,6 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command
-        .setName("pressure-badge")
-        .setDescription("Get a random Roblox: Pressure badge"),
-    )
-    .addSubcommand((command) =>
-      command
-        .setName("pressure-entity")
-        .setDescription("Get a random Roblox: Pressure entity"),
-    )
-    .addSubcommand((command) =>
-      command
-        .setName("regretevator-badge")
-        .setDescription("Get a random Roblox: Regretevator badge"),
-    )
-    .addSubcommand((command) =>
-      command
-        .setName("grace-badge")
-        .setDescription("Get a random Roblox: Grace badge"),
-    )
-    .addSubcommand((command) =>
-      command
-        .setName("grace-entity")
-        .setDescription("Get a random Roblox: Grace entity"),
-    )
-    .addSubcommand((command) =>
-      command
         .setName("dragalia-lost")
         .setDescription("Get a random Dragalia Lost adventurer"),
     ),
@@ -172,17 +147,6 @@ module.exports = {
       .setImage(character.url)
       .setFooter({ text: `${footer}`})
 
-      const badgeEmbed = new EmbedBuilder()
-      .setColor("f3b3a2")
-      .setTitle(
-        `${game.emoji} ${interaction.member.displayName}, your ${game.name} ${game.word} is... ${character.name}`)
-        .setDescription(`${character.description}`)
-      .setThumbnail(character.url)
-
-      if (command.endsWith("badge")) {
-        interaction.reply({ embeds: [badgeEmbed] });
-      } else {
-        interaction.reply({ embeds: [embed] });
-      }
+    interaction.reply({ embeds: [embed] });
   },
 };
