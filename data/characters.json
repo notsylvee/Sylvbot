@@ -24,7 +24,8 @@
     { "url": "https://cdn.sylvee.xyz/valorant_deadlock.webp", "name": "Deadlock! <:val_sentinel:1280603058509844540>" },
     { "url": "https://cdn.sylvee.xyz/valorant_iso.webp", "name": "Iso! <:val_duelist:1280603038704468041>" },
     { "url": "https://cdn.sylvee.xyz/valorant_clove.webp", "name": "Clove! <:val_controller:1280603027761528953>" },
-    { "url": "https://cdn.sylvee.xyz/valorant_vyse.webp", "name": "Vyse! <:val_sentinel:1280603058509844540>" }
+    { "url": "https://cdn.sylvee.xyz/valorant_vyse.webp", "name": "Vyse! <:val_sentinel:1280603058509844540>" },
+    { "url": "https://cdn.sylvee.xyz/valorant_tejo.webp", "name": "Tejo! <:val_initiator:1280603048753758208>" }
   ],
   "hsr": [
     { "url": "https://cdn.sylvee.xyz/hsr_acheron.webp", "name": "Acheron! <:hsr_nihility:1280596031074992160> <:hsr_lightning:1280600275643666593>" },
@@ -156,11 +157,13 @@
     { "url": "https://cdn.sylvee.xyz/wuwa_encore.webp", "name": "Encore! <:wuwa_fusion:1280604652097896448> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_jianxin.webp", "name": "Jianxin! <:wuwa_aero:1280604630975512636> <:wuwa_gauntlets:1280606473809952768>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_jinhsi.webp", "name": "Jinhsi! <:wuwa_spectro:1280604686277279806> <:wuwa_broadblade:1280606462061838376>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_jinhsi_peach_blossom.webp", "name": "Jinhsi (Peach Blossom)! <:wuwa_spectro:1280604686277279806> <:wuwa_broadblade:1280606462061838376>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_jiyan.webp", "name": "Jiyan! <:wuwa_aero:1280604630975512636> <:wuwa_broadblade:1280606462061838376>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_lingyang.webp", "name": "Lingyang! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_mortefi.webp", "name": "Mortefi! <:wuwa_fusion:1280604652097896448> <:wuwa_pistols:1280606485134442619>" },
-    { "url": "https://cdn.sylvee.xyz/wuwa_rover.webp", "name": "Rover! <:wuwa_spectro:1280604686277279806>/<:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_rover.webp", "name": "Rover! <:wuwa_sword:1280606507041558558>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_sanhua.webp", "name": "Sanhua! <:wuwa_glacio:1280604663636430888> <:wuwa_sword:1280606507041558558>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_sanhua_exorcistic_adjuration.webp", "name": "Sanhua (Exorcistic Adjuration)! <:wuwa_glacio:1280604663636430888> <:wuwa_sword:1280606507041558558>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_taoqi.webp", "name": "Taoqi! <:wuwa_havoc:1280604674352877568> <:wuwa_broadblade:1280606462061838376>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_verina.webp", "name": "Verina! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_xiangli_yao.webp", "name": "Xiangli Yao! <:wuwa_electro:1280604641834307594> <:wuwa_gauntlets:1280606473809952768>" },
@@ -171,7 +174,9 @@
     { "url": "https://cdn.sylvee.xyz/wuwa_shorekeeper.webp", "name": "The Shorekeeper! <:wuwa_spectro:1280604686277279806> <:wuwa_rectifier:1280606495762808977>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_Camellya.webp", "name": "Camellya! <:wuwa_havoc:1280604674352877568> <:wuwa_sword:1280606507041558558>" },
     { "url": "https://cdn.sylvee.xyz/wuwa_Youhu.webp", "name": "Youhu! <:wuwa_glacio:1280604663636430888> <:wuwa_gauntlets:1280606473809952768>" },
-    { "url": "https://cdn.sylvee.xyz/wuwa_Lumi.webp", "name": "Lumi! <:wuwa_electro:1280604641834307594> <:wuwa_broadblade:1280606462061838376>" }
+    { "url": "https://cdn.sylvee.xyz/wuwa_Lumi.webp", "name": "Lumi! <:wuwa_electro:1280604641834307594> <:wuwa_broadblade:1280606462061838376>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_carlotta.webp", "name": "Carlotta! <:wuwa_glacio:1280604663636430888> <:wuwa_pistols:1280606485134442619>" },
+    { "url": "https://cdn.sylvee.xyz/wuwa_roccia.webp", "name": "Roccia! <:wuwa_havoc:1280604674352877568> <:wuwa_gauntlets:1280606473809952768>" }
   ],
   "zzz": [
     { "url": "https://cdn.sylvee.xyz/zzz_rina.webp", "name": "Alexandrina (Rina) Sebastiane! <:zzz_electric:1280610523066400910>" },
@@ -197,7 +202,10 @@
     { "url": "https://cdn.sylvee.xyz/zzz_ceaser_king.webp", "name": "Ceaser King! <:zzz_physical:1280610567203065999>" },
     { "url": "https://cdn.sylvee.xyz/zzz_burnice.webp", "name": "Burnice White! <:zzz_fire:1280610544625123390>" },
     { "url": "https://cdn.sylvee.xyz/zzz_Tsukishiro_Yanagi.webp", "name": "Tsukishiro Yanagi! <:zzz_electric:1280610523066400910>" },
-    { "url": "https://cdn.sylvee.xyz/zzz_Lighter.webp", "name": "Lighter! <:zzz_fire:1280610544625123390>" }
+    { "url": "https://cdn.sylvee.xyz/zzz_Lighter.webp", "name": "Lighter! <:zzz_fire:1280610544625123390>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_asaba_harumasa.webp", "name": "Asaba Harumasa! <:zzz_electric:1280610523066400910>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_Astra_Yao.webp", "name": "Astra Yao! <:zzz_ether:1280610533300637746>" },
+    { "url": "https://cdn.sylvee.xyz/zzz_Hoshimi_Miyabi.webp.webp", "name": "Hoshimi Miyabi! <:zzz_frost:1336478840196698122>" }
   ],
   "r1999": [
     { "url": "https://cdn.sylvee.xyz/r1999_37.webp", "name": "37!" },
@@ -624,7 +632,8 @@
     { "url": "https://cdn.sylvee.xyz/league_Warwick.webp", "name": "Warwick! <:league_fighter:1280955610502004756>" },
     { "url": "https://cdn.sylvee.xyz/league_Wukong.webp", "name": "Wukong! <:league_fighter:1280955610502004756>" },
     { "url": "https://cdn.sylvee.xyz/league_Volibear.webp", "name": "Volibear! <:league_fighter:1280955610502004756>" },
-    { "url": "https://cdn.sylvee.xyz/league_Ambessa.png", "name": "Ambessa! <:league_fighter:1280955610502004756>  <:league_slayer:1280955645469655153> " }
+    { "url": "https://cdn.sylvee.xyz/league_Ambessa.png", "name": "Ambessa! <:league_fighter:1280955610502004756>  <:league_slayer:1280955645469655153> " },
+    { "url": "https://cdn.sylvee.xyz/league_Mel.png", "name": "Mel! <:league_mage:1280955620647895180>" }
   ],
   "overwatch": [
     { "url": "https://cdn.sylvee.xyz/OW2_Ana.webp", "name": "Ana! <:ow_support:1290401331202490428>" },
@@ -696,9 +705,13 @@
     { "url": "https://cdn.sylvee.xyz/mc_notch.png", "name": "Notch!", "footer": "Minecraft founder" }
   ],
   "nte": [
-    { "url": "https://cdn.sylvee.xyz/NTE_Mint.png", "name": "Mint!" },
-    { "url": "https://cdn.sylvee.xyz/NTE_Nanally.png", "name": "Nanally!" },
-    { "url": "https://cdn.sylvee.xyz/NTE_Sakiri.png", "name": "Sakiri!" }
+    { "url": "https://cdn.sylvee.xyz/NTE_Nanally.webp", "name": "Nanally!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Mint.webp", "name": "Mint!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Sakiri.webp", "name": "Sakiri!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Taygedo.webp", "name": "Taygedo!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Hotori.webp", "name": "Hotori!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Lacrimosa.webp", "name": "Lacrimosa!" },
+    { "url": "https://cdn.sylvee.xyz/NTE_Fadia.webp", "name": "Fadia!" }
   ],
   "hi3": [
     { "url": "https://cdn.sylvee.xyz/hi3_black_nucleus.png", "name": "Bronya Zaychick: Black Nucleus!" },
@@ -836,7 +849,10 @@
     { "url": "https://cdn.sylvee.xyz/genshin_Yun_Jin.webp", "name": "Yun Jin!" },
     { "url": "https://cdn.sylvee.xyz/genshin_Zhongli.webp", "name": "Zhongli!" },
     { "url": "https://cdn.sylvee.xyz/genshin_Ororon.webp", "name": "Ororon!" },
-    { "url": "https://cdn.sylvee.xyz/genshin_Chasca.webp", "name": "Chasca!" }
+    { "url": "https://cdn.sylvee.xyz/genshin_Chasca.webp", "name": "Chasca!" },
+    { "url": "https://cdn.sylvee.xyz/genshin_Citlali.webp", "name": "Citlali!" },
+    { "url": "https://cdn.sylvee.xyz/genshin_Lan_Yan.webp", "name": "Lan Yan!" },
+    { "url": "https://cdn.sylvee.xyz/genshin_Mavuika.webp", "name": "Mavuika!" }
   ],
   "strinova": [
     { "url": "https://cdn.sylvee.xyz/strinova_Audrey.png", "name": "Audrey!" },
@@ -844,19 +860,21 @@
     { "url": "https://cdn.sylvee.xyz/strinova_Celestia.png", "name": "Celestia!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Eika.png", "name": "Eika!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Flavia.png", "name": "Flavia!" },
+    { "url": "https://cdn.sylvee.xyz/strinova_Fragrans.png", "name": "Fragrans!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Fuchsia.png", "name": "Fuchsia!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Galatea.png", "name": "Galatea!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Kanami.png", "name": "Kanami!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Kokona.png", "name": "Kokona!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Lawine.png", "name": "Lawine!" },
+    { "url": "https://cdn.sylvee.xyz/strinova_Leona.png", "name": "Leona!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Maddelena.png", "name": "Maddelena!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Meredith.png", "name": "Meredith!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Michele.png", "name": "Michele!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Ming.png", "name": "Ming!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Nobunaga.png", "name": "Nobunaga!" },
     { "url": "https://cdn.sylvee.xyz/strinova_Reiichi.png", "name": "Reiichi!" },
-    { "url": "https://cdn.sylvee.xyz/strinova_Yvette.png", "name": "Yvette!" },
-    { "url": "https://cdn.sylvee.xyz/strinova_Yugiri.png", "name": "Yugiri!" }
+    { "url": "https://cdn.sylvee.xyz/strinova_Yugiri.png", "name": "Yugiri!" },
+    { "url": "https://cdn.sylvee.xyz/strinova_Yvette.png", "name": "Yvette!" }
   ],
   "astral-party": [
     { "url": "https://cdn.sylvee.xyz/ap_alana.png", "name": "Alana!" },
@@ -868,13 +886,16 @@
     { "url": "https://cdn.sylvee.xyz/ap_fen.png", "name": "Fen!" },
     { "url": "https://cdn.sylvee.xyz/ap_fen_bond.png", "name": "Fen!" },
     { "url": "https://cdn.sylvee.xyz/ap_fen_maidwarrior.png", "name": "Fen (Maid Warrior)!" },
+    { "url": "https://cdn.sylvee.xyz/ap_fen_dragonsascent.png", "name": "Fen (Dragon's Ascent)!" },
     { "url": "https://cdn.sylvee.xyz/ap_haiqing.png", "name": "HaiQing!" },
     { "url": "https://cdn.sylvee.xyz/ap_haiqing_bond.webp", "name": "HaiQing!" },
     { "url": "https://cdn.sylvee.xyz/ap_haiqing_costumeparty.webp", "name": "HaiQing (Costume Party)!" },
     { "url": "https://cdn.sylvee.xyz/ap_jasmine.webp", "name": "Jasmine!" },
     { "url": "https://cdn.sylvee.xyz/ap_jasmine_bond.webp", "name": "Jasmine!" },
+    { "url": "https://cdn.sylvee.xyz/ap_jasmine_festivaldress.png", "name": "Jasmine (Festival Dress)!" },
     { "url": "https://cdn.sylvee.xyz/ap_komachi.webp", "name": "Komachi!" },
     { "url": "https://cdn.sylvee.xyz/ap_komachi_bond.webp", "name": "Komachi!" },
+    { "url": "https://cdn.sylvee.xyz/ap_komachi_whytheninja.png", "name": "Komachi (Why the Ninja?)!" },
     { "url": "https://cdn.sylvee.xyz/ap_luka.webp", "name": "Luka!" },
     { "url": "https://cdn.sylvee.xyz/ap_luka_bond.png", "name": "Luka!" },
     { "url": "https://cdn.sylvee.xyz/ap_lulu.webp", "name": "Lulu!" },
@@ -889,6 +910,7 @@
     { "url": "https://cdn.sylvee.xyz/ap_misaki_maidwarrior.png", "name": "Misaki (Maid Warrior)!" },
     { "url": "https://cdn.sylvee.xyz/ap_nancy_lu.webp", "name": "Nancy Lu!" },
     { "url": "https://cdn.sylvee.xyz/ap_nancy_lu_bond.webp", "name": "Nancy Lu!" },
+    { "url": "https://cdn.sylvee.xyz/ap_nancy_lu_splendorroyale.png", "name": "Nancy Lu (Splendor Royale)!" },
     { "url": "https://cdn.sylvee.xyz/ap_nardis.webp", "name": "Nardis!" },
     { "url": "https://cdn.sylvee.xyz/ap_nardis_bond.png", "name": "Nardis!" },
     { "url": "https://cdn.sylvee.xyz/ap_nardis_festivaldress.webp", "name": "Nardis (Festival Dress)!" },
@@ -908,7 +930,11 @@
     { "url": "https://cdn.sylvee.xyz/ap_Z3000.png", "name": "Z3000!" },
     { "url": "https://cdn.sylvee.xyz/ap_Z3000_bond.png", "name": "Z3000!" },
     { "url": "https://cdn.sylvee.xyz/ap_Ame.png", "name": "Ame!" },
-    { "url": "https://cdn.sylvee.xyz/ap_KAngel.png", "name": "KAngel!" }
+    { "url": "https://cdn.sylvee.xyz/ap_KAngel.png", "name": "KAngel!" },
+    { "url": "https://cdn.sylvee.xyz/ap_megas.png", "name": "Megas!" },
+    { "url": "https://cdn.sylvee.xyz/ap_megas_bond.png", "name": "Megas!" },
+    { "url": "https://cdn.sylvee.xyz/ap_mengzhao.png", "name": "Mengzhao!" },
+    { "url": "https://cdn.sylvee.xyz/ap_mengzhao_bond.png", "name": "Mengzhao!" }
 
   ],
   "mc-plant": [

@@ -48,11 +48,6 @@ module.exports = {
     )
     .addSubcommand((command) =>
       command
-        .setName("r1999")
-        .setDescription("Get a random Reverse: 1999 arcanist"),
-    )
-    .addSubcommand((command) =>
-      command
         .setName("mc-mob")
         .setDescription("Get a random Minecraft mob"),
     )
@@ -75,11 +70,6 @@ module.exports = {
       command
         .setName("nte")
         .setDescription("Get a random Neverness to Everness character"),
-    )
-    .addSubcommand((command) =>
-      command
-        .setName("hi3")
-        .setDescription("Get a random Honkai Impact 3rd valkyrie"),
     )
     .addSubcommand((command) =>
       command
