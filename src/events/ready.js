@@ -18,9 +18,7 @@ module.exports = {
     });
 
     const updates = await client.channels.fetch(process.env.updatechannel);
-    const message = await updates.messages.fetch({ limit: 1 });
-    const recent = message.first();
-    if (recent.author.id !== process.env.botID) updates.send("Update live!");
+    updates.send("Update live!");
 
     console.log("Ready!");
 
