@@ -77,7 +77,9 @@ module.exports = {
       if (rare < 499) {message.channel.send("-# crazy? i was crazy once");
       } else {message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***");
         logsChannel.send({ embeds: [crazyembed] })}}
-
+    if (message.content.toLowerCase() === "they locked me in a room") {message.channel.send("-# a rubber room")}
+    if (message.content.toLowerCase() === "a rubber room with rats") {message.channel.send("-# and rats make me crazy")}
+    
     if (message.content.toLowerCase().includes("cwazy")) {
       message.channel.send("-# cwazy? i was cwazy once")}
 
