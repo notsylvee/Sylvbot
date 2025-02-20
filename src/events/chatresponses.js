@@ -118,6 +118,7 @@ module.exports = {
     if (message.content.toLowerCase() === "rawr") {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "nya") {message.channel.send("-# nya~!")}
     if (message.content.toLowerCase() === "ligma") {message.channel.send("-# balls")}
+    if (message.content.toLowerCase() === "say gex") {message.channel.send("-# gex")}
     if (message.content.toLowerCase().includes(":3")) {message.channel.send("-# :3")}
     if (message.content.toLowerCase().includes("x3")) {message.channel.send("-# x3")}
     if (message.content.toLowerCase().includes("uwu")) {message.channel.send("-# uwu")}
