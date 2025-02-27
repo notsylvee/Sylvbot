@@ -18,7 +18,7 @@ module.exports = {
     });
 
     const updates = await client.channels.fetch(process.env.updatechannel);
-    updates.send("Update live!");
+    updates.send("I am now online/have been updated!");
 
     console.log("Ready!");
 
