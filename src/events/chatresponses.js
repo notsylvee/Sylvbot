@@ -6,7 +6,7 @@ module.exports = {
 
     if (message.author.bot || !message.guild) return;
     if (message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?")) return;
-    const logsChannel = await client.channels.fetch("1245963741460430858");
+    const logsChannel = await client.channels.fetch("1344881478625923112");
 
     //blocked channels
     if (message.channel.id === `1219415504884731994`) return; /*scok*/
