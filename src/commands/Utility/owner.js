@@ -1,15 +1,9 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const {
   EmbedBuilder,
-  Embed,
-  PermissionsBitField,
-  ChannelType,
-  AutoModerationActionExecution,
   ActionRowBuilder,
   ButtonBuilder,
-  ButtonStyle,
-  SlashCommandIntegerOption,
-  Component,
+  ButtonStyle
 } = require("discord.js");
 
 module.exports = {
