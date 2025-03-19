@@ -1,4 +1,4 @@
-module.exports = {
+/*(module.exports = {
     name: "messageCreate",
     async execute(message) {
       if (message.author.bot || !message.guild) return;
@@ -25,4 +25,4 @@ module.exports = {
       if (message.content.toLowerCase().includes("<#953885359668871238> happy bday"))
         {message.channel.send(`${response} ${name}!`)};
     },
-  };
+  };*/
