@@ -10,13 +10,10 @@ module.exports = {
 
     //blocked channels
     if (message.channel.id === `1219415504884731994`) return; /*scok*/
-    if (message.channel.id === `1100258238697590824`) return; /*tgses*/
-    if (message.channel.id === `1100255684727152660`) return; /*tgsp*/
 
     //names & msgs
     let name = `${message.member.displayName}`;
     if (message.author.id === "1018686464000807003") name = "mama";
-    if (message.author.id === "529405805686947843") name = "grandma";
     if (message.author.id === "431220802797568001") name = "step parent";
 
     let lovemsg = "I love you too";
