@@ -123,6 +123,7 @@ module.exports = {
     if (message.content.toLowerCase() === "kys") {message.channel.send("-# keep yourself safe")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
+    if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
 
     //MARK: secret
     const secretrepliesmath = Math.random() * 5000;
