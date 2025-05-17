@@ -120,11 +120,13 @@ module.exports = {
     if (message.content.toLowerCase().includes("x3")) {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "meow") {message.channel.send("-# =^._.^=")}
     if (message.content.toLowerCase().includes("uwu")) {message.channel.send("-# uwu")}
+    if (message.content.toLowerCase().includes("owo")) {message.channel.send("-# owo")}
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
     if (message.content.toLowerCase() === "kys") {message.channel.send("-# keep yourself safe")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
+    if (message.content.toLowerCase().includes("i dont give a gaf")) {message.channel.send("-# i dont give a give a fuck")}
 
     //MARK: secret
     const secretrepliesmath = Math.random() * 5000;
