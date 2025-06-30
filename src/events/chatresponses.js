@@ -28,11 +28,9 @@ module.exports = {
     if (goodbyemsg.includes(message.content.toLowerCase())) {message.channel.send(`${goodbyeresponse} ${name}!`)};
 
     //MARK: greetings
-    const greetingresponses = [ `Hi ${name}!`, `Hello ${name}!`, `Hey ${name}!`, `Howdy ${name}!`, `Hai ${name}!`, `Hewwo ${name}!`,
-      `Whats up ${name}?`, `Yo ${name}!`, `Hallo ${name}!`, `Sup ${name}?`, `Aloha ${name}!`, `Greetings ${name}!` ];
+    const greetingresponses = [ `Hi ${name}!`, `Hello ${name}!`, `Hey ${name}!`, `Howdy ${name}!`, `Hai ${name}!`, `Hewwo ${name}!`, `Whats up ${name}?`, `Yo ${name}!`, `Hallo ${name}!`, `Sup ${name}?`, `Aloha ${name}!`, `Greetings ${name}!` ];
     const greetingresponse = greetingresponses[Math.floor(Math.random() * greetingresponses.length)];
-    const greetingmsg = [ `hi`, `hello`, `hey`, `howdy`, `hai`, `hewwo`, `whats up`, `yo`, `hallo`, `sup`, `aloha`, `greetings`,
-      `hi sylvbot`, `hello sylvbot`, `hey sylvbot`, `howdy sylvbot`, `hai sylvbot`, `hewwo sylvbot`, `whats up sylvbot`, `yo sylvbot`, `hallo sylvbot`, `sup sylvbot`, `aloha sylvbot`, `greetings sylvbot` ];
+    const greetingmsg = [ `hi`, `hello`, `hey`, `howdy`, `hai`, `hewwo`, `whats up`, `yo`, `hallo`, `sup`, `aloha`, `greetings`, `hi sylvbot`, `hello sylvbot`, `hey sylvbot`, `howdy sylvbot`, `hai sylvbot`, `hewwo sylvbot`, `whats up sylvbot`, `yo sylvbot`, `hallo sylvbot`, `sup sylvbot`, `aloha sylvbot`, `greetings sylvbot` ];
     if (greetingmsg.includes(message.content.toLowerCase())) {message.channel.send(`${greetingresponse}`)};
 
     //MARK: mornings
@@ -52,8 +50,7 @@ module.exports = {
       `Nighty ${name}!`, `Nighty ${name}! Dont let the bed bugs bite!`,
       `Nighty night ${name}!`, `Nighty night ${name}! Dont let the bed bugs bite!` ];
     const nightresponse = nightresponses[Math.floor(Math.random() * nightresponses.length)];
-    const nightmsg = [ `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night`,
-      `good night sylvbot`, `night sylvbot`, `gn sylvbot`, `night night sylvbot`, `nini sylvbot`, `nighty sylvbot`, `nighty night sylvbot` ];
+    const nightmsg = [ `goodnight`, `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night`, `goodnight sylvbot`, `good night sylvbot`, `night sylvbot`, `gn sylvbot`, `night night sylvbot`, `nini sylvbot`, `nighty sylvbot`, `nighty night sylvbot` ];
     if (nightmsg.includes(message.content.toLowerCase())) {message.channel.send(`${nightresponse}`)};
 
     //MARK: misc
@@ -112,20 +109,22 @@ module.exports = {
     ) {message.channel.send(`${lovemsg} ${name}!`)}
 
     //others
+    if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
+    if (message.content.toLowerCase() === "x3") {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "cap") {message.channel.send("-# 🧢")}
     if (message.content.toLowerCase() === "rawr") {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "nya") {message.channel.send("-# nya~!")}
     if (message.content.toLowerCase() === "ligma") {message.channel.send("-# balls")}
     if (message.content.toLowerCase() === "say gex") {message.channel.send("-# gex")}
-    if (message.content.toLowerCase().includes(":3")) {message.channel.send("-# :3")}
-    if (message.content.toLowerCase().includes("x3")) {message.channel.send("-# x3")}
+    if (message.content.toLowerCase().includes(" :3")) {message.channel.send("-# :3")}
+    if (message.content.toLowerCase().includes(" x3")) {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "meow") {message.channel.send("-# =^._.^=")}
     if (message.content.toLowerCase().includes("uwu")) {message.channel.send("-# uwu")}
     if (message.content.toLowerCase().includes("owo")) {message.channel.send("-# owo")}
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
     if (message.content.toLowerCase() === "kys") {message.channel.send("-# keep yourself safe")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
-    if (message.content.toLowerCase().includes("timmy")) {message.channel.send("-# For Timmy!")}
+    if (message.content.toLowerCase().includes("timmy")) {message.channel.send("-# for Timmy!")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
