@@ -44,39 +44,3 @@ const commandFolders = fs.readdirSync("./src/commands");
   client.handleCommands(commandFolders, "./src/commands");
   client.login(process.env.token);
 })();
-
-//guild join log invite button
-client.on(Events.InteractionCreate, async (interaction) => {
-  if (interaction.customId !== "invite") return;
-
-  const channels = await guild.channels.cache.filter(
-    (c) => c.type === ChannelType.GuildText,
-  );
-  for (const c of channels.values()) {
-    channel = c;
-    break;
-  }
-
-  if (!channel)
-    return await interaction.reply({
-      content: `<:exclamation:1266823414828765246> Invalid channels`,
-      ephemeral: true,
-    });
-
-  const invite = await channel.createInvite().catch((err) => {});
-  await interaction.reply({
-    content: `discord.gg/${invite.code}`,
-    ephemeral: true,
-  });
-});
-
-//giveaways
-const GiveawaysManager = require("./giveaways");
-client.giveawayManager = new GiveawaysManager(client, {
-  default: {
-    botsCanWin: false,
-    embedColor: "#f3b3a2",
-    embedColorEnd: "#f3b3a2",
-    reaction: "🎉",
-  },
-});
