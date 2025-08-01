@@ -96,7 +96,7 @@ module.exports = {
         const embed = new EmbedBuilder()
           .setColor("f3b3a2")
           .setDescription(
-            `<:check:1266815137587920937> The bots status has been set to \`${status}\``,
+            `The bots status has been set to \`${status}\``,
           );
 
         await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -131,22 +131,22 @@ module.exports = {
         if (fetchedGuild) {
           await fetchedGuild.leave();
           await sendMessage(
-            `<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`,
+            `I have succesfully left ${fetchedGuild.name}`,
           ).catch((err) => {});
         } else {
           if (guilds.length > 1) {
             await sendMessage(
-              `<:exclamation:1266823414828765246> \`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`,
+              `\`${guild}\` is the name of multiple servers I am in! Try using the servers ID instead`,
             );
           } else if (guild.length == 0) {
             await sendMessage(
-              `<:exclamation:1266823414828765246> I am not in any guilds matching \`${guild}\``,
+              `I am not in any guilds matching \`${guild}\``,
             );
           } else {
             fetchedGuild = await client.guild.fetch(guilds[0].id);
             await fetchedGuild.leave();
             await sendMessage(
-              `<:check:1266815137587920937> I have succesfully left ${fetchedGuild.name}`,
+              `I have succesfully left ${fetchedGuild.name}`,
             ).catch((err) => {});
           }
         }
@@ -202,12 +202,12 @@ module.exports = {
         if (listBin.ok) {
           var { key } = await listBin.json();
           await sendMessage(
-            `<:check:1266815137587920937> **Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`,
+            `**Server list:**\n\nI am currently in \`${client.guilds.cache.size}\` server(s)`,
             key,
           );
         } else {
           await sendMessage(
-            `<:exclamation:1266823414828765246> Failed to load server list`,
+            `Failed to load server list`,
           );
         }
     }
@@ -234,7 +234,7 @@ module.exports = {
 
         await interaction.channel.send(message);
         await interaction.reply({
-          content: "<:check:1266815137587920937> Message sent",
+          content: "Message sent",
           ephemeral: true,
         });
     }
