@@ -16,6 +16,7 @@ module.exports = {
     let name = `${message.member.displayName}`;
     if (message.author.id === "1018686464000807003") name = "mama";
     if (message.author.id === "431220802797568001") name = "step parent";
+    if (message.author.id === "743907112165310475") name = "Skibidi Toilet";
 
     let lovemsg = "I love you too";
     if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också";
