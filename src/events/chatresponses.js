@@ -129,9 +129,19 @@ module.exports = {
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
     if (message.content.toLowerCase().includes("timmy")) {message.channel.send("-# for Timmy!")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
-    if (message.content.toLowerCase() === "driving in my car") {message.channel.send("-# right after a beer")}
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
+
+    //dimcraabhtbisladduihaydigahmahldykifuogigyfmaptfwmbisyoolt
+    if (message.content.toLowerCase() === "driving in my car") {message.channel.send("-# right after a beer")}
+    if (message.content.toLowerCase() === "hey that bump") {message.channel.send("-# is shaped like a deer")}
+    if (message.content.toLowerCase() === "dui?") {message.channel.send("-# how about you die?")}
+    if (message.content.toLowerCase() === "ill go a hundred miles") {message.channel.send("-# an hour!")}
+    if (message.content.toLowerCase() === "little do you know") {message.channel.send("-# im filled up on gas")}
+    if (message.content.toLowerCase() === "imma get") {message.channel.send("-# your fountain-making ass")}
+    if (message.content.toLowerCase() === "pulverize this fuck") {message.channel.send("-# with my bergentrück")}
+    if (message.content.toLowerCase() === "it seems youre out of luck") {message.channel.send("-# TRUCK!")}
+
 
     //MARK: secret
     const secretrepliesmath = Math.random() * 5000;
