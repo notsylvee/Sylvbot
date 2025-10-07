@@ -109,21 +109,14 @@ module.exports = {
         || message.content.toLowerCase().includes("i love you <@953885359668871238>")
     ) {message.channel.send(`${lovemsg} ${name}!`)}
 
-    //others
-    if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
-    if (message.content.toLowerCase() === "x3") {message.channel.send("-# x3")}
+    //MARK: others
     if (message.content.toLowerCase() === "cap") {message.channel.send("-# 🧢")}
     if (message.content.toLowerCase() === "rawr") {message.channel.send("-# x3")}
-    if (message.content.toLowerCase() === "uwu") {message.channel.send("-# uwu")}
-    if (message.content.toLowerCase() === "owo") {message.channel.send("-# owo")}
     if (message.content.toLowerCase() === "nya") {message.channel.send("-# nya~!")}
+    if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
     if (message.content.toLowerCase() === "ligma") {message.channel.send("-# balls")}
     if (message.content.toLowerCase() === "say gex") {message.channel.send("-# gex")}
-    if (message.content.toLowerCase().includes(" :3")) {message.channel.send("-# :3")}
-    if (message.content.toLowerCase().includes(" x3")) {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "meow") {message.channel.send("-# =^._.^=")}
-    if (message.content.toLowerCase().includes(" uwu")) {message.channel.send("-# uwu")}
-    if (message.content.toLowerCase().includes(" owo")) {message.channel.send("-# owo")}
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
     if (message.content.toLowerCase() === "kys") {message.channel.send("-# keep yourself safe")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
@@ -131,6 +124,16 @@ module.exports = {
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
+
+    //faces
+    if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
+    if (message.content.toLowerCase() === "x3") {message.channel.send("-# x3")}
+    if (message.content.toLowerCase() === "uwu") {message.channel.send("-# uwu")}
+    if (message.content.toLowerCase() === "owo") {message.channel.send("-# owo")}
+    if (message.content.toLowerCase().includes(" :3")) {message.channel.send("-# :3")}
+    if (message.content.toLowerCase().includes(" x3")) {message.channel.send("-# x3")}
+    if (message.content.toLowerCase().includes(" uwu")) {message.channel.send("-# uwu")}
+    if (message.content.toLowerCase().includes(" owo")) {message.channel.send("-# owo")}
 
     //dimcraabhtbisladduihaydigahmahldykifuogigyfmaptfwmbisyoolt
     if (message.content.toLowerCase() === "driving in my car") {message.channel.send("-# right after a beer")}
