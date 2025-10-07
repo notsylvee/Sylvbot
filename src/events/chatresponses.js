@@ -128,6 +128,7 @@ module.exports = {
     if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
     if (message.content.toLowerCase() === "sylv") {message.channel.send("-# ee")}
     if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
+    if (message.content.toLowerCase() === "lyfe") {message.channel.send("-# o.o")}
     if (message.content.toLowerCase() === "kat") {message.channel.send("-# gamer")}
     if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
     if (message.content.toLowerCase() === "des") {message.channel.send("-# crenti")}
