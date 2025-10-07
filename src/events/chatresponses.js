@@ -124,6 +124,9 @@ module.exports = {
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
 
+    //memes
+    if (message.content.toLowerCase() === "road work ahead") {message.channel.send("-# yeah i sure hope it does")}
+
     //friends
     if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
     if (message.content.toLowerCase() === "sylv") {message.channel.send("-# ee")}
