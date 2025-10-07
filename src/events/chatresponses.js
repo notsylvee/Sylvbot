@@ -124,10 +124,24 @@ module.exports = {
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
 
-    //memes
-    if (message.content.toLowerCase() === "road work ahead") {message.channel.send("-# yeah i sure hope it does")}
+    //MARK: memes
+    if (message.content.toLowerCase() === "psst") {message.channel.send("-# wat")}
+    if (message.content.toLowerCase() === "what does that say anaya?") {message.channel.send("-# wha?")}
+    if (message.content.toLowerCase() === "you guys say colorado") {message.channel.send("-# IM A GIRRAFE")}
+    if (message.content.toLowerCase() === "hey im lesbian") {message.channel.send("-# i thought you were american")}
+    if (message.content.toLowerCase() === "peel the avacado") {message.channel.send("-# guac a mole, guac guac a mole")}
+    if (message.content.toLowerCase() === "road work ahead?") {message.channel.send("-# uh, yeah, i sure hope it does")}
+    if (message.content.toLowerCase() === "hurricane katrina?") {message.channel.send("-# more like hurricane tortilla")}
+    if (message.content.toLowerCase() === "who am i lets go to the beach beach") {message.channel.send("-# nimki minjaj")}
+    if (message.content.toLowerCase() === "and they were roomates") {message.channel.send("-# ohmygahd they were roomates")}
+    if (message.content.toLowerCase() === "there is only one thing worse than a rapist") {message.channel.send("-# a child")}
+    if (message.content.toLowerCase() === "is that a police? im calling the weed") {message.channel.send("-# 420 whatchu smokin")}
+    if (message.content.toLowerCase() === "get to del taco") {message.channel.send("-# they gotta new thing called fr e sh a voca do")}
+    if (message.content.toLowerCase() === "oh hi thanks for checking in im") {message.channel.send("-# still a piece of ✨garbage✨")}
+    if (message.content.toLowerCase() === "whos the hottest uber driver youve ever had") {message.channel.send("-# i never went to oovoo javer")}
+    if (message.content.toLowerCase() === "how do you keep your pants up while youre preforming its incredible") {message.channel.send("-# belt")}
 
-    //friends
+    //MARK: friends
     if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
     if (message.content.toLowerCase() === "sylv") {message.channel.send("-# ee")}
     if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
@@ -139,7 +153,7 @@ module.exports = {
     if (message.content.toLowerCase() === "kelp") {message.channel.send("-# iusprime")}
     if (message.content.toLowerCase() === "crimson") {message.channel.send("-# lights")}
 
-    //faces
+    //MARK: faces
     if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
     if (message.content.toLowerCase() === "x3") {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "uwu") {message.channel.send("-# uwu")}
@@ -149,7 +163,7 @@ module.exports = {
     if (message.content.toLowerCase().includes(" uwu")) {message.channel.send("-# uwu")}
     if (message.content.toLowerCase().includes(" owo")) {message.channel.send("-# owo")}
 
-    //dimcraabhtbisladduihaydigahmahldykifuogigyfmaptfwmbisyoolt
+    //MARK: dimcraab
     if (message.content.toLowerCase() === "driving in my car") {message.channel.send("-# right after a beer")}
     if (message.content.toLowerCase() === "hey that bump") {message.channel.send("-# is shaped like a deer")}
     if (message.content.toLowerCase() === "dui?") {message.channel.send("-# how about you die?")}
