@@ -113,7 +113,6 @@ module.exports = {
     if (message.content.toLowerCase() === "cap") {message.channel.send("-# 🧢")}
     if (message.content.toLowerCase() === "rawr") {message.channel.send("-# x3")}
     if (message.content.toLowerCase() === "nya") {message.channel.send("-# nya~!")}
-    if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
     if (message.content.toLowerCase() === "ligma") {message.channel.send("-# balls")}
     if (message.content.toLowerCase() === "say gex") {message.channel.send("-# gex")}
     if (message.content.toLowerCase() === "meow") {message.channel.send("-# =^._.^=")}
@@ -124,6 +123,15 @@ module.exports = {
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
     if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
+
+    //friends
+    if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
+    if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
+    if (message.content.toLowerCase() === "kat") {message.channel.send("-# gamer")}
+    if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
+    if (message.content.toLowerCase() === "xeno") {message.channel.send("-# scarlet")}
+    if (message.content.toLowerCase() === "kelp") {message.channel.send("-# iusprime")}
+    if (message.content.toLowerCase() === "crimson") {message.channel.send("-# lights")}
 
     //faces
     if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
