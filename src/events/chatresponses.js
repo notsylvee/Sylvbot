@@ -5,6 +5,7 @@ module.exports = {
   async execute(message, client) {
 
     if (!message.guild) return;
+    if (message.author.id === "953885359668871238") return;
     if (!message.guild.members.me.permissionsIn(message.channel.id).has(PermissionFlagsBits.SendMessages)) return;
     if (message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?")) return;
     const logsChannel = await client.channels.fetch("1344881478625923112");
