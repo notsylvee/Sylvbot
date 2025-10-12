@@ -117,12 +117,13 @@ module.exports = {
     if (message.content.toLowerCase() === "say gex") {message.channel.send("-# gex")}
     if (message.content.toLowerCase() === "meow") {message.channel.send("-# =^._.^=")}
     if (message.content.toLowerCase() === "type shit") {message.channel.send("-# shit")}
+    if (message.content.toLowerCase().includes("freaky")) {message.channel.send("-# 𝓯𝓻𝓮𝓪𝓴𝔂")}
     if (message.content.toLowerCase() === "kys") {message.channel.send("-# keep yourself safe")}
     if (message.content.toLowerCase() === "aw man") {message.channel.send("-# creeper! aw man")}
     if (message.content.toLowerCase().includes("timmy")) {message.channel.send("-# for Timmy!")}
     if (message.content.toLowerCase() === "smh my head") {message.channel.send("-# shaking my head my head")}
     if (message.content.toLowerCase() === "i dont give a gaf") {message.channel.send("-# i dont give a give a fuck")}
-    if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")}
+    if (message.content.toLowerCase().includes("massive")) {message.channel.send("-# you know what else is massive?")} 
 
     //MARK: memes
     if (message.content.toLowerCase() === "psst") {message.channel.send("-# wat")}
