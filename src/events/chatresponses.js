@@ -15,7 +15,7 @@ module.exports = {
     if (message.channel.id === `1219415504884731994`) return; /*scok*/
 
     //names & msgs
-    let name = `${message.member.username}`;
+    let name = `${message.user.username}`;
     if (message.author.id === "1018686464000807003") name = "mama";
     if (message.author.id === "431220802797568001") name = "step parent";
     if (message.author.id === "743907112165310475") name = "Skibidi Toilet";
