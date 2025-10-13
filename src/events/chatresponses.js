@@ -9,12 +9,13 @@ module.exports = {
     if (!message.guild.members.me.permissionsIn(message.channel.id).has(PermissionFlagsBits.SendMessages)) return;
     if (message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?")) return;
     const logsChannel = await client.channels.fetch("1344881478625923112");
+    const rare = Math.random() * 500;
 
     //blocked channels
     if (message.channel.id === `1219415504884731994`) return; /*scok*/
 
     //names & msgs
-    let name = `${message.member.displayName}`;
+    let name = `${message.member.username}`;
     if (message.author.id === "1018686464000807003") name = "mama";
     if (message.author.id === "431220802797568001") name = "step parent";
     if (message.author.id === "743907112165310475") name = "Skibidi Toilet";
@@ -54,9 +55,6 @@ module.exports = {
     const nightresponse = nightresponses[Math.floor(Math.random() * nightresponses.length)];
     const nightmsg = [ `goodnight`, `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night`, `goodnight sylvbot`, `good night sylvbot`, `night sylvbot`, `gn sylvbot`, `night night sylvbot`, `nini sylvbot`, `nighty sylvbot`, `nighty night sylvbot` ];
     if (nightmsg.includes(message.content.toLowerCase())) {message.channel.send(`${nightresponse}`)};
-
-    //MARK: misc
-    const rare = Math.random() * 500;
     
     //erm
     const ermreplies = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish", "shark", "freak" ];
