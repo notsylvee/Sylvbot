@@ -15,7 +15,7 @@ module.exports = {
     if (message.channel.id === `1219415504884731994`) return; /*scok*/
 
     //names & msgs
-    let name = `<@${message.user.id}>`;
+    let name = `<@${message.author.id}>`;
     if (message.author.id === "1018686464000807003") name = "mama";
     if (message.author.id === "431220802797568001") name = "step parent";
     if (message.author.id === "743907112165310475") name = "Skibidi Toilet";
@@ -56,18 +56,12 @@ module.exports = {
     const nightmsg = [ `goodnight`, `good night`, `night`, `gn`, `night night`, `nini`, `nighty`, `nighty night`, `goodnight sylvbot`, `good night sylvbot`, `night sylvbot`, `gn sylvbot`, `night night sylvbot`, `nini sylvbot`, `nighty sylvbot`, `nighty night sylvbot` ];
     if (nightmsg.includes(message.content.toLowerCase())) {message.channel.send(`${nightresponse}`)};
     
-    //erm
+    //MARK: erm
     const ermreplies = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish", "shark", "freak" ];
     const ermreply = ermreplies[Math.floor(Math.random() * ermreplies.length)];
     if (message.content.toLowerCase() === "erm") {message.channel.send(`-# what the ${ermreply}`)}
 
-    //crazy
-    const crazyembed = new EmbedBuilder()
-    .setDescription(`crazy? im starting to go crazy trapped in this place...`)
-    .addFields({name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}`},
-      { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
-      { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
-
+    //MARK: crazy
     if (message.content.toLowerCase().includes("crazy")) {
       if (rare < 499) {message.channel.send("-# crazy? i was crazy once");
       } else {message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***");
@@ -84,19 +78,13 @@ module.exports = {
     if (message.content.toLowerCase().includes("cray cray")) {
       message.channel.send("-# cray cray? i was cray cray once")}
 
-    //real
-    const realembed = new EmbedBuilder()
-    .setDescription(`chat, am i real..?`)
-    .addFields({ name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}` },
-      { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
-      { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
-
+    //MARK: real
     if (message.content.toLowerCase() === "real") {
       if (rare < 499) {message.channel.send("-# chat, is this real?");
       } else {message.channel.send("-# chat, ***am i real..?***");
         logsChannel.send({ embeds: [realembed] })}}
 
-    //sylvbot
+    //MARK: sylvbot
     if (message.content.toLowerCase().includes("thanks sylvbot")
       || message.content.toLowerCase().includes("thank you sylvbot")
     ) {message.channel.send(`You're welcome ${name}!`)}
