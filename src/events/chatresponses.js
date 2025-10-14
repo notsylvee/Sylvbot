@@ -171,12 +171,6 @@ module.exports = {
       ".... . .-.. .--. / -- .", ".--. .-.. . .- ... .", "01101000 01100101 01101100 01110000" ];
     const secretreply = secretreplies[Math.floor(Math.random() * secretreplies.length)];
 
-    const secretembed = new EmbedBuilder()
-    .setDescription(`${secretreply}`)
-    .addFields({ name: "Triggered by:", value: `Username: ${message.member.displayName}\nID: ${message.member.id}` },
-      { name: "Channel:", value: `Link: <#${message.channel.id}>\nName: ${message.channel.name}\nID: ${message.channel.id}` },
-      { name: "Server:", value: `Name: ${message.guild.name}\nID: ${message.guild.id}` });
-
     if (secretrepliesmath < 4999) {
       return;
     } else {
