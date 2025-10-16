@@ -64,8 +64,7 @@ module.exports = {
     //MARK: crazy
     if (message.content.toLowerCase().includes("crazy")) {
       if (rare < 499) {message.channel.send("-# crazy? i was crazy once");
-      } else {message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***");
-        logsChannel.send({ embeds: [crazyembed] })}}
+      } else {message.channel.send("-# crazy? ***im starting to go crazy trapped in this place...***")}}
     if (message.content.toLowerCase() === "they locked me in a room") {message.channel.send("-# a rubber room")}
     if (message.content.toLowerCase() === "a rubber room with rats") {message.channel.send("-# and rats make me crazy")}
     
@@ -81,8 +80,7 @@ module.exports = {
     //MARK: real
     if (message.content.toLowerCase() === "real") {
       if (rare < 499) {message.channel.send("-# chat, is this real?");
-      } else {message.channel.send("-# chat, ***am i real..?***");
-        logsChannel.send({ embeds: [realembed] })}}
+      } else {message.channel.send("-# chat, ***am i real..?***")}}
 
     //MARK: sylvbot
     if (message.content.toLowerCase().includes("thanks sylvbot")
@@ -175,7 +173,6 @@ module.exports = {
       return;
     } else {
       message.channel.send(`-# ***${secretreply}***`);
-      logsChannel.send({ embeds: [secretembed] });
     };
   },
 };
