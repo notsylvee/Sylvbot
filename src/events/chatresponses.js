@@ -5,11 +5,10 @@ module.exports = {
   async execute(message, client) {
 
     if (!message.guild) return;
-    if (message.author.id === "953885359668871238") return;
-    if (message.author.id === "743907112165310475") return;
+    if (message.author.id === "953885359668871238") return; //sylvbot
+    if (message.author.id === "743907112165310475") return; //xeno
     if (!message.guild.members.me.permissionsIn(message.channel.id).has(PermissionFlagsBits.SendMessages)) return;
     if (message.content.toLowerCase().startsWith("sylvbot") && message.content.toLowerCase().endsWith("?")) return;
-    const logsChannel = await client.channels.fetch("1344881478625923112");
     const rare = Math.random() * 500;
 
     //blocked channels
@@ -17,12 +16,12 @@ module.exports = {
 
     //names & msgs
     let name = `<@${message.author.id}>`;
-    if (message.author.id === "1018686464000807003") name = "mama";
-    if (message.author.id === "431220802797568001") name = "step parent";
-    if (message.author.id === "743907112165310475") name = "Skibidi Toilet";
+    if (message.author.id === "1018686464000807003") name = "mama"; //sylvee
+    if (message.author.id === "431220802797568001") name = "step parent"; //tharen
+    if (message.author.id === "743907112165310475") name = "Skibidi Toilet"; //xeno
 
     let lovemsg = "I love you too";
-    if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också";
+    if (message.author.id === "788222689126776832") lovemsg = "Jag älskar dig också"; //valk
 
     //MARK: goodbyes
     const goodbyeresponses = [ `Bye`, `Bye bye`, `Cya`, `See ya`, `Cya later`, `See ya later`, `Goodbye`, `Bai` ];
