@@ -129,6 +129,7 @@ module.exports = {
 
     //MARK: friends
     if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
+    if (message.content.toLowerCase() === "syl") {message.channel.send("-# vee")}
     if (message.content.toLowerCase() === "sylv") {message.channel.send("-# ee")}
     if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
     if (message.content.toLowerCase() === "lyfe") {message.channel.send("-# o.o")}
