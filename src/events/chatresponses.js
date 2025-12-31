@@ -134,10 +134,10 @@ module.exports = {
     if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
     if (message.content.toLowerCase() === "lyfe") {message.channel.send("-# o.o")}
     if (message.content.toLowerCase() === "kat") {message.channel.send("-# gamer")}
-    if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
+    //if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
     if (message.content.toLowerCase() === "des") {message.channel.send("-# crenti")}
     if (message.content.toLowerCase() === "rumble") {message.channel.send("-# fish")}
-    if (message.content.toLowerCase() === "xeno") {message.channel.send("-# scarlet")}
+    //if (message.content.toLowerCase() === "xeno") {message.channel.send("-# scarlet")}
     if (message.content.toLowerCase() === "kelp") {message.channel.send("-# iusprime")}
     if (message.content.toLowerCase() === "crimson") {message.channel.send("-# lights")}
 
