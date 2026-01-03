@@ -9,7 +9,20 @@ module.exports = {
     },
     async execute(interaction) {
 
-        const words = [ "sigma", "tuna", "flip", "scallop", "skibidi", "heck", "what", "fish 🐟", "shark 🦈", "freak", "fart" ];
+        const words = [
+            "sigma",
+            "tuna",
+            "flip",
+            "scallop",
+            "skibidi",
+            "heck",
+            "what",
+            "fish 🐟",
+            "shark 🦈",
+            "freak",
+            "fart"
+        ];
+        
         const word = words[Math.floor(Math.random() * words.length)];
         await interaction.reply({ content: `what the ${word}` });
       },
