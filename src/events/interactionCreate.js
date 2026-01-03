@@ -10,7 +10,7 @@ module.exports = {
     if (command.owner == true) {
       if (interaction.user.id !== "1018686464000807003")
         return await interaction.reply({
-          content: `<:forbidden:1266829648344645694> Invalid permission`,
+          content: `Invalid permission`,
           ephemeral: true,
         });
     }

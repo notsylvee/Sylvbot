@@ -1,26 +1,30 @@
 const { REST } = require("@discordjs/rest");
-const { Routes } = require("discord-api-types/v9");
-const fs = require("fs");
+const { Routes } = require('discord-api-types/v9');
+const { SlashCommandBuilder } = require("discord.js");
+const fs = require('fs');
 
-const guildId = "854795198836375562";
+const guildId = '1217915488332550218'; 
 
 module.exports = (client) => {
-  client.handleCommands = async (commandFolders, path) => {
-    client.commandArray = [];
-    for (folder of commandFolders) {
-      const commandFiles = fs
-        .readdirSync(`${path}/${folder}`)
-        .filter((file) => file.endsWith(".js"));
-      for (const file of commandFiles) {
-        const command = require(`../commands/${folder}/${file}`);
-        client.commands.set(command.data.name, command);
-        client.commandArray.push(command.data.toJSON());
-      }
-    }
+    client.handleCommands = async (commandFolders, path) => {
+        client.commandArray = [];
+        for (folder of commandFolders) {
+            const commandFiles = fs.readdirSync(`${path}/${folder}`).filter(file => file.endsWith('.js'));
+            for (const file of commandFiles) {
+                const command = require(`../commands/${folder}/${file}`);
+                client.commands.set(command.data.name, command);
 
-    const rest = new REST({
-      version: "9",
-    }).setToken(process.env.token);
+                if (command.data instanceof SlashCommandBuilder) {
+                    client.commandArray.push(command.data.toJSON());
+                } else {
+                    client.commandArray.push(command.data);
+                }
+            }
+        }
+
+        const rest = new REST({
+            version: '9'
+        }).setToken(process.env.token);
 
     (async () => {
       try {
