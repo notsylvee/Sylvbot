@@ -12,6 +12,7 @@ module.exports = {
 
     //blocked channels
     if (message.channel.id === `1219415504884731994`) return; //sc, ok
+    if (message.channel.id === `1466301788478247076`) return; //sc, ay
     if (message.channel.id === `1449240566532538489`) return; //th, g
 
     //names & msgs
@@ -126,20 +127,6 @@ module.exports = {
     if (message.content.toLowerCase() === "whos the hottest uber driver youve ever had") {message.channel.send("-# i never went to oovoo javer")}
     if (message.content.toLowerCase() === "how do you keep your pants up while youre preforming its incredible") {message.channel.send("-# belt")}
 
-    //MARK: friends
-    if (message.content.toLowerCase() === "cups") {message.channel.send("-# l")}
-    if (message.content.toLowerCase() === "syl") {message.channel.send("-# vee")}
-    if (message.content.toLowerCase() === "sylv") {message.channel.send("-# ee")}
-    if (message.content.toLowerCase() === "nico") {message.channel.send("-# cdm")}
-    if (message.content.toLowerCase() === "lyfe") {message.channel.send("-# o.o")}
-    if (message.content.toLowerCase() === "kat") {message.channel.send("-# gamer")}
-    //if (message.content.toLowerCase() === "bolty") {message.channel.send("-# Boo!")}
-    if (message.content.toLowerCase() === "des") {message.channel.send("-# crenti")}
-    if (message.content.toLowerCase() === "rumble") {message.channel.send("-# fish")}
-    //if (message.content.toLowerCase() === "xeno") {message.channel.send("-# scarlet")}
-    if (message.content.toLowerCase() === "kelp") {message.channel.send("-# iusprime")}
-    if (message.content.toLowerCase() === "crimson") {message.channel.send("-# lights")}
-
     //MARK: faces
     if (message.content.toLowerCase() === ":3") {message.channel.send("-# :3")}
     if (message.content.toLowerCase() === "x3") {message.channel.send("-# x3")}
@@ -159,7 +146,6 @@ module.exports = {
     if (message.content.toLowerCase() === "imma get") {message.channel.send("-# your fountain-making ass")}
     if (message.content.toLowerCase() === "pulverize this fuck") {message.channel.send("-# with my bergentrück")}
     if (message.content.toLowerCase() === "it seems youre out of luck") {message.channel.send("-# TRUCK!")}
-
 
     //MARK: secret
     const secretrepliesmath = Math.random() * 5000;
