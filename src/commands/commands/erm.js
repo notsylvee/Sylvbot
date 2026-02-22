@@ -20,7 +20,9 @@ module.exports = {
             "fish 🐟",
             "shark 🦈",
             "freak",
-            "fart"
+            "fart 💨",
+            "uma 🐎",
+            "jellyfish 🪼"
         ];
         
         const word = words[Math.floor(Math.random() * words.length)];
